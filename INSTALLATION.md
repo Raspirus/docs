@@ -13,9 +13,9 @@ This guide will help you in building the project on your own machine.
   - [6. Install project dependencies](#6-install-project-dependencies)
   - [7. Build the project](#7-build-the-project)
 - [Conclusion](#conclusion)
-
+https://github.com/Raspirus/Raspirus/releases
 ## Introduction
-For people that just want a working app, they can just head over to the [Release page](github.com/Benji377/Raspirus/releases/latest) 
+For people that just want a working app, they can just head over to the [Release page](https://github.com/Raspirus/Raspirus/releases/latest)
 and download the executable for the correct platform. But if you are on a different Linux distribution, unsupported OS, or just want to
 compile the project on your own, this step-by-step guide will guide you.
 
@@ -56,9 +56,8 @@ Firstly, we will install the node modules. To do this, head over to the director
 
 ### 7. Build the project
 Before you can completely build the project, there is one more thing you might want to check. To make sure that the Rust part of the project works fine, open the
-folder `app/src-tauri/` and execute the command `cargo build`. If this command succeeds, you can go back to the `app/` directory. If this command fails, please [open an issue](https://github.com/Benji377/Raspirus/issues/new) on this repository with as much information about the error as possible.
+folder `app/src-tauri/` and execute the command `cargo build`. If this command succeeds, you can go back to the `app/` directory. If this command fails, please [open an issue](https://github.com/Raspirus/Raspirus/issues/new) on this repository with as much information about the error as possible.
 If everything went well, you are now in the `app` directory, and you can safely execute the command `cargo tauri build`. This command will build the entire application and display a path at the end of the process showing you where the executable is located. By default, you should be able to find it in the `app\src-tauri\target\release` folder.
-
 
 ## Conclusion
 This application is basically a website attached to some Rust code and packaged with the Tauri framework. It will therefore need a graphical overlay to start and display the website. This project is in constant development and therefore, if you find anything unusual, have some good ideas or find some errors, don't be afraid to open an issue on this repository and I will be happy to help you out.
