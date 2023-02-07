@@ -1,7 +1,7 @@
 # Frequently Asked Questions
 
 ## How do I generate the documentation for this repository?
-You can find the generated documentation in the [docs folder](https://github.com/Benji377/Raspirus/tree/main/docs/generated) and in case you want to generate
+You can find the generated documentation in the [rust folder](/rust/) and in case you want to generate
 your own, you can do so by using the `cargo doc` command. Here are some parameters you might want to use with it:
 - `--no-deps`: Ignores dependencies, only documents the code itself
 - `--release`: It is generally better than a debug
