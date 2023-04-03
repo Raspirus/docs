@@ -1,21 +1,20 @@
----
-comments: true
----
+# Home
 
-# Welcome to MkDocs
+## Welcome to Raspirus Docs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Contents:
+- [Introduction](#introduction)
+- [Installation](installation.md)
+- [Guides](guides.md)
+- [FAQ](faq.md)
+- [Usage and Diagrams](usage.md)
+- [Developers Section](developers/index.md)
+    - [Frontend (Next.JS)](developers/frontend.md)
+    - [Backend (Rust)](developers/backend.md)
+- [Contributing](contributing/index.md)
+    - [Coding](contributing/coding.md)
+    - [Translations](contributing/translations.md)
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Introduction
+This repository contains all documentation of the Raspirus project. 
+It is currently in development and therefore not too reliable.

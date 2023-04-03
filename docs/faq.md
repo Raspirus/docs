@@ -1,4 +1,8 @@
-# Frequently Asked Questions
+---
+comments: true
+---
+
+# FAQ
 
 ## How do I generate the documentation for this repository?
 You can find the generated documentation in the [rust folder](/rust/) and in case you want to generate

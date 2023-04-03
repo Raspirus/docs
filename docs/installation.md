@@ -1,4 +1,8 @@
-# Custom build guide
+---
+comments: true
+---
+
+# Installation
 This guide will help you in building the project on your own machine.
 
 ## Table of contents
