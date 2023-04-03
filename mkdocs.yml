@@ -1,0 +1,67 @@
+site_name: Raspirus docs
+repo_url: https://github.com/Raspirus/Raspirus
+repo_name: Raspirus
+edit_uri: https://github.com/Raspirus/docs
+site_description: Documentation and guides of the Raspirus project
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  custom_dir: overrides
+
+  icon:
+    repo: fontawesome/brands/github
+
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+    - content.action.view
+    - search.suggest
+    - toc.integrate
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Raspirus
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Benben377
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:demetzbenjamin@duck.com
+
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
+
+copyright: Copyright &copy; 2022 - 2023 Raspirus Project
