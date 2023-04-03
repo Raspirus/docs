@@ -3,6 +3,7 @@ repo_url: https://github.com/Raspirus/Raspirus
 repo_name: Raspirus
 edit_uri: https://github.com/Raspirus/docs
 site_description: Documentation and guides of the Raspirus project
+site_author: Benjamin Demetz
 
 theme:
   name: material
@@ -42,6 +43,8 @@ theme:
 
 plugins:
   - search
+  - with-pdf:
+      cover_subtitle: A simple hash-based virus scanner
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
