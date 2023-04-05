@@ -5,6 +5,7 @@ comments: true
 # Translations
 Translations are very important and can help other people understand the app easier and make it wider available. If you know a language outside of English and would like to add your translations you can do so in two ways: The first one is to translate the documentation, the second one is to translate the frontend strings.
 
+
 ## Translating code
 This is a work in progress, but essentially it will be done in one of two possible ways:
 

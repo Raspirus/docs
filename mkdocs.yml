@@ -7,9 +7,10 @@ site_author: Benjamin Demetz
 
 theme:
   name: material
-  logo: assets/logo.png
-  favicon: assets/favicon.ico
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
   custom_dir: overrides
+  language: en
 
   icon:
     repo: fontawesome/brands/github
@@ -43,13 +44,25 @@ theme:
     - toc.integrate
 
 plugins:
-  - search
-  - with-pdf:
-      cover_subtitle: A simple hash-based virus scanner
+  - i18n:
+      default_language: en
+      docs_structure: folder
+      languages:
+        en:
+          name: English
+          build: true
+        de:
+          name: Deutsch
+          build: true
+        it:
+          name: Italiano
+          build: true
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
-
+  - search
+  - with-pdf:
+      cover_subtitle: A simple hash-based virus scanner
 
 extra:
   social:
@@ -59,13 +72,5 @@ extra:
       link: https://twitter.com/Benben377
     - icon: fontawesome/solid/paper-plane
       link: mailto:demetzbenjamin@duck.com
-
-  alternate:
-    - name: English
-      link: /en/
-      lang: en
-    - name: Deutsch
-      link: /de/
-      lang: de
 
 copyright: Copyright &copy; 2022 - 2023 Raspirus Project
