@@ -1,17 +1,17 @@
 ---
-comments: true
+comments: vero
 ---
 
-# Guides
-## COMING SOON
+# Guide
+## COMANDO SUONO
 
 
-## Notes
-### Export to PDF:
-- Follow instructions for your OS on here: https://github.com/orzih/mkdocs-with-pdf#requirements
-- Install all dependencies using pip with `pip install -r requirements.txt`
-- Run `mkdocs build`
-- PDF is located in site/pdf/document.pdf
+## Note
+### Esporta in PDF:
+- Segui le istruzioni per il tuo sistema operativo qui: https://github.com/orzih/mkdocs-with-pdf#requirements
+- Installa tutte le dipendenze usando pip con `pip install -r requirements.txt`
+- Esegue `mkdocs build`
+- PDF si trova in sito/pdf/document.pdf
 
-### Translations
+### Traduzioni
 - Link: https://github.com/ultrabug/mkdocs-static-i18n
