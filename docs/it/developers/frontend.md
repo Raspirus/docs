@@ -1,7 +1,7 @@
 ---
-comments: true
+comments: vero
 ---
 
 # Frontend
 
-## COMING SOON
+## COMANDO SUONO
