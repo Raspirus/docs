@@ -1,7 +1,7 @@
 ---
-comments: true
+comments: wahr
 ---
 
 # Frontend
 
-## COMING SOON
+## KOMMT BALD
