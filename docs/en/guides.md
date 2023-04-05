@@ -11,3 +11,6 @@ comments: true
 - Install all dependencies using pip with `pip install -r requirements.txt`
 - Run `mkdocs build`
 - PDF is located in site/pdf/document.pdf
+
+### Translations
+- Link: https://github.com/ultrabug/mkdocs-static-i18n
