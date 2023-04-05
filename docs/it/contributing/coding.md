@@ -1,7 +1,7 @@
 ---
-comments: true
+comments: vero
 ---
 
-# Code
+# Codice
 
-## COMING SOON
+## COMANDO SUONO
