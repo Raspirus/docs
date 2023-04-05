@@ -1,19 +1,19 @@
 # Home
 
-## Welcome to Raspirus Docs
+## Benvenuti a Raspirus Docs
 
-## Contents:
-- [Introduction](#introduction)
-- [Installation](installation.md)
-- [Guides](guides.md)
+## Contenuto:
+- [Introduzione](#introduction)
+- [Installazione](installation.md)
+- [Guide](guides.md)
 - [FAQ](faq.md)
-- [Usage and Diagrams](usage.md)
-- [Developers Section](developers/index.md)
+- [Uso e diagrammi](usage.md)
+- [Sezione Sviluppatori](developers/index.md)
     - [Frontend (Next.JS)](developers/frontend.md)
     - [Backend (Rust)](developers/backend.md)
-- [Contributing](contributing/index.md)
+- [Contribuire](contributing/index.md)
     - [Coding](contributing/coding.md)
-    - [Translations](contributing/translations.md)
+    - [Traduzioni](contributing/translations.md)
 
-## Introduction
-This repository contains all documentation of the Raspirus project. It is currently in development and therefore not too reliable.
+## Introduzione
+Questo repository contiene tutta la documentazione del progetto Raspirus. Attualmente è in fase di sviluppo e quindi non è troppo affidabile.
