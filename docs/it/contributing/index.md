@@ -10,5 +10,6 @@ The app itself is made with user-friendliness in mind and therefore doesn't have
 
 ## Coding
 L'app è costruita utilizzando principalmente due linguaggi di programmazione: Rust e JavaScript. JavaScript is used for the frontend to build a website using the [Next.JS](https://nextjs.org/) framework and make the app look nicer and be cross-platform. The backend on the other side is written in Rust because we value speed a lot when scanning files and therefore need a fast language. To make the two communicate we use the Tauri framework. [Tauri](https://tauri.app/) è un framework open-source scritto in Rust, abbastanza nuovo nel suo campo. In futuro c'è anche un piano per aggiungere un programma di installazione Python. If you have knowledge in any of these fields you are more than welcome to contribute to the project. Ovviamente puoi anche usare questo progetto come esempio per creare il tuo progetto.
+
 ## Sponsorizzazione
 COMANDO SUONO
