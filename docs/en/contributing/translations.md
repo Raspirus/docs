@@ -16,7 +16,7 @@ There is a translations file in JSON format for each different language. So the 
 We use an external translations service to translate the project. This option would allow translators to just translate the given strings and have an overview of how much has been translated and what still needs to be translated. This would be the preferred option, but the downside is the setup for this option. Since we don't know which service to use yet, this option will be added in the future when we have more concrete ideas and hopefully a bigger team. We will probably use [Crowdin](https://crowdin.com/)
 
 ## Translating Docs
-The document you are reading right now is the project documentation. To add translations to this project, the best way is to add translations using [Crowdin](https://crowdin.com/project/raspirus). An alternative is using the instructions below:
+The docs you are reading right now also need translations and will require a much bigger effort than translating strings used on the frontend. The documentation is quite big and can therefore take quite some time to translate. As the option above, we could use the service here too, but that will be added in the future. If you want to start adding translations right away, I would suggest to do the following:
 
 1. [Fork this repository](https://github.com/Raspirus/docs/fork): You can follow a [guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo) online on how to do it properly.
 2. Enter the `docs` folder and, if the language you want to translate doesn't exist yet, add a new directory whose name is the name of the language you want to write translations for. For example, it would be `it` for italian, `de` for german and so on.
@@ -24,3 +24,5 @@ The document you are reading right now is the project documentation. To add tran
 4. After you have finished editing, save your files and upload them to your fork on GitHub. Basically make a [GitHub commit](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project)
 5. Now you can open a [pull-request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to the original repository and request that your changes get added to the main project.
 6. Someone of the team will review the translations and if accepted add them to the main project.
+
+In the future we hopefully have an external service that handles all this for you, so that you can focus on your translations without distractions. We will probably use [Crowdin](https://crowdin.com/).
