@@ -1,5 +1,5 @@
 ---
-comments: true
+comments: vero
 ---
 
 # Installazione
@@ -16,14 +16,15 @@ Questa guida vi aiuterà a costruire il progetto sulla vostra macchina.
   - [5. Installa Tauri](#5-install-tauri)
   - [6. Installa dipendenze progetto](#6-install-project-dependencies)
   - [7. Genera il progetto](#7-build-the-project)
-- [Conclusione](#conclusion)
 
+- [Conclusion](#conclusion) https://github.com/Raspirus/Raspirus/releases
 ## Introduzione
 For people that just want a working app, they can just head over to the [Release page](https://github.com/Raspirus/Raspirus/releases/latest) and download the executable for the correct platform. But if you are on a different Linux distribution, unsupported OS, or just want to compile the project on your own, this step-by-step guide will guide you.
 
 ## Limitazioni
 - Glibc può causare problemi su Linux: https://tauri.app/v1/guides/building/linux#limitations
 - You need to use 64-bit systems, else the app might crash because it's using memory improvements that only work there
+
 - The app is meant to be run as a "I'm the only app running on this system" app. This is important regarding RAM usage, because if you have much RAM, it will use much RAM. And if you, for some reason, try to limit the initially available RAM, the app might crash because it doesn't have the promised amount of RAM. (A future version might have a toggle for this)
 
 ## Step-by-step guide
