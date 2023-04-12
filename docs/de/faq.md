@@ -1,11 +1,11 @@
 ---
-comments: true
+comments: wahr
 ---
 
 # FAQ
-In this page we will answer your most asked questions. As more questions arise, we will expand this page to include more answers. This page is very useful if you encounter any errors during developemnt or usage. Maybe your error can be easily fixed and doesn't require a bug report.
 
 ## Wie generiere ich die Dokumentation für dieses Projektarchiv?
+
 You can find the generated documentation in the [rust folder](/rust/) and in case you want to generate your own, you can do so by using the `cargo doc` command. Hier sind einige Parameter, die Sie mit ihm verwenden können:
 - `--no-deps`: Ignoriert Abhängigkeiten, dokumentiert nur den Code selbst
 - `--release`: Es ist im Allgemeinen besser als ein Debug
@@ -23,5 +23,5 @@ Das Rust Analyzer Plugin in Visual Studio Code versucht nach einer Cargo.toml Da
 }
 ```
 
-## Updating database crashes app
-On Windows it seems like the app crashes when the user tries to update the database. We are aware of this issue and working to fix it. The issue arises because the function needs administrative privileges, which Windows isn't providing. To fix this issue for now, simply execute the app in administration mode, aka. with admin privileges. You can do so by right-clicking the app and clicking `Run as administrator`.
+## Weitere demnächst
+...
