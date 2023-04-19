@@ -17,3 +17,6 @@
 
 ## Introduction
 This repository contains all documentation of the Raspirus project. It is currently in development and therefore not too reliable.
+
+## Related projects
+COMING SOON
