@@ -1,5 +1,5 @@
 ---
-comments: vero
+comments: true
 ---
 
 # Sviluppatori
