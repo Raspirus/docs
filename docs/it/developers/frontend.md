@@ -1,7 +1,8 @@
 ---
-comments: true
+comments: vero
 ---
 
 # Frontend
 
-## COMANDO SUONO
+## Planing
+COMANDO SUONO
