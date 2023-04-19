@@ -35,4 +35,30 @@ The frontend is written in JavaScript using the [Next.JS](https://nextjs.org/) f
 
 
 ## Integration
-Technical infos (APIs), description, important classes and code
+Raspirus is a standalone app and everything happens inside the app. What I mean by this is that there are mo APIs for the outside to get information from and the app is also not meant to be used by other apps. The main usage of the app is through a touchscreen, that's why there are no input fields where a user has to type text, as that is a quite frustrating experience on bad touchscreen, as the one from a Raspberry Pi. 
+Actually, there are API calls, but they happen inside the app. In fact, the Next.js frontend calls the backend through the Tauri API.
+
+For example in the `loading.js` file, we call the scanning function from the frontend to tell Rust to start the scanner:
+```js
+const message = await invoke("start_scanner", {
+    path: scan_path,
+    dbfile: db_location,
+    obfuscated: obfuscatedMode,
+});
+```
+We basically start the `start_scanner` function and give it the needed parameters. Then we save the result in the `message` constant. This is a basic Tauri API call. 
+
+To instead communicate from the backend back to the frontend, Tauri uses the principle of signals:
+```rs
+fn calculate_progress(&mut self, last_percentage: &mut f64, file_size: u64) {
+    self.scanned_size = self.scanned_size + file_size;
+    let scanned_percentage = (self.scanned_size as f64 / self.folder_size as f64 * 100.0).round();
+    info!("Scanned: {}%", scanned_percentage);
+    if scanned_percentage != *last_percentage {
+        self.tauri_window.emit_all("progress", TauriEvent {message: scanned_percentage.to_string()}).unwrap();
+        *last_percentage = scanned_percentage;
+    }
+}
+```
+
+If you want to know more about how this internal API system exactly works, you can refer to the official [Tauri guide](https://tauri.app/v1/guides/features/command).

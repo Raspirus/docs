@@ -60,6 +60,7 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
   - search
+  - glightbox
   - with-pdf:
       cover_subtitle: A simple hash-based virus scanner
 
