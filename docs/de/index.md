@@ -16,4 +16,7 @@
     - [Übersetzungen](contributing/translations.md)
 
 ## Einführung
-Dieses Projektarchiv enthält die gesamte Dokumentation des Raspirus Projekts. Sie befindet sich derzeit in der Entwicklung und daher nicht zu zuverlässig.
+This repository contains all documentation of the Raspirus project. It is currently in development and therefore not too reliable.
+
+## Related projects
+KOMMT BALD
