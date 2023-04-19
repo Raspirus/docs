@@ -1,7 +1,8 @@
 ---
-comments: true
+comments: vero
 ---
 
 # Utilizzo
 
-## COMANDO SUONO
+## Case study
+COMANDO SUONO
