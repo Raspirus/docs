@@ -4,4 +4,5 @@ comments: true
 
 # Usage
 
-## COMING SOON
+## Case study
+COMING SOON
