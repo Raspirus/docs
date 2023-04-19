@@ -16,4 +16,7 @@
     - [Traduzioni](contributing/translations.md)
 
 ## Introduzione
-Questo repository contiene tutta la documentazione del progetto Raspirus. Attualmente è in fase di sviluppo e quindi non è troppo affidabile.
+This repository contains all documentation of the Raspirus project. It is currently in development and therefore not too reliable.
+
+## Related projects
+COMANDO SUONO
