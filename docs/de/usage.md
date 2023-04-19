@@ -1,7 +1,8 @@
 ---
-comments: true
+comments: wahr
 ---
 
 # Auslastung
 
-## KOMMT BALD
+## Case study
+KOMMT BALD
