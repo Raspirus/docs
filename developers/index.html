@@ -156,7 +156,7 @@
 </li>
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../faq/">
-      FAQ
+      Faq.md
     </a>
 </li>
 <li class="md-tabs__item">
@@ -217,7 +217,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../faq/">
-        FAQ
+        Faq.md
       </a>
 </li>
 <li class="md-nav__item">
@@ -259,7 +259,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../contributing/translations/">
-        Translations
+        Translations.md
       </a>
 </li>
 </ul>
@@ -333,38 +333,38 @@
 </a>
 <h1 id="developers">Developers</h1>
 <p>The Raspirus project mainly uses two different programming languages and frameworks. One for the backend and one for the backend and one for the frontend. \
-The frontend is written in JavaScript using the <a href="https://nextjs.org/">Next.JS</a> framework. The backend on the other side is written in Rust. The communication between these two programming languages is made using the <a href="https://tauri.app/">Tauri</a> framework. Using this framework one can write functions in Rust and call them from the frontend easily.</p>
+The frontend is written in JavaScript using the <a href="https://nextjs.org/">Next.js</a> framework. The backend on the other side is written in Rust. The communication between these two programming languages is made using the <a href="https://tauri.app/">Tauri</a> framework. Using this framework, one can write functions in Rust and call them from the frontend easily.</p>
 <h2 id="technologies-used">Technologies used</h2>
 <ul>
 <li><a href="https://www.npmjs.com">NPM</a>:
-    I wanted the frontend to be beautiful, and at first I tried creating an actual native application, but that just didn't have the customisation I was searching for. Therefore I decided to write a Web-frontend, and for that I could choose between Node.js or <a href="https://deno.land/">Deno</a>. I ended up using Node.js as it's the one I am mostly familiar with.</li>
+    I wanted the frontend to be beautiful, and at first I tried creating an actual native application, but that just didn't have the customization I was searching for. Therefore, I decided to write a Web-frontend, and for that I could choose between Node.js or <a href="https://deno.land/">Deno</a>. I ended up using Node.js as it's the one I am mostly familiar with.</li>
 <li><a href="https://nextjs.org">Next.js</a>:
     Next.js is a frontend framework that is fairly easy to implement, and once setup can be very powerful. The most useful feature used in this project is the export of the website in static HTML. This is essential for Tauri to function. Another advantage of Next.js is that it optimizes itself, by automatically stripping away everything unnecessary, this makes the app lightweight and fast. Navigation with Next.js is practically instant.</li>
 <li><a href="https://www.rust-lang.org">Rust</a>:
-    Rust was not my first choice for the backend. At first I started with C++, but I was not skilled enough to create the entire app with that language, so I turned to Python. Python is way slower than C++, but it's my favorite language and the one I know best, so I was able to develop faster. Nonetheless, the lack of speed with Python was a big drawback. Luckily a friend of mine helped me out an rewrote the entire backend in Rust, basically speeding the app up by 100x. What previously took a couple of minutes, now took mere seconds. Rust is compiled language and faster than Python, which is an interpreted language. If you want to test the old Python system, there is an entire <a href="https://github.com/Raspirus/python-cli">repository</a> for that.</li>
+    Rust was not my first choice for the backend. At first, I started with C++, but I was not skilled enough to create the entire app with that language, so I turned to Python. Python is way slower than C++, but it's my favorite language and the one I know best, so I was able to develop faster. Nonetheless, the lack of speed with Python was a big drawback. Luckily, a friend of mine helped me out and rewrote the entire backend in Rust, basically speeding the app up by 100x. What previously took a couple of minutes, now took mere seconds. Rust is a compiled language and faster than Python, which is an interpreted language. If you want to test the old Python system, there is an entire <a href="https://github.com/Raspirus/python-cli">repository</a> for that.</li>
 <li><a href="https://tauri.app/v1/guides/getting-started/setup/next-js">Tauri</a>:
-    Tauri plays a very important part in this project, as it is a framework that allows connecting the Rust backend to a JavaScript frontend. This essentially allowed us to have a beautiful frontend in Next.js and a impressively fast backend in Rust. Furthermore, Tauri compiles the application for different systems, like Windows, Linux or MacOS by creating installers or binaries. THis improved the installation of the app.</li>
+    Tauri plays a very important part in this project, as it is a framework that allows connecting the Rust backend to a JavaScript frontend. This essentially allowed us to have a beautiful frontend in Next.js and an impressively fast backend in Rust. Furthermore, Tauri compiles the application for different systems, like Windows, Linux or macOS by creating installers or binaries. This improved the installation of the app.</li>
 <li><a href="https://sweetalert2.github.io">SweetAlertv2</a>:
-    When errors occur, or there are warnings and information to display as a pop-up to the user, the simple JavaScript alert just doesn't look that good. SweetAlert improves the look of these pop-ups by a lot. It's fairly easy to install and to use. In our case it is mainly used to display errors or warnings, for example when the scanning process is suddenly interrupted.</li>
+    When errors occur, or there are warnings and information to display as a pop-up to the user, the simple JavaScript alert just doesn't look that good. SweetAlert improves the look of these pop-ups by a lot. It's fairly easy to install and to use. In our case, it is mainly used to display errors or warnings, for example when the scanning process is suddenly interrupted.</li>
 <li><a href="https://github.com/i18next/next-i18next">next-i18next</a>:
-    The app doesn't have much text, and with the icons and colors it should be fairly simple to understand what you need to do. Nonetheless, we decided to add translations to the app. This is done using a Next.js plugin named i18next, that allows to translate the project easily with .json files.</li>
+    The app doesn't have much text, and with the icons and colors it should be fairly simple to understand what you need to do. Nonetheless, we decided to add translations to the app. This is done using a Next.js plugin named i18next, that allows to translate the project easily with .JSON files.</li>
 <li><a href="https://crowdin.com/project/raspirus">Crowdin</a>:
-    Crowdin is a website that collects translations from users and helps translate open-source and private projects. I am especially grateful that for open-source projects the price for this service is free. It is useful for translators to focus on translations, without the need to look at code. It also helps developers, as it automatically syncs new translations with GitHUb and viceversa.</li>
+    Crowdin is a website that collects translations from users and helps translate open-source and private projects. I am especially grateful that for open-source projects, the price for this service is free. It is useful for translators to focus on translations, without the need to look at code. It also helps developers, as it automatically syncs new translations with GitHub and vice versa.</li>
 <li><a href="https://www.mkdocs.org/">MkDocs</a>:
-    MkDocs is a Python framework used to create documentation for projects. In fact it is the framework used to create this specific translation. It is really easy to use and makes structurizing docs or integrating plugins like Crowdin fairly easily.</li>
+    MkDocs is a Python framework used to create documentation for projects. In fact, it is the framework used to create this specific translation. It is really easy to use and makes structuralizing docs or integrating plugins like Crowdin fairly easily.</li>
 <li><a href="https://docs.github.com/en/code-security/dependabot/working-with-dependabot">Dependabot</a>:
-    Dependabot comes with every GitHub repository, and can be activated fairly easily. Its job is to check dependencies for updates and therefore to keep the entire app up-to-date. This also ensures that the app has the latest patches and functions. By improving its dependencies, the app might become faster and more efficient. Furthermore Dependabot also informs the user about Security vulnerabilities of used dependencies or crates, a very useful feature to maintain the app secure.</li>
-<li><a href="https://github.com/">Github</a>:
-    GitHub has been chosen as the file hosting platform mainly because it is popular, easy to use and has ec´verything needed. Plus it's free. A company also suggested hosting the project on their GitLab servers, but in the end the project remained on GitHUb as it is easier to use and to collaborate than to use a VPN to connect to a PC that then connects to GitLab. GitHUb also has a lot of features: Project planing, Milestones, Issues, Actions, ...</li>
+    Dependabot comes with every GitHub repository, and can be activated fairly easily. Its job is to check dependencies for updates and therefore to keep the entire app up-to-date. This also ensures that the app has the latest patches and functions. By improving its dependencies, the app might become faster and more efficient. Furthermore, Dependabot also informs the user about Security vulnerabilities of used dependencies or crates, a very useful feature to maintain the app secure.</li>
+<li><a href="https://github.com/">GitHub</a>:
+    GitHub has been chosen as the file hosting platform mainly because it is popular, easy to use and has everything needed. Plus it's free. A company also suggested hosting the project on their GitLab servers, but in the end the project remained on GitHub as it is easier to use and to collaborate than to use a VPN to connect to a PC that then connects to GitLab. GitHub also has a lot of features: Project planing, Milestones, Issues, Actions, ...</li>
 <li><a href="https://codeql.github.com/">CodeQL</a>:
-    CodeQL is another powerful tool from GitHub. It scans the entire project and checks for vulnerabilities in the code. For example if there is cross-site-scripting happening somewhere, or we are not hiding passwords and secrets correctly, or we are coding inefficiently. This is very useful, as it assures a certain reliability of the code.</li>
+    CodeQL is another powerful tool from GitHub. It scans the entire project and checks for vulnerabilities in the code. For example, if there is cross-site-scripting happening somewhere, or we are not hiding passwords and secrets correctly, or we are coding inefficiently. This is very useful, as it assures a certain reliability of the code.</li>
 <li><a href="https://about.codecov.io/">CodeCov</a>:
-    Codecov is an external tool that can be installed on GitHub and it tracks test coverage. It basically tells you how efficient the tests you just wrote actually are and if they cover the entire project. Testing the frontend is hard, as we would likely need to test user interaction, but testing the backend is duable. Therefore we setup Codecov to check our Rust backend for test coverage.</li>
+    Codecov is an external tool that can be installed on GitHub, and it tracks test coverage. It basically tells you how efficient the tests you just wrote actually are, and if they cover the entire project. Testing the frontend is hard, as we would likely need to test user interaction, but testing the backend is doable. Therefore, we set up Codecov to check our Rust backend for test coverage.</li>
 </ul>
 <h2 id="integration">Integration</h2>
-<p>Raspirus is a standalone app and everything happens inside the app. What I mean by this is that there are mo APIs for the outside to get information from and the app is also not meant to be used by other apps. The main usage of the app is through a touchscreen, that's why there are no input fields where a user has to type text, as that is a quite frustrating experience on bad touchscreen, as the one from a Raspberry Pi. 
+<p>Raspirus is a standalone app and everything happens inside the app. What I mean by this is that there are mo APIs for the outside to get information from, and the app is also not meant to be used by other apps. The main usage of the app is through a touchscreen, that's why there are no input fields where a user has to type text, as that is a quite frustrating experience on bad touchscreen, as the one from a Raspberry Pi. 
 Actually, there are API calls, but they happen inside the app. In fact, the Next.js frontend calls the backend through the Tauri API.</p>
-<p>For example in the <code>loading.js</code> file, we call the scanning function from the frontend to tell Rust to start the scanner:</p>
+<p>For example, in the <code>loading.js</code> file, we call the scanning function from the frontend to tell Rust to start the scanner:</p>
 <pre><code class="language-js">const message = await invoke("start_scanner", {
     path: scan_path,
     dbfile: db_location,
@@ -389,7 +389,7 @@ Actually, there are API calls, but they happen inside the app. In fact, the Next
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 19, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 20, 2023</span>
 <br/>
         Created:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 5, 2023</span>
@@ -438,7 +438,7 @@ Actually, there are API calls, but they happen inside the app. In fact, the Next
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Translations" class="md-footer__link md-footer__link--prev" href="../contributing/translations/" rel="prev">
+<a aria-label="Previous: Translations.md" class="md-footer__link md-footer__link--prev" href="../contributing/translations/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -447,7 +447,7 @@ Actually, there are API calls, but they happen inside the app. In fact, the Next
                 Previous
               </span>
 <div class="md-ellipsis">
-                Translations
+                Translations.md
               </div>
 </div>
 </a>

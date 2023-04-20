@@ -11,7 +11,7 @@
 <link href="../../developers/" rel="next"/>
 <link href="../../../assets/images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.1.5" name="generator"/>
-<title>Translations - Raspirus docs</title>
+<title>Translations.md - Raspirus docs</title>
 <link href="../../../assets/stylesheets/main.7a7fce14.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -36,7 +36,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#translations">
+<a class="md-skip" href="#comments-true">
           Skip to content
         </a>
 </div>
@@ -60,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Translations
+              Translations.md
             
           </span>
 </div>
@@ -156,7 +156,7 @@
 </li>
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../../faq/">
-      FAQ
+      Faq.md
     </a>
 </li>
 <li class="md-tabs__item">
@@ -217,7 +217,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../faq/">
-        FAQ
+        Faq.md
       </a>
 </li>
 <li class="md-nav__item">
@@ -260,11 +260,11 @@
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          Translations
+          Translations.md
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        Translations
+        Translations.md
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -272,6 +272,17 @@
       Table of contents
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#comments-true">
+    comments: true
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#translations">
+    Translations
+  </a>
+<nav aria-label="Translations" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#translating-code">
     Translating code
@@ -295,6 +306,9 @@
 <a class="md-nav__link" href="#translating-docs">
     Translating Docs
   </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -345,8 +359,10 @@
 <a class="md-content__button md-icon" href="https://github.com/Raspirus/docs/en/contributing/translations.md" title="View source of this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"></path></svg>
 </a>
+<hr/>
+<h2 id="comments-true">comments: true</h2>
 <h1 id="translations">Translations</h1>
-<p>Translations are very important and can help other people understand the app easier and make it wider available. If you know a language outside of English and would like to add your translations you can do so in two ways: The first one is to translate the documentation, the second one is to translate the frontend strings.</p>
+<p>Translations are very important and can help other people understand the app easier and make it wider available. If you know a language outside of English and would like to add your translations, you can do so in two ways: The first one is to translate the documentation, the second one is to translate the frontend strings.</p>
 <h2 id="translating-code">Translating code</h2>
 <p>This is a work in progress, but essentially it will be done in one of two possible ways:</p>
 <h3 id="translation-file">Translation file</h3>
@@ -354,60 +370,27 @@
 <h3 id="translation-service">Translation service</h3>
 <p>We use an external translations service to translate the project. This option would allow translators to just translate the given strings and have an overview of how much has been translated and what still needs to be translated. This would be the preferred option, but the downside is the setup for this option. Since we don't know which service to use yet, this option will be added in the future when we have more concrete ideas and hopefully a bigger team. We will probably use <a href="https://crowdin.com/">Crowdin</a></p>
 <h2 id="translating-docs">Translating Docs</h2>
-<p>The docs you are reading right now also need translations and will require a much bigger effort than translating strings used on the frontend. The documentation is quite big and can therefore take quite some time to translate. As the option above, we could use the service here too, but that will be added in the future. If you want to start adding translations right away, I would suggest to do the following:</p>
+<p>The docs you are reading right now also need translations and will require a much bigger effort than translating strings used on the frontend. The documentation is quite big and can therefore take quite some time to translate. As the option above, we could use the service here too, but that will be added in the future. If you want to start adding translations right away, I would suggest doing the following:</p>
 <ol>
 <li><a href="https://github.com/Raspirus/docs/fork">Fork this repository</a>: You can follow a <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">guide</a> online on how to do it properly.</li>
-<li>Enter the <code>docs</code> folder and, if the language you want to translate doesn't exist yet, add a new directory whose name is the name of the language you want to write translations for. For example, it would be <code>it</code> for italian, <code>de</code> for german and so on.</li>
+<li>Enter the <code>docs</code> folder and, if the language you want to translate doesn't exist yet, add a new directory whose name is the name of the language you want to write translations for. For example, it would be <code>it</code> for Italian, <code>de</code> for German and so on.</li>
 <li>Then change to that directory and edit the Markdown files inside that directory. Make sure you keep the original folder structure.</li>
 <li>After you have finished editing, save your files and upload them to your fork on GitHub. Basically make a <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project">GitHub commit</a></li>
 <li>Now you can open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">pull-request</a> to the original repository and request that your changes get added to the main project.</li>
 <li>Someone of the team will review the translations and if accepted add them to the main project.</li>
 </ol>
-<p>In the future we hopefully have an external service that handles all this for you, so that you can focus on your translations without distractions. We will probably use <a href="https://crowdin.com/">Crowdin</a>.</p>
+<p>In the future, we hopefully have an external service that handles all this for you, so that you can focus on your translations without distractions. We will probably use <a href="https://crowdin.com/">Crowdin</a>.</p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 7, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 20, 2023</span>
 <br/>
         Created:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 5, 2023</span>
 </small>
 </div>
-<h2 id="__comments">Comments</h2>
-<!-- Insert generated snippet here -->
-<script async="" crossorigin="anonymous" data-category="Documentation" data-category-id="DIC_kwDOI6768s4CVgUQ" data-emit-metadata="0" data-input-position="bottom" data-lang="en" data-loading="lazy" data-mapping="pathname" data-reactions-enabled="1" data-repo="Raspirus/docs" data-repo-id="R_kgDOI6768g" data-strict="1" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
-</script>
-<!-- Synchronize Giscus theme with palette -->
-<script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate" ? "dark" : "light"
-      giscus.setAttribute("data-theme", theme)
-    }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 </article>
 </div>
 </div>
