@@ -5,6 +5,11 @@ comments: true
 # FAQ
 In this page we will answer your most asked questions. As more questions arise, we will expand this page to include more answers. This page is very useful if you encounter any errors during developemnt or usage. Maybe your error can be easily fixed and doesn't require a bug report.
 
+## What is the Icon of the project?
+![Transparent logo](../img/transparent-logo.png)
+In case you didn't notice yet, this is the logo of the Raspirus app. It was generated with [Dall-E](https://openai.com/product/dall-e-2) and some creative image editing and merging. It should represent a red monster that eats viruses. His name is Stuart by the way, and don't worry, he is a very kind monster, except for when he is hungry, then you better feed him viruses.
+You can find more media and documents in the [dedicated repository](https://github.com/Raspirus/media). You are free to use these images to create your own art and showcase them in the [discussion boards](https://github.com/orgs/Raspirus/discussions)
+
 ## How do I generate the documentation for this repository?
 You can find the generated documentation in the [rust folder](/rust/) and in case you want to generate your own, you can do so by using the `cargo doc` command. Here are some parameters you might want to use with it:
 - `--no-deps`: Ignores dependencies, only documents the code itself
