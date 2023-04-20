@@ -63,6 +63,10 @@ plugins:
   - glightbox
   - with-pdf:
       cover_subtitle: A simple hash-based virus scanner
+      cover_logo: assets/images/logo.png
+      convert_iframe:
+        - src: https://www.figma.com/file/pkgpwieNbhYiOi4Gz6Uyt6
+          img: assets/images/Figma.png
 
 extra:
   social:
