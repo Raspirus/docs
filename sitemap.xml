@@ -55,6 +55,15 @@
          
     </url>
     <url>
+         <loc>Nonecontributing/CODE_OF_CONDUCT/</loc>
+         <lastmod>2023-04-21</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/contributing/CODE_OF_CONDUCT/"/>
+         <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/CODE_OF_CONDUCT/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/CODE_OF_CONDUCT/"/>
+         
+    </url>
+    <url>
          <loc>Nonecontributing/coding/</loc>
          <lastmod>2023-04-21</lastmod>
          <changefreq>daily</changefreq>
