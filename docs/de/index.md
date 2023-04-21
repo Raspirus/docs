@@ -2,6 +2,7 @@
 # Zuhause
 
 ## Willkommen bei Raspirus Docs
+![Full banner logo](../img/banner_logo.png)
 
 ## Inhalte:
 - [Einführung](#introduction)
