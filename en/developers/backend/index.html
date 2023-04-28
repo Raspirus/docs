@@ -311,11 +311,39 @@
 <a class="md-nav__link" href="#database">
     Database
   </a>
+<nav aria-label="Database" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#structure">
+    Structure
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#initialisation">
+    Initialisation
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#scanner">
     Scanner
   </a>
+<nav aria-label="Scanner" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ignoring-hashes-false-positives">
+    Ignoring hashes (false positives)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#obfuscated-mode">
+    Obfuscated mode
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#logging">
@@ -352,14 +380,69 @@
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../img/RaspActLight.png#only-light"><img alt="Raspirus Activity Diagram" src="../../img/RaspActLight.png#only-light"/></a>
 This diagram describes how the logical flow of the app work. The exact flow can change in the future, but this was the initial planing of the app. As you can see, it is rather simple with just a couple if statements and a for-each loop. The backend is actually not that hard to understand, the complicated part is the more in-depth part of how to manage the database, scan files, create the hash and most importantly, communicate the result to the frontend by emitting signals.</p>
 <h2 id="database">Database</h2>
+<p>The Database consists of a single big file with mainly two columns. This file is generated at runtime and can be updated with a button on the GUI. At the time of writing, this file is approximately 4 GB in size and can take up to an hour to generate. The database contains in one column all signatures as a primary key, and in the second column the name of the file they got extracted from, based on the <a href="https://virusshare.com/">Virusshare database</a> file names.</p>
+<h3 id="structure">Structure</h3>
+<p>Here is how the database may look like:</p>
+<table>
+<thead>
+<tr>
+<th>MD5 Hash</th>
+<th>FileNr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>....</td>
+<td>....</td>
+</tr>
+<tr>
+<td>40610db6af6eaf2391b7a169e2540de9</td>
+<td>00219</td>
+</tr>
+<tr>
+<td>64a613db4aa368108e6d4c15ef7f6454</td>
+<td>00219</td>
+</tr>
+<tr>
+<td>....</td>
+<td>....</td>
+</tr>
+</tbody>
+</table>
+<h3 id="initialisation">Initialisation</h3>
+<p>Here is the Rust code in the main.rs file that creates the Database:</p>
+<pre><code class="language-rust">let mut use_db = "signatures.db".to_owned();
+match dbfile {
+    Some(fpath) =&gt; {
+        if Path::new(&amp;fpath).to_owned().exists() &amp;&amp; Path::new(&amp;fpath).to_owned().is_file() {
+            info!("Using specific DB path {}", fpath);
+            use_db = fpath.to_owned();
+        } else {
+            info!("Falling back to default DB file (signatures.db)");
+        }
+    }
+    None =&gt; {
+        info!("Path is None; Falling back to default DB file (signatures.db)");
+    }
+};
+</code></pre>
+<p>If the specified <code>signatures.db</code> file doesn't exist, it will automatically attempt to create on and even create the necessary table. You can technically also provide your own file, just put it in the same folder as the executable. Also make sure that the table is the same.</p>
 <h2 id="scanner">Scanner</h2>
+<p>The scanner class is the main function of the entire app. It takes a directory as parameter and starts scanning it. It will scan all folders and files recursively by hashing it and checking the hash in the database.</p>
+<h3 id="ignoring-hashes-false-positives">Ignoring hashes (false positives)</h3>
+<p>In the <code>file_scanner.rs</code> file, where the scanner is declared, we also have an Array that contains signatures that should be ignored. Virusshare is a databse where Hashes are mostly added, not removed, and therefore we need to do our filtering on the client-side. For example there was a hash for empty files, but in our opinion empty file should not be flagged as dangerous, so we added an excemption:</p>
+<pre><code class="language-rust">let false_pos: Vec&lt;String&gt; = vec!["7dea362b3fac8e00956a4952a3d4f474".to_owned()];
+</code></pre>
+<h3 id="obfuscated-mode">Obfuscated mode</h3>
+<p>Sometimes, for privacy reasons, you might not want to display the path and names of the found files, therefore the scanner provides a so-called 'Obfuscated mode'. Setting this to true will make the app fail immediately as soon as it finds a vairus, without scanning the entire folder, and output red or green depending on the security of the scan.</p>
 <h2 id="logging">Logging</h2>
+<p>The app also has a logger that keeps track of issues or warnings during the execution of the app. Sadly this only works in <code>dev</code> or <code>debug</code> mode. When packing ito an executable the logger is lost as it gets stripped away for better performance. We are nonetheless working on bringing it back to life in the future.</p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 20, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 28, 2023</span>
 <br/>
         Created:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 3, 2023</span>
