@@ -1,10 +1,9 @@
-
 # Zuhause
 
-## Willkommen bei Raspirus Docs
+## Welcome to the Raspirus Documentation
 ![Full banner logo](../img/banner_logo.png)
 
-## Inhalte:
+## Table of Contents:
 - [Einführung](#introduction)
 - [Installation](installation.md)
 - [Anleitungen](guides.md)
@@ -18,19 +17,24 @@
     - [Übersetzungen](contributing/translations.md)
 
 ## Einführung
-This repository contains all documentation of the Raspirus project. It is currently in development and therefore not too reliable.
+Welcome to the Raspirus project documentation. This repository serves as a comprehensive guide to the Raspirus project. Please note that the project is currently under development, and while we strive for accuracy, some information may be subject to change.
 
-## Related projects
-Raspirus is a simple virus scanner, and there are many similar projects out there. I will list a few of them I know and why I decided not to use them for my project, or why Raspirus is better.
+## Related Projects
+Raspirus is a simple and efficient virus scanner, specifically designed for compatibility with single-board computers like the Raspberry Pi. While there are several similar projects available, Raspirus stands out for its unique features and advantages. Here are some notable comparisons:
 
-- [Clam AV](https://www.clamav.net/): This program is an open-source Antivirus, but it can also be used like Raspirus to scan single files or folders. It surely is more accurate when it comes to search for viruses, but it is very resource intensive and a bit slow. Therefore, it is not suited for single-board computers like the Raspberry Pi, as it doesn't have enough RAM. Nonetheless, Clam AV is a great open-source tool.
-- [Windows Defender](https://www.microsoft.com/en-us/windows/comprehensive-security): This program from Windows doesn't just scan files and folders on-demand, but scans the entire system continuously. This slows down the entire system. Furthermore, it is also Windows-only, while Raspirus is cross-platform.
-- [Bitdefender](https://www.bitdefender.com/): This is another great Antivirus software, but it comes with a cost. I think that security should be a must, not something you need to pay for. But if you are willing to pay a bit, this piece of software really has it all, and as far as I know it is even cross-platform.
+- [Clam AV](https://www.clamav.net/): Clam AV is an open-source antivirus program that can also perform file and folder scanning similar to Raspirus. However, it is known to be resource-intensive and relatively slow. Due to its high memory requirements, it may not be suitable for deployment on low-spec systems like the Raspberry Pi. Nonetheless, Clam AV remains a powerful open-source tool.
 
-There surely are many others that I could compare here, but Raspirus is not aimed at beating other Antivirus software. Its aim is to do one thing, and do it as best as possible: Compare Hashes of a file with a list of signatures.
+- [Windows Defender](https://www.microsoft.com/en-us/windows/comprehensive-security): Windows Defender is a comprehensive security program for Windows that continuously scans the entire system for threats. However, this continuous scanning process can significantly impact system performance. Additionally, Windows Defender is limited to the Windows operating system, whereas Raspirus is designed to be cross-platform, offering compatibility with various operating systems.
 
-- This project is free and will always stay free.
-- It is open-source, so you can look at the code and judge for yourself if you trust the app or not.
-- Community helps grow the project, and many smart minds surely can achieve a lot if they work together
-- Cross-platform as a standard: Raspirus should work everywhere
-- Lightweight and fast, usable even on your Potato PC
+- [Bitdefender](https://www.bitdefender.com/): Bitdefender is a feature-rich commercial antivirus software solution. While it offers robust security capabilities, it comes at a cost. Raspirus, on the other hand, is committed to being a free and open-source project. We believe that security should be accessible to all users without the need for financial barriers. Furthermore, Raspirus aims to foster a collaborative community, leveraging the collective expertise of developers worldwide.
+
+While there are numerous other antivirus solutions available, it's important to note that Raspirus does not seek to outperform or compete directly with other antivirus software. Instead, its primary focus is to excel at a specific task: comparing file hashes against a list of signatures.
+
+Key features of Raspirus include:
+- Free and open-source nature
+- Transparent codebase for community review and scrutiny
+- Emphasis on community-driven growth and development
+- Cross-platform compatibility as a standard feature
+- Lightweight and fast performance, ensuring usability even on low-spec devices
+
+We invite you to explore the documentation further to gain a comprehensive understanding of the Raspirus project and its capabilities.
