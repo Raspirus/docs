@@ -23,7 +23,7 @@
     
     
       
-        <title>Translations - Raspirus docs</title>
+        <title>Translators - Raspirus docs</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#translations" class="md-skip">
+        <a href="#translators" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Translations
+              Translators
             
           </span>
         </div>
@@ -488,6 +488,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -536,8 +538,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../artwork/" class="md-nav__link">
+        Media Resources
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../coding/" class="md-nav__link">
-        Code
+        Code Contributions
       </a>
     </li>
   
@@ -560,12 +576,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Translations
+          Translators
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Translations
+        Translators
       </a>
       
         
@@ -585,22 +601,22 @@
       
         <li class="md-nav__item">
   <a href="#translating-code" class="md-nav__link">
-    Translating code
+    Translating Code
   </a>
   
-    <nav class="md-nav" aria-label="Translating code">
+    <nav class="md-nav" aria-label="Translating Code">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#translation-file" class="md-nav__link">
-    Translation file
+    Translation File
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#translation-service" class="md-nav__link">
-    Translation service
+    Translation Service
   </a>
   
 </li>
@@ -611,8 +627,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#translating-docs" class="md-nav__link">
-    Translating Docs
+  <a href="#translating-documentation" class="md-nav__link">
+    Translating Documentation
   </a>
   
 </li>
@@ -748,32 +764,33 @@
   
 
 
-<h1 id="translations">Translations</h1>
-<p>Translations are very important and can help other people understand the app easier and make it wider available. If you know a language outside of English and would like to add your translations, you can do so in two ways: The first one is to translate the documentation, the second one is to translate the frontend strings.</p>
-<h2 id="translating-code">Translating code</h2>
-<p>This is a work in progress, but essentially it will be done in one of two possible ways:</p>
-<h3 id="translation-file">Translation file</h3>
-<p>There is a translations file in JSON format for each different language. So the app would load the strings it needs from that file. This is a bit easier to implement for the developers, but not very efficient or great for translators, as it involves forking the repository.</p>
-<h3 id="translation-service">Translation service</h3>
-<p>We use an external translations service to translate the project. This option would allow translators to just translate the given strings and have an overview of how much has been translated and what still needs to be translated. This would be the preferred option, but the downside is the setup for this option. Since we don't know which service to use yet, this option will be added in the future when we have more concrete ideas and hopefully a bigger team. We will probably use <a href="https://crowdin.com/">Crowdin</a></p>
-<h2 id="translating-docs">Translating Docs</h2>
-<p>The docs you are reading right now also need translations and will require a much bigger effort than translating strings used on the frontend. The documentation is quite big and can therefore take quite some time to translate. As the option above, we could use the service here too, but that will be added in the future. If you want to start adding translations right away, I would suggest doing the following:</p>
+<h1 id="translators">Translators</h1>
+<p>Translations play a vital role in making the app accessible to users worldwide. If you are fluent in a language other than English and would like to contribute by providing translations, we welcome your assistance. There are two main areas where you can contribute: translating code and translating documentation.</p>
+<h2 id="translating-code">Translating Code</h2>
+<p>Translating the app's frontend strings is an essential task that allows users to interact with the app in their native language. There are two possible ways to handle translations within the codebase:</p>
+<h3 id="translation-file">Translation File</h3>
+<p>Each language has its own translation file in JSON format. The app loads the required strings from these files. While this approach is relatively simpler for developers to implement, it may not be the most efficient or user-friendly for translators, as it involves forking the repository and manually editing the JSON file.</p>
+<h3 id="translation-service">Translation Service</h3>
+<p>To streamline the translation process and provide a better experience for translators, we plan to integrate an external translation service. This service would enable translators to focus solely on translating the strings and provide an overview of the progress. We are considering using <a href="https://crowdin.com/">Crowdin</a> as the preferred translation service. However, the setup for this option is still being worked on, and it will be added in the future as the team expands and we have more concrete plans.</p>
+<h2 id="translating-documentation">Translating Documentation</h2>
+<p>The documentation itself also requires translations to make it accessible to users who are more comfortable in languages other than English. Translating the documentation is a more significant undertaking compared to translating frontend strings. If you are eager to contribute translations to the documentation, follow these steps:</p>
 <ol>
-<li><a href="https://github.com/Raspirus/docs/fork">Fork this repository</a>: You can follow a <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">guide</a> online on how to do it properly.</li>
-<li>Enter the <code>docs</code> folder and, if the language you want to translate doesn't exist yet, add a new directory whose name is the name of the language you want to write translations for. For example, it would be <code>it</code> for Italian, <code>de</code> for German and so on.</li>
-<li>Then change to that directory and edit the Markdown files inside that directory. Make sure you keep the original folder structure.</li>
-<li>After you have finished editing, save your files and upload them to your fork on GitHub. Basically make a <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project">GitHub commit</a></li>
-<li>Now you can open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">pull-request</a> to the original repository and request that your changes get added to the main project.</li>
-<li>Someone of the team will review the translations and if accepted add them to the main project.</li>
+<li><a href="https://github.com/Raspirus/docs/fork">Fork this repository</a>: You can find a comprehensive guide on how to fork a repository <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">here</a>.</li>
+<li>Navigate to the <code>docs</code> folder in the forked repository. If the language you want to translate to doesn't exist yet, create a new directory with the name of the language you wish to translate into (e.g., <code>it</code> for Italian, <code>de</code> for German).</li>
+<li>Enter the language directory and start editing the Markdown files while maintaining the original folder structure.</li>
+<li>Once you have finished the translations, save your files and upload them to your forked repository. You can commit your changes following the <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project">GitHub commit guide</a>.</li>
+<li>Finally, open a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">pull request</a> to the original repository, proposing your changes to be added to the main project.</li>
+<li>A member of our team will review your translations and, if accepted, merge them into the main project.</li>
 </ol>
-<p>In the future, we hopefully have an external service that handles all this for you, so that you can focus on your translations without distractions. We will probably use <a href="https://crowdin.com/">Crowdin</a>.</p>
+<p>We understand that this manual process might be cumbersome, but rest assured that in the future, we plan to integrate an external service like <a href="https://crowdin.com/">Crowdin</a>. This service will simplify the translation workflow, allowing you to focus solely on your translations without any distractions.</p>
+<p>We appreciate your contribution to making the app accessible to a global audience through your translations. Thank you for your support!</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 10, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 31, 2023</span>
       
         <br>
         Created:
@@ -857,7 +874,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../coding/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Code" rel="prev">
+          <a href="../coding/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Code Contributions" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -866,7 +883,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Code
+                Code Contributions
               </div>
             </div>
           </a>

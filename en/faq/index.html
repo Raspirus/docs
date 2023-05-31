@@ -443,29 +443,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-the-icon-of-the-project" class="md-nav__link">
-    What is the Icon of the project?
+  <a href="#what-is-the-projects-icon" class="md-nav__link">
+    What is the project's icon?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-do-i-generate-the-documentation-for-this-repository" class="md-nav__link">
-    How do I generate the documentation for this repository?
+  <a href="#how-can-i-generate-the-documentation-for-this-repository" class="md-nav__link">
+    How can I generate the documentation for this repository?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#in-vs-code-how-do-i-set-up-rust-analyzer-to-work-in-non-standard-directory-structure" class="md-nav__link">
-    In VS Code, how do I set up Rust analyzer to work in non-standard directory structure?
+  <a href="#how-do-i-set-up-rust-analyzer-in-vs-code-to-work-with-a-non-standard-directory-structure" class="md-nav__link">
+    How do I set up Rust Analyzer in VS Code to work with a non-standard directory structure?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#updating-database-crashes-app" class="md-nav__link">
-    Updating database crashes app
+  <a href="#the-app-crashes-when-updating-the-database" class="md-nav__link">
+    The app crashes when updating the database
   </a>
   
 </li>
@@ -548,6 +548,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -596,8 +598,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../contributing/artwork/" class="md-nav__link">
+        Media Resources
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../contributing/coding/" class="md-nav__link">
-        Code
+        Code Contributions
       </a>
     </li>
   
@@ -611,7 +627,7 @@
   
     <li class="md-nav__item">
       <a href="../contributing/translations/" class="md-nav__link">
-        Translations
+        Translators
       </a>
     </li>
   
@@ -741,34 +757,38 @@
 
 
 <h1 id="faq">FAQ</h1>
-<p>In this page, we will answer your most asked questions. As more questions arise, we will expand this page to include more answers. This page is very useful if you encounter any errors during development or usage. Maybe your error can be easily fixed and doesn't require a bug report.</p>
-<h2 id="what-is-the-icon-of-the-project">What is the Icon of the project?</h2>
-<p><a class="glightbox" href="../img/transparent-logo.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Transparent logo" src="../img/transparent-logo.png" /></a>
-In case you didn't notice yet, this is the logo of the Raspirus app. It was generated with <a href="https://openai.com/product/dall-e-2">DALL-E</a> and some creative image editing and merging. It should represent a red monster that eats viruses. His name is Stuart by the way, and don't worry, he is a very kind monster, except for when he is hungry, then you better feed him viruses.
-You can find more media and documents in the <a href="https://github.com/Raspirus/media">dedicated repository</a>. You are free to use these images to create your own art and showcase them in the <a href="https://github.com/orgs/Raspirus/discussions">discussion boards</a></p>
-<h2 id="how-do-i-generate-the-documentation-for-this-repository">How do I generate the documentation for this repository?</h2>
-<p>You can find the generated documentation in the <a href="/rust/">rust folder</a> and in case you want to generate your own, you can do so by using the <code>cargo doc</code> command. Here are some parameters you might want to use with it:
-- <code>--no-deps</code>: Ignores dependencies, only documents the code itself
-- <code>--release</code>: It is generally better than a debug
-- <code>--target-dir</code>: Where to output the docs All together, the command might look something like this: \
-  <code>cargo doc --no-deps --release --target-dir=/docs/generated/</code></p>
-<h2 id="in-vs-code-how-do-i-set-up-rust-analyzer-to-work-in-non-standard-directory-structure">In VS Code, how do I set up Rust analyzer to work in non-standard directory structure?</h2>
-<p>The Rust analyzer plugin in Visual Studio Code tries to search for a Cargo.toml file in the current directory, or parent directory. But since we packed the entire application in the <code>app</code> directory, it's unable to find the file and therefore might not work. This is a big lost, as it doesn't tell you if your Rust files have correct syntax or not. To solve this issue, you can add an option to the plugin and specify the location of your Cargo.toml file. As stated <a href="https://github.com/rust-lang/rust-analyzer/issues/2649#issuecomment-691582605">in this comment</a>, you need to add the following lines to the end of your plugin settings' JSON. Afterward, you will also need to restart the Analyzer for the modification to take effect.</p>
+<p>Welcome to our FAQ section, where we address some of the most frequently asked questions. If you encounter any errors or have queries during development or usage, this page can provide you with useful information. We continually update this section as new questions arise.</p>
+<h2 id="what-is-the-projects-icon">What is the project's icon?</h2>
+<p><a class="glightbox" href="../img/transparent-logo.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Transparent logo" src="../img/transparent-logo.png" /></a></p>
+<p>The logo of the Raspirus app features a red monster named Stuart, who is designed to represent a virus-eating creature. The logo was generated using <a href="https://openai.com/product/dall-e-2">DALL-E</a>, along with creative image editing and merging. Stuart is a friendly monster, except when he's hungry for viruses. You can find additional media and documents in the <a href="https://github.com/Raspirus/media">dedicated repository</a>. Feel free to use these images to create your own artwork and share them in the <a href="https://github.com/orgs/Raspirus/discussions">discussion boards</a>.</p>
+<h2 id="how-can-i-generate-the-documentation-for-this-repository">How can I generate the documentation for this repository?</h2>
+<p>The generated documentation can be found in the <a href="/rust/">rust folder</a>. If you want to generate your own documentation, you can use the <code>cargo doc</code> command. Here are some parameters you may find useful:</p>
+<ul>
+<li><code>--no-deps</code>: Ignores dependencies and only documents the code itself.</li>
+<li><code>--release</code>: Generates documentation optimized for release builds.</li>
+<li><code>--target-dir</code>: Specifies the output directory for the documentation.</li>
+</ul>
+<p>Putting it all together, the command might look like this:</p>
+<pre><code class="language-shell">cargo doc --no-deps --release --target-dir=/docs/generated/
+</code></pre>
+<h2 id="how-do-i-set-up-rust-analyzer-in-vs-code-to-work-with-a-non-standard-directory-structure">How do I set up Rust Analyzer in VS Code to work with a non-standard directory structure?</h2>
+<p>The Rust Analyzer plugin in Visual Studio Code searches for a <code>Cargo.toml</code> file in the current directory or its parent directory. However, in our case, since the entire application is packed in the <code>app</code> directory, the plugin may not work as expected. To address this issue, you can add an option to the plugin settings and specify the location of your <code>Cargo.toml</code> file.</p>
+<p>As mentioned in <a href="https://github.com/rust-lang/rust-analyzer/issues/2649#issuecomment-691582605">this comment</a>, you can add the following lines to the end of your plugin settings JSON. Afterward, restart the Rust Analyzer for the modifications to take effect.</p>
 <pre><code class="language-json">{
     &quot;rust-analyzer.linkedProjects&quot;: [
-        &quot;/home/matklad/tmp/hello/Cargo.toml&quot;
+        &quot;/home/stuart/raspirus/raspirus/Cargo.toml&quot;
     ]
 }
 </code></pre>
-<h2 id="updating-database-crashes-app">Updating database crashes app</h2>
-<p>On Windows, it seems like the app crashes when the user tries to update the database. We are aware of this issue and working to fix it. The issue arises because the function needs administrative privileges, which Windows isn't providing. To fix this issue for now, simply execute the app in administration mode, aka. With admin privileges. You can do so by right-clicking the app and clicking <code>Run as administrator</code>.</p>
+<h2 id="the-app-crashes-when-updating-the-database">The app crashes when updating the database</h2>
+<p>On Windows, it has been observed that the app crashes when attempting to update the database. We are aware of this issue and actively working to resolve it. The problem arises because the update function requires administrative privileges, which Windows does not automatically provide. To temporarily resolve this issue, you can execute the app with administrative privileges. Right-click on the app and select "Run as administrator" to launch it with the necessary privileges.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 20, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 31, 2023</span>
       
         <br>
         Created:

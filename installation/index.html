@@ -473,15 +473,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-an-executable" class="md-nav__link">
-    Use an executable
+  <a href="#using-executables" class="md-nav__link">
+    Using Executables
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-the-makefile-debian-based-systems-only" class="md-nav__link">
-    Use the Makefile (Debian based systems only)
+  <a href="#using-the-makefile-debian-based-systems-only" class="md-nav__link">
+    Using the Makefile (Debian-based Systems Only)
   </a>
   
 </li>
@@ -495,15 +495,15 @@
       
         <li class="md-nav__item">
   <a href="#step-by-step-guide" class="md-nav__link">
-    Step-by-step guide
+    Step-by-Step Guide
   </a>
   
-    <nav class="md-nav" aria-label="Step-by-step guide">
+    <nav class="md-nav" aria-label="Step-by-Step Guide">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#1-clone-the-repository" class="md-nav__link">
-    1. Clone the repository
+    1. Clone the Repository
   </a>
   
 </li>
@@ -589,6 +589,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -637,8 +639,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../contributing/artwork/" class="md-nav__link">
+        Media Resources
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../contributing/coding/" class="md-nav__link">
-        Code
+        Code Contributions
       </a>
     </li>
   
@@ -652,7 +668,7 @@
   
     <li class="md-nav__item">
       <a href="../contributing/translations/" class="md-nav__link">
-        Translations
+        Translators
       </a>
     </li>
   
@@ -782,51 +798,51 @@
 
 
 <h1 id="installation">Installation</h1>
-<p>This guide will help you in building the project on your own machine.</p>
-<h2 id="use-an-executable">Use an executable</h2>
-<p>The fastest and easiest way to install the app on your system is using one of the executables provided in the <a href="https://github.com/Raspirus/Raspirus/releases/latest">Release page</a>. Once downloaded, it will depend on your system on how to run it, but on Windows for example you can easily double-klick on the executable and follow the installation instructions from the wizard. And that's it, you are done.</p>
-<h2 id="use-the-makefile-debian-based-systems-only">Use the Makefile (Debian based systems only)</h2>
-<p>The project also features a Makefile for easier installation, update and testing. You can therefore simply clone the repository and execute the Makefile with the command:</p>
+<p>This guide provides instructions on how to install the Raspirus application on your machine.</p>
+<h2 id="using-executables">Using Executables</h2>
+<p>The quickest and simplest method to install the application is by using one of the executables available on the <a href="https://github.com/Raspirus/Raspirus/releases/latest">Release page</a>. Once you have downloaded the executable, the installation process may vary depending on your system. For example, on Windows, you can double-click the executable and follow the installation instructions provided by the wizard. Once completed, the installation process is finished.</p>
+<h2 id="using-the-makefile-debian-based-systems-only">Using the Makefile (Debian-based Systems Only)</h2>
+<p>The project includes a Makefile that facilitates installation, updating, and testing. To install the application, you can clone the repository and execute the Makefile using the following command:</p>
 <pre><code class="language-sh">make install
 </code></pre>
 <h2 id="limitations">Limitations</h2>
 <ul>
-<li>Glibc can cause problems on Linux: https://tauri.app/v1/guides/building/linux#limitations</li>
-<li>You need to use 64-bit systems, else the app might crash because it's using memory improvements that only work there</li>
+<li>Glibc can cause issues on Linux. Please refer to the <a href="https://tauri.app/v1/guides/building/linux#limitations">limitations</a> section of the Tauri documentation for more information.</li>
+<li>The application requires a 64-bit system. Running it on a different system architecture may result in crashes due to the utilization of memory improvements specific to 64-bit systems.</li>
 </ul>
-<h2 id="step-by-step-guide">Step-by-step guide</h2>
-<p>Please read the whole guide once before starting to execute each step!</p>
-<h3 id="1-clone-the-repository">1. Clone the repository</h3>
-<p>With <code>git</code> installed, do:</p>
+<h2 id="step-by-step-guide">Step-by-Step Guide</h2>
+<p>Before executing each step, we recommend reading the entire guide thoroughly.</p>
+<h3 id="1-clone-the-repository">1. Clone the Repository</h3>
+<p>If you have <code>git</code> installed, use the following command to clone the repository:</p>
 <pre><code class="language-sh">git clone https://github.com/Raspirus/Raspirus.git
 </code></pre>
-<p>Else, download the repository from <a href="https://github.com/Raspirus/Raspirus/">here</a> and extract the <code>.zip</code> file. <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">The GitHub guide</a> might help you.</p>
+<p>Alternatively, you can download the repository as a ZIP file from <a href="https://github.com/Raspirus/Raspirus/">here</a> and extract its contents. The <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">GitHub guide</a> provides further assistance on this process.</p>
 <h3 id="2-install-rust">2. Install Rust</h3>
-<p>On <strong>Linux</strong> (Debian, Ubuntu):</p>
+<p>For <strong>Linux</strong> (Debian, Ubuntu):</p>
 <pre><code class="language-sh">curl https://sh.rustup.rs -sSf | sh -s -- --help
 </code></pre>
-<p>On <strong>Windows</strong>:
-Download the executable from the <a href="https://www.rust-lang.org/tools/install">Rust website</a> and install it.</p>
+<p>For <strong>Windows</strong>:
+Download the Rust executable from the <a href="https://www.rust-lang.org/tools/install">Rust website</a> and follow the installation instructions.</p>
 <h3 id="3-install-npm">3. Install NPM</h3>
-<p>On <strong>LInux</strong> (Debian, Ubuntu):</p>
+<p>For <strong>Linux</strong> (Debian, Ubuntu):</p>
 <pre><code class="language-sh">curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &amp;&amp;\
 sudo apt-get install -y nodejs
 </code></pre>
-<p>On <strong>Windows</strong>:
-Head over to the <a href="https://docs.npmjs.com/cli/v7/configuring-npm/install">NPM Website</a> and download the executable to install it.</p>
+<p>For <strong>Windows</strong>:
+Visit the <a href="https://docs.npmjs.com/cli/v7/configuring-npm/install">NPM Website</a> to download the NPM executable and proceed with the installation.</p>
 <h3 id="4-install-nextjs">4. Install Next.js</h3>
-<p>Execute the command with npm:</p>
+<p>Use the following command with npm to install Next.js and its dependencies:</p>
 <pre><code class="language-sh">npm install next@latest react@latest react-dom@latest eslint-config-next@latest
 </code></pre>
 <h2 id="conclusion">Conclusion</h2>
-<p>This application is basically a website attached to some Rust code and packaged with the Tauri framework. It will therefore need a graphical overlay to start and display the website. This project is in constant development and therefore, if you find anything unusual, have some good ideas or find some errors, don't be afraid to open an issue on this repository and I will be happy to help you out.</p>
+<p>The Raspirus application combines a website interface with underlying Rust code, packaged using the Tauri framework. To launch and display the website, a graphical overlay is required. As the project is continually evolving, we encourage you to open an issue on the repository if you encounter any unusual behavior, have suggestions, or discover errors. We are here to assist you.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 10, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 31, 2023</span>
       
         <br>
         Created:
