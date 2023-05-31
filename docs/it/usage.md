@@ -5,28 +5,31 @@ comments: vero
 # Utilizzo
 
 ## Tutorial
-Using the app is really easy. Once you have it installed it is just as easy as pressing a couple of buttons. The entire app is built around the concept of being used on a bad touchscreen, so it needs no input or keyboard to work. **Step by step:**
-1. Open the app on the main page
-2. Insert an USB and select it, or click the folder icon to select a local folder to scan
-3. Accept the user agreement after you have read it carefully
-4. Wait for the app do to it's magic
-5. Result is shown and you can now start a new scan if needed
+Using the Raspirus app is straightforward and user-friendly. Once you have installed the application, it requires only a few simple steps to perform a scan. The app is designed with a focus on usability for touchscreens and does not require any input devices or keyboards to operate. Here's a step-by-step guide:
 
-## Case study
-Here are some metrics of the app, how fast it is, how reliable and what it can actually do. It also describes how the app is intended to be used.
+1. Open the app from the main page.
+2. Insert a USB drive and select it, or click the folder icon to choose a local folder for scanning.
+3. Carefully review and accept the user agreement.
+4. Allow the app to perform its scanning process.
+5. The results will be displayed, and you can initiate a new scan if necessary.
 
-### Specification
+## Case Study
+Let's delve into some key metrics and specifications of the Raspirus app, evaluating its speed, reliability, and functionality. Additionally, we will outline the intended use of the application.
+
+### Specifications
 - App size: 5MB
-- RAM usage: ~ 50MB
-- Works offline, only requires connection to Internet to update the database file
+- RAM usage: Approximately 50MB
+- Works offline, requiring an internet connection only for database file updates
 
-### Metrics
-The speed in which the app is able to scan highly depends on three things:
-- The USB or Storage medium used
-- The CPU of the system the app runs on.
-- The size of the single files that need to be scanned
+### Performance Metrics
+The scanning speed of the app depends on three factors:
+- The storage medium (USB or local) used for scanning.
+- The CPU performance of the system running the app.
+- The file size of individual files being scanned.
 
-For optimal scanning speed, you should use a modern storage medium with high read speeds, a modern CPU that is not overloaded with other apps and files that are low in size. It is faster to scan 100 files of 10GB than 1 file of 10GB. The reason being that the Hash funktion is faster on smaller files. For Raspberry Pis, don't look at RAM, as the app only requires a couple MB. Instead, look at CPU speed, as that's more important.
+For optimal scanning speed, it is recommended to utilize modern storage media with high read speeds, employ a capable CPU that is not overwhelmed with other applications, and focus on scanning smaller files. Scanning 100 files of 10GB each will generally be faster than scanning a single 10GB file, as the hashing function performs more efficiently on smaller files. For Raspberry Pis, CPU speed is of greater importance than RAM capacity, as the app only requires a few megabytes of memory.
 
-### Application
-The app was originally intended to use only on Raspberry Pis with a touchscreen. The Raspberry Pi with Linux on it is easy to setup and very secure. Most of the viruses target Windows PC, and therefore have no effect on Linux. Furthermore, if you add a battery to your Raspberry Pi and set the app in Kiosk mode, you can create some sort of Raspirus box that can be carried around and is focused on scanning USB sticks. Thanks to Tauri and it's cross-compilation feature, Raspirus is available for all major systems: macOS, Windows, Linux. The app is primarly being developed and tested on Windows and Debian Linux. You can find installation instructions in the [Installation page](installation.md).
+### Application Scope
+Initially developed for Raspberry Pis with touchscreens, the Raspirus app offers easy setup and high security on Linux-based systems. Given that most viruses target Windows PCs, Linux-based Raspberry Pis are inherently less vulnerable. Additionally, by configuring a Raspberry Pi with a battery and enabling Kiosk mode, it is possible to create a portable Raspirus scanning box specifically tailored for scanning USB drives.
+
+Thanks to Tauri's cross-compilation feature, the Raspirus app is now available for macOS, Windows, and Linux. While primarily developed and tested on Windows and Debian Linux, installation instructions for various operating systems can be found on the [Installation page](installation.md).
