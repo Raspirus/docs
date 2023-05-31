@@ -2,28 +2,34 @@
 comments: wahr
 ---
 
-# Übersetzungen
-Übersetzungen sind sehr wichtig und können anderen Menschen helfen, die App einfacher zu verstehen und sie umfassender zur Verfügung zu stellen. If you know a language outside of English and would like to add your translations, you can do so in two ways: The first one is to translate the documentation, the second one is to translate the frontend strings.
+# Translators
 
+Translations play a vital role in making the app accessible to users worldwide. If you are fluent in a language other than English and would like to contribute by providing translations, we welcome your assistance. There are two main areas where you can contribute: translating code and translating documentation.
 
-## Code wird übersetzt
-Es handelt sich um eine laufende Arbeit, die jedoch im Wesentlichen auf eine von zwei möglichen Wegen erfolgen wird:
+## Translating Code
 
-### Übersetzungsdatei
-Es gibt eine Übersetzungsdatei im JSON-Format für jede einzelne Sprache. So the app would load the strings it needs from that file. This is a bit easier to implement for the developers, but not very efficient or great for translators, as it involves forking the repository.
+Translating the app's frontend strings is an essential task that allows users to interact with the app in their native language. There are two possible ways to handle translations within the codebase:
 
-### Übersetzungsdienst
-Wir verwenden einen externen Übersetzungsdienst, um das Projekt zu übersetzen. This option would allow translators to just translate the given strings and have an overview of how much has been translated and what still needs to be translated. Dies wäre die bevorzugte Option, aber die Kehrseite ist das Setup für diese Option. Since we don't know which service to use yet, this option will be added in the future when we have more concrete ideas and hopefully a bigger team. Wir werden wahrscheinlich [Crowdin](https://crowdin.com/) verwenden
+### Translation File
 
-## Übersetzungen von Docs
-The docs you are reading right now also need translations and will require a much bigger effort than translating strings used on the frontend. Die Dokumentation ist ziemlich groß und kann daher einige Zeit in Anspruch nehmen, um zu übersetzen. Als obige Option könnten wir den Service auch hier nutzen, aber das wird in Zukunft hinzugefügt werden. If you want to start adding translations right away, I would suggest doing the following:
+Each language has its own translation file in JSON format. The app loads the required strings from these files. While this approach is relatively simpler for developers to implement, it may not be the most efficient or user-friendly for translators, as it involves forking the repository and manually editing the JSON file.
 
-1. [Fork this repository](https://github.com/Raspirus/docs/fork): You can follow a [guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo) online on how to do it properly.
-2. Enter the `docs` folder and, if the language you want to translate doesn't exist yet, add a new directory whose name is the name of the language you want to write translations for. For example, it would be `it` for Italian, `de` for German and so on.
-3. Then change to that directory and edit the Markdown files inside that directory. Make sure you keep the original folder structure.
-4. Nachdem Sie die Bearbeitung abgeschlossen haben, speichern Sie Ihre Dateien und laden sie auf GitHub in Ihren Fork hoch. Mache einen [GitHub Commit](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project)
-5. Jetzt können Sie eine [Pull-Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) in das ursprüngliche Projektarchiv öffnen und verlangen, dass Ihre Änderungen dem Hauptprojekt hinzugefügt werden.
-6. Jemand des Teams wird die Übersetzungen prüfen und wenn akzeptiert, diese dem Hauptprojekt hinzufügen.
+### Translation Service
 
-In the future, we hopefully have an external service that handles all this for you, so that you can focus on your translations without distractions. Wir werden wahrscheinlich [Crowdin](https://crowdin.com/) verwenden.
+To streamline the translation process and provide a better experience for translators, we plan to integrate an external translation service. This service would enable translators to focus solely on translating the strings and provide an overview of the progress. We are considering using [Crowdin](https://crowdin.com/) as the preferred translation service. However, the setup for this option is still being worked on, and it will be added in the future as the team expands and we have more concrete plans.
+
+## Translating Documentation
+
+The documentation itself also requires translations to make it accessible to users who are more comfortable in languages other than English. Translating the documentation is a more significant undertaking compared to translating frontend strings. If you are eager to contribute translations to the documentation, follow these steps:
+
+1. [Fork this repository](https://github.com/Raspirus/docs/fork): You can find a comprehensive guide on how to fork a repository [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+2. Navigate to the `docs` folder in the forked repository. If the language you want to translate to doesn't exist yet, create a new directory with the name of the language you wish to translate into (e.g., `it` for Italian, `de` for German).
+3. Enter the language directory and start editing the Markdown files while maintaining the original folder structure.
+4. Once you have finished the translations, save your files and upload them to your forked repository. You can commit your changes following the [GitHub commit guide](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project).
+5. Finally, open a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to the original repository, proposing your changes to be added to the main project.
+6. A member of our team will review your translations and, if accepted, merge them into the main project.
+
+We understand that this manual process might be cumbersome, but rest assured that in the future, we plan to integrate an external service like [Crowdin](https://crowdin.com/). This service will simplify the translation workflow, allowing you to focus solely on your translations without any distractions.
+
+We appreciate your contribution to making the app accessible to a global audience through your translations. Thank you for your support!
 
