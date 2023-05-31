@@ -3,28 +3,43 @@ comments: vero
 ---
 
 # FAQ
-In this page, we will answer your most asked questions. As more questions arise, we will expand this page to include more answers. This page is very useful if you encounter any errors during development or usage. Maybe your error can be easily fixed and doesn't require a bug report.
 
-## What is the Icon of the project?
-![Transparent logo](../img/transparent-logo.png) In case you didn't notice yet, this is the logo of the Raspirus app. It was generated with [DALL-E](https://openai.com/product/dall-e-2) and some creative image editing and merging. It should represent a red monster that eats viruses. His name is Stuart by the way, and don't worry, he is a very kind monster, except for when he is hungry, then you better feed him viruses. You can find more media and documents in the [dedicated repository](https://github.com/Raspirus/media). You are free to use these images to create your own art and showcase them in the [discussion boards](https://github.com/orgs/Raspirus/discussions)
+Welcome to our FAQ section, where we address some of the most frequently asked questions. If you encounter any errors or have queries during development or usage, this page can provide you with useful information. We continually update this section as new questions arise.
 
-## Come posso generare la documentazione per questo repository?
-You can find the generated documentation in the [rust folder](/rust/) and in case you want to generate your own, you can do so by using the `cargo doc` command. Ecco alcuni parametri che potresti voler utilizzare con esso:
-- `--no-deps`: Ignora le dipendenze, documenta solo il codice stesso
-- `--release`: Generalmente è meglio di un debug
-- `--target-dir`: Where to output the docs All together, the command might look something like this: \
-  `cargo doc --no-deps --release --target-dir=/docs/generated/`
+## What is the project's icon?
 
-## In VS Code, how do I set up Rust analyzer to work in non-standard directory structure?
-Il plugin dell'analizzatore Rust in Visual Studio Code cerca di cercare un file Cargo.toml nella directory corrente o nella directory principale. But since we packed the entire application in the `app` directory, it's unable to find the file and therefore might not work. This is a big lost, as it doesn't tell you if your Rust files have correct syntax or not. Per risolvere questo problema, è possibile aggiungere un'opzione al plugin e specificare la posizione del file Cargo.toml. As stated [in this comment](https://github.com/rust-lang/rust-analyzer/issues/2649#issuecomment-691582605), you need to add the following lines to the end of your plugin settings' JSON. In seguito, dovrai anche riavviare l'analizzatore per rendere effettiva la modifica.
+![Transparent logo](../img/transparent-logo.png)
+
+The logo of the Raspirus app features a red monster named Stuart, who is designed to represent a virus-eating creature. The logo was generated using [DALL-E](https://openai.com/product/dall-e-2), along with creative image editing and merging. Stuart is a friendly monster, except when he's hungry for viruses. You can find additional media and documents in the [dedicated repository](https://github.com/Raspirus/media). Feel free to use these images to create your own artwork and share them in the [discussion boards](https://github.com/orgs/Raspirus/discussions).
+
+## How can I generate the documentation for this repository?
+
+The generated documentation can be found in the [rust folder](/rust/). If you want to generate your own documentation, you can use the `cargo doc` command. Here are some parameters you may find useful:
+
+- `--no-deps`: Ignores dependencies and only documents the code itself.
+- `--release`: Generates documentation optimized for release builds.
+- `--target-dir`: Specifies the output directory for the documentation.
+
+Putting it all together, the command might look like this:
+
+```shell
+cargo doc --no-deps --release --target-dir=/docs/generated/
+```
+
+## How do I set up Rust Analyzer in VS Code to work with a non-standard directory structure?
+
+The Rust Analyzer plugin in Visual Studio Code searches for a `Cargo.toml` file in the current directory or its parent directory. However, in our case, since the entire application is packed in the `app` directory, the plugin may not work as expected. To address this issue, you can add an option to the plugin settings and specify the location of your `Cargo.toml` file.
+
+As mentioned in [this comment](https://github.com/rust-lang/rust-analyzer/issues/2649#issuecomment-691582605), you can add the following lines to the end of your plugin settings JSON. Afterward, restart the Rust Analyzer for the modifications to take effect.
 
 ```json
 {
     "rust-analyzer.linkedProjects": [
-        "/home/matklad/tmp/hello/Cargo.toml"
+        "/home/stuart/raspirus/raspirus/Cargo.toml"
     ]
 }
 ```
 
-## Updating database crashes app
-On Windows, it seems like the app crashes when the user tries to update the database. We are aware of this issue and working to fix it. The issue arises because the function needs administrative privileges, which Windows isn't providing. To fix this issue for now, simply execute the app in administration mode, aka. With admin privileges. You can do so by right-clicking the app and clicking `Run as administrator`.
+## The app crashes when updating the database
+
+On Windows, it has been observed that the app crashes when attempting to update the database. We are aware of this issue and actively working to resolve it. The problem arises because the update function requires administrative privileges, which Windows does not automatically provide. To temporarily resolve this issue, you can execute the app with administrative privileges. Right-click on the app and select "Run as administrator" to launch it with the necessary privileges.
