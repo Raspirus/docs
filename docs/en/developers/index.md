@@ -2,44 +2,42 @@
 comments: true
 ---
 
-
 # Developers
 
-The Raspirus project mainly uses two different programming languages and frameworks. One for the backend and one for the backend and one for the frontend. \
-The frontend is written in JavaScript using the [Next.js](https://nextjs.org/) framework. The backend on the other side is written in Rust. The communication between these two programming languages is made using the [Tauri](https://tauri.app/) framework. Using this framework, one can write functions in Rust and call them from the frontend easily.
+The Raspirus project employs two distinct programming languages and frameworks: one for the frontend and one for the backend. The frontend utilizes JavaScript with the Next.js framework, while the backend is built with Rust. Communication between these languages is facilitated by the Tauri framework, enabling seamless integration of Rust functions in the frontend.
 
-## Technologies used
+## Technologies Used
 - [NPM](https://www.npmjs.com):
-    I wanted the frontend to be beautiful, and at first I tried creating an actual native application, but that just didn't have the customization I was searching for. Therefore, I decided to write a Web-frontend, and for that I could choose between Node.js or [Deno](https://deno.land/). I ended up using Node.js as it's the one I am mostly familiar with.
+  To achieve an aesthetically pleasing frontend, I explored native application development options initially. However, the customization capabilities fell short of my expectations. Consequently, I opted for a web-based frontend and selected Node.js over [Deno](https://deno.land/) due to my familiarity with Node.js.
 - [Next.js](https://nextjs.org):
-    Next.js is a frontend framework that is fairly easy to implement, and once setup can be very powerful. The most useful feature used in this project is the export of the website in static HTML. This is essential for Tauri to function. Another advantage of Next.js is that it optimizes itself, by automatically stripping away everything unnecessary, this makes the app lightweight and fast. Navigation with Next.js is practically instant.
+  Next.js, a frontend framework, proved to be easy to implement and incredibly powerful once set up. The project extensively leverages Next.js's capability to export the website as static HTML, which is crucial for the functioning of Tauri. Additionally, Next.js optimizes the application by automatically eliminating unnecessary components, resulting in a lightweight and fast application. Navigation with Next.js is nearly instantaneous.
 - [Rust](https://www.rust-lang.org):
-    Rust was not my first choice for the backend. At first, I started with C++, but I was not skilled enough to create the entire app with that language, so I turned to Python. Python is way slower than C++, but it's my favorite language and the one I know best, so I was able to develop faster. Nonetheless, the lack of speed with Python was a big drawback. Luckily, a friend of mine helped me out and rewrote the entire backend in Rust, basically speeding the app up by 100x. What previously took a couple of minutes, now took mere seconds. Rust is a compiled language and faster than Python, which is an interpreted language. If you want to test the old Python system, there is an entire [repository](https://github.com/Raspirus/python-cli) for that.
+  While C++ was my initial choice for the backend, my proficiency wasn't sufficient to develop the entire application in that language. I turned to Python, my preferred language and one in which I am proficient, for faster development. However, Python's speed limitations became a significant drawback. Fortunately, a friend helped rewrite the entire backend in Rust, boosting the application's speed by 100x. Rust's compilation-based approach and performance superiority over interpreted languages like Python made it an ideal choice. If you are interested in the previous Python implementation, you can refer to the dedicated [repository](https://github.com/Raspirus/python-cli).
 - [Tauri](https://tauri.app/v1/guides/getting-started/setup/next-js):
-    Tauri plays a very important part in this project, as it is a framework that allows connecting the Rust backend to a JavaScript frontend. This essentially allowed us to have a beautiful frontend in Next.js and an impressively fast backend in Rust. Furthermore, Tauri compiles the application for different systems, like Windows, Linux or macOS by creating installers or binaries. This improved the installation of the app.
-- [SweetAlertv2](https://sweetalert2.github.io):
-    When errors occur, or there are warnings and information to display as a pop-up to the user, the simple JavaScript alert just doesn't look that good. SweetAlert improves the look of these pop-ups by a lot. It's fairly easy to install and to use. In our case, it is mainly used to display errors or warnings, for example when the scanning process is suddenly interrupted.
+  Tauri plays a vital role in this project by bridging the Rust backend with the JavaScript frontend. This allows us to have an elegant frontend with Next.js and an impressively fast backend with Rust. Furthermore, Tauri simplifies the compilation of the application into installers or binaries for different systems like Windows, Linux, or macOS, greatly enhancing the installation experience.
+- [SweetAlert2](https://sweetalert2.github.io):
+  When presenting errors, warnings, or information to the user as pop-ups, the default JavaScript alert lacks visual appeal. SweetAlert2 significantly enhances the appearance of these pop-ups. It is easy to install and use. In our case, SweetAlert2 is mainly used for displaying errors or warnings, such as when the scanning process is abruptly interrupted.
 - [next-i18next](https://github.com/i18next/next-i18next):
-    The app doesn't have much text, and with the icons and colors it should be fairly simple to understand what you need to do. Nonetheless, we decided to add translations to the app. This is done using a Next.js plugin named i18next, that allows to translate the project easily with .JSON files.
+  Although the application contains minimal text and relies on icons and colors for clarity, we decided to incorporate translations. This is achieved using the Next.js plugin called i18next, which facilitates easy translation management through .JSON files.
 - [Crowdin](https://crowdin.com/project/raspirus):
-    Crowdin is a website that collects translations from users and helps translate open-source and private projects. I am especially grateful that for open-source projects, the price for this service is free. It is useful for translators to focus on translations, without the need to look at code. It also helps developers, as it automatically syncs new translations with GitHub and vice versa.
+  Crowdin is a website that aids in translating open-source and private projects, and I am particularly grateful that it offers free pricing for open-source projects. Crowdin allows translators to focus solely on translations without the need to examine code. It also streamlines the translation synchronization process between Crowdin and GitHub.
 - [MkDocs](https://www.mkdocs.org/):
-    MkDocs is a Python framework used to create documentation for projects. In fact, it is the framework used to create this specific translation. It is really easy to use and makes structuralizing docs or integrating plugins like Crowdin fairly easily.
-- [Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot):
-    Dependabot comes with every GitHub repository, and can be activated fairly easily. Its job is to check dependencies for updates and therefore to keep the entire app up-to-date. This also ensures that the app has the latest patches and functions. By improving its dependencies, the app might become faster and more efficient. Furthermore, Dependabot also informs the user about Security vulnerabilities of used dependencies or crates, a very useful feature to maintain the app secure.
-- [GitHub](https://github.com/):
-    GitHub has been chosen as the file hosting platform mainly because it is popular, easy to use and has everything needed. Plus it's free. A company also suggested hosting the project on their GitLab servers, but in the end the project remained on GitHub as it is easier to use and to collaborate than to use a VPN to connect to a PC that then connects to GitLab. GitHub also has a lot of features: Project planing, Milestones, Issues, Actions, ...
-- [CodeQL](https://codeql.github.com/):
-    CodeQL is another powerful tool from GitHub. It scans the entire project and checks for vulnerabilities in the code. For example, if there is cross-site-scripting happening somewhere, or we are not hiding passwords and secrets correctly, or we are coding inefficiently. This is very useful, as it assures a certain reliability of the code.
-- [CodeCov](https://about.codecov.io/):
-    Codecov is an external tool that can be installed on GitHub, and it tracks test coverage. It basically tells you how efficient the tests you just wrote actually are, and if they cover the entire project. Testing the frontend is hard, as we would likely need to test user interaction, but testing the backend is doable. Therefore, we set up Codecov to check our Rust backend for test coverage.
+  MkDocs, a Python framework, is utilized to generate project documentation. In fact, this very translation you are reading was created using MkDocs. It is user-friendly and facilitates document structuring and integration with plugins like
 
+ Crowdin.
+- [Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot):
+  Dependabot, a built-in feature in GitHub repositories, ensures that dependencies are up to date by automatically checking for updates. This helps maintain an up-to-date application with the latest patches and functionality. By improving dependencies, the application's performance and efficiency can be enhanced. Moreover, Dependabot notifies users of any security vulnerabilities in the utilized dependencies or crates, ensuring the application's security.
+- [GitHub](https://github.com/):
+  GitHub was selected as the file hosting platform due to its popularity, user-friendly interface, and comprehensive feature set. Additionally, it offers free hosting. Although a company suggested hosting the project on their GitLab servers, GitHub's ease of use and collaboration capabilities prevailed over the complexities of utilizing a VPN to connect to a PC that connects to GitLab. GitHub offers numerous features, including project planning, milestones, issues, and actions.
+- [CodeQL](https://codeql.github.com/):
+  CodeQL, another powerful tool from GitHub, scans the project for vulnerabilities in the code. It detects issues like cross-site scripting, improper handling of passwords and secrets, and inefficient coding practices. CodeQL ensures a higher level of code reliability.
+- [CodeCov](https://about.codecov.io/):
+  Codecov, an external tool installable on GitHub, tracks test coverage. It provides insights into the effectiveness of written tests and their coverage across the entire project. Although testing the frontend is challenging as it often involves user interaction, testing the backend is feasible. Therefore, we integrated Codecov to monitor test coverage in our Rust backend.
 
 ## Integration
-Raspirus is a standalone app and everything happens inside the app. What I mean by this is that there are mo APIs for the outside to get information from, and the app is also not meant to be used by other apps. The main usage of the app is through a touchscreen, that's why there are no input fields where a user has to type text, as that is a quite frustrating experience on bad touchscreen, as the one from a Raspberry Pi. 
-Actually, there are API calls, but they happen inside the app. In fact, the Next.js frontend calls the backend through the Tauri API.
+Raspirus is a self-contained application, operating solely within its environment. There are no external APIs for retrieving information, nor is the application designed for integration with other apps. The primary user interaction occurs via a touchscreen interface, eliminating the need for text input fields, which can be frustrating on low-quality touchscreens like the one found on a Raspberry Pi.
 
-For example, in the `loading.js` file, we call the scanning function from the frontend to tell Rust to start the scanner:
+Although API calls are made, they are internal to the application. For instance, in the `loading.js` file, we invoke the scanning function from the frontend to initiate the scanner in Rust:
 ```js
 const message = await invoke("start_scanner", {
     path: scan_path,
@@ -47,19 +45,18 @@ const message = await invoke("start_scanner", {
     obfuscated: obfuscatedMode,
 });
 ```
-We basically start the `start_scanner` function and give it the needed parameters. Then we save the result in the `message` constant. This is a basic Tauri API call. 
+The `start_scanner` function is called with the required parameters, and the resulting message is stored in the `message` constant. This basic Tauri API call enables seamless communication between the frontend and backend.
 
-To instead communicate from the backend back to the frontend, Tauri uses the principle of signals:
+To send data from the backend to the frontend, Tauri employs the signal principle:
 ```rs
 fn calculate_progress(&mut self, last_percentage: &mut f64, file_size: u64) {
-    self.scanned_size = self.scanned_size + file_size;
+    self.scanned_size += file_size;
     let scanned_percentage = (self.scanned_size as f64 / self.folder_size as f64 * 100.0).round();
     info!("Scanned: {}%", scanned_percentage);
     if scanned_percentage != *last_percentage {
-        self.tauri_window.emit_all("progress", TauriEvent {message: scanned_percentage.to_string()}).unwrap();
+        self.tauri_window.emit_all("progress", TauriEvent { message: scanned_percentage.to_string() }).unwrap();
         *last_percentage = scanned_percentage;
     }
 }
 ```
-
-If you want to know more about how this internal API system exactly works, you can refer to the official [Tauri guide](https://tauri.app/v1/guides/features/command).
+For further details on how this internal API system operates, refer to the official [Tauri guide](https://tauri.app/v1/guides/features/command).
