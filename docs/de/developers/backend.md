@@ -4,17 +4,21 @@ comments: wahr
 
 # Backend
 
-## Planing
+In the backend of the Raspirus app, several components work together to provide the desired functionality. This section outlines the planning, database structure, scanner, and logging aspects of the backend.
 
-![Raspirus Activity Diagram](../../img/RaspActDark.png#only-dark) ![Raspirus Activity Diagram](../../img/RaspActLight.png#only-light) This diagram describes how the logical flow of the app work. The exact flow can change in the future, but this was the initial planing of the app. As you can see, it is rather simple with just a couple if statements and a for-each loop. The backend is actually not that hard to understand, the complicated part is the more in-depth part of how to manage the database, scan files, create the hash and most importantly, communicate the result to the frontend by emitting signals.
+## Planning
+
+The activity diagrams below illustrate the logical flow of the app. While the exact flow may evolve over time, these diagrams represent the initial planning of the app. The backend follows a relatively straightforward design, utilizing if statements and a for-each loop. The complexity lies in managing the database, scanning files, creating hashes, and communicating the results to the frontend through signal emissions.
+
+Activity Diagram: ![Raspirus Activity Diagram - Dark Mode](../../img/RaspActDark.png#only-dark) ![Raspirus Activity Diagram - Light Mode](../../img/RaspActLight.png#only-light)
 
 ## Database
 
-The Database consists of a single big file with mainly two columns. This file is generated at runtime and can be updated with a button on the GUI. At the time of writing, this file is approximately 4 GB in size and can take up to an hour to generate. The database contains in one column all signatures as a primary key, and in the second column the name of the file they got extracted from, based on the [Virusshare database](https://virusshare.com/) file names.
+The database consists of a single large file with two main columns. This file is generated at runtime and can be updated through a button on the GUI. At the time of writing, the database file is approximately 4 GB in size and can take up to an hour to generate. The first column contains all signatures as primary keys, while the second column contains the corresponding file names extracted from the [Virusshare database](https://virusshare.com/) file names.
 
 ### Structure
 
-Here is how the database may look like:
+The database structure is as follows:
 
 | MD5 Hash                         | FileNr |
 | -------------------------------- | ------ |
@@ -23,9 +27,9 @@ Here is how the database may look like:
 | 64a613db4aa368108e6d4c15ef7f6454 | 00219  |
 | ....                             | ....   |
 
-### Initialisation
+### Initialization
 
-Here is the Rust code in the main.rs file that creates the Database:
+The following Rust code in the `main.rs` file creates the database:
 
 ```rust
 let mut use_db = "signatures.db".to_owned();
@@ -44,24 +48,26 @@ match dbfile {
 };
 ```
 
-If the specified `signatures.db` file doesn't exist, it will automatically attempt to create on and even create the necessary table. You can technically also provide your own file, just put it in the same folder as the executable. Also make sure that the table is the same.
+If the specified `signatures.db` file doesn't exist, the code will attempt to create it and the necessary table. You can also provide your own file by placing it in the same folder as the executable. Just ensure that the table structure is the same.
 
 ## Scanner
 
-The scanner class is the main function of the entire app. It takes a directory as parameter and starts scanning it. It will scan all folders and files recursively by hashing it and checking the hash in the database.
+The scanner class is the core function of the app. It takes a directory as a parameter and starts scanning it. It recursively scans all folders and files by hashing them and checking the hash in the database for matches.
 
-### Ignoring hashes (false positives)
+### Ignoring Hashes (False Positives)
 
-In the `file_scanner.rs` file, where the scanner is declared, we also have an Array that contains signatures that should be ignored. Virusshare is a databse where Hashes are mostly added, not removed, and therefore we need to do our filtering on the client-side. For example there was a hash for empty files, but in our opinion empty file should not be flagged as dangerous, so we added an excemption:
+In the `file_scanner.rs` file, where the scanner is defined, there is an array that contains signatures to be ignored. Since Virusshare primarily adds hashes and rarely removes them, we need to handle filtering on the client-side. For example, if there is a hash for empty files, we added an exemption to prevent them from being flagged as dangerous:
 
 ```rust
 let false_pos: Vec<String> = vec!["7dea362b3fac8e00956a4952a3d4f474".to_owned()];
 ```
 
-### Obfuscated mode
+### Obfuscated Mode
 
-Sometimes, for privacy reasons, you might not want to display the path and names of the found files, therefore the scanner provides a so-called 'Obfuscated mode'. Setting this to true will make the app fail immediately as soon as it finds a vairus, without scanning the entire folder, and output red or green depending on the security of the scan.
+To address privacy concerns, the scanner offers an "Obfuscated mode." When enabled, the app immediately fails upon finding a virus without scanning the entire folder
+
+. It outputs red or green depending on the security of the scan, without revealing the path and names of the detected files.
 
 ## Logging
 
-The app also has a logger that keeps track of issues or warnings during the execution of the app. Sadly this only works in `dev` or `debug` mode. When packing ito an executable the logger is lost as it gets stripped away for better performance. We are nonetheless working on bringing it back to life in the future.
+The app incorporates a logger that tracks issues or warnings during execution. However, the logger only functions in `dev` or `debug` mode. When packing the app into an executable, the logger is stripped away for improved performance. Efforts are underway to reintroduce logging functionality in the future.
