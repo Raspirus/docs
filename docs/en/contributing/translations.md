@@ -16,7 +16,7 @@ Each language has its own translation file in JSON format. The app loads the req
 
 ### Translation Service
 
-To streamline the translation process and provide a better experience for translators, we plan to integrate an external translation service. This service would enable translators to focus solely on translating the strings and provide an overview of the progress. We are considering using [Crowdin](https://crowdin.com/) as the preferred translation service. However, the setup for this option is still being worked on, and it will be added in the future as the team expands and we have more concrete plans.
+To streamline the translation process and provide a better experience for translators, we plan to integrate an external translation service. This service would enable translators to focus solely on translating the strings and provide an overview of the progress. We are considering using [Crowdin](https://crowdin.com/project/raspirus) as the preferred translation service. However, the setup for this option is still being worked on, and it will be added in the future as the team expands and we have more concrete plans.
 
 ## Translating Documentation
 
@@ -29,7 +29,7 @@ The documentation itself also requires translations to make it accessible to use
 5. Finally, open a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) to the original repository, proposing your changes to be added to the main project.
 6. A member of our team will review your translations and, if accepted, merge them into the main project.
 
-We understand that this manual process might be cumbersome, but rest assured that in the future, we plan to integrate an external service like [Crowdin](https://crowdin.com/). This service will simplify the translation workflow, allowing you to focus solely on your translations without any distractions.
+We understand that this manual process might be cumbersome, but rest assured that in the future, we plan to integrate an external service like [Crowdin](https://crowdin.com/project/raspirus). This service will simplify the translation workflow, allowing you to focus solely on your translations without any distractions.
 
 We appreciate your contribution to making the app accessible to a global audience through your translations. Thank you for your support!
 
