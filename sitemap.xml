@@ -109,6 +109,15 @@
          
     </url>
     <url>
+         <loc>Nonedevelopers/cross-compile/</loc>
+         <lastmod>2023-06-21</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/developers/cross-compile/"/>
+         <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/cross-compile/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="Noneit/developers/cross-compile/"/>
+         
+    </url>
+    <url>
          <loc>Nonedevelopers/frontend/</loc>
          <lastmod>2023-06-21</lastmod>
          <changefreq>daily</changefreq>
