@@ -1,7 +1,7 @@
 site_name: Raspirus docs
 repo_url: https://github.com/Raspirus/Raspirus
 repo_name: Raspirus
-edit_uri: https://github.com/Raspirus/docs
+edit_uri: https://github.com/Raspirus/docs/docs
 site_description: Documentation and guides of the Raspirus project
 site_author: Benjamin Demetz
 
@@ -75,6 +75,6 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/Benben377
     - icon: fontawesome/solid/paper-plane
-      link: mailto:demetzbenjamin@duck.com
+      link: mailto:raspirus.dev@gmail.com
 
 copyright: Copyright &copy; 2022 - 2023 Raspirus Project
