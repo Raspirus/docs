@@ -42,6 +42,14 @@ theme:
     - search.suggest
     - toc.integrate
 
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 plugins:
   - i18n:
       default_language: en

@@ -1,16 +1,5 @@
 # GUIDES
 
-Headings in the navbar:
-- HOME
-- GUIDES
-- DEVELOPERS
-- CONTRIBUTING
-- FAQ
-- SCREENSHOTS
-- STARS (list of contributors)
-
-
-
 ## Documentation
 - Setup
 - Exporting to PDF
