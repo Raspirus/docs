@@ -25,6 +25,11 @@ Getting started with Raspirus is a breeze. Follow these simple steps:
 1. Visit our [website](https://raspirus.deno.dev) or head to the [GitHub release page](https://github.com/Raspirus/Raspirus/releases/latest).
 2. Download the executable that matches your operating system.
 
+!!! note
+
+    If you plan to use Raspirus on the Raspberry        Pi as a standalone application, we have a [dedicated guide]() for it.
+
+
 ### For Developers
 
 Are you a developer looking to set up Raspirus? We've got you covered. Check out our comprehensive guides for various operating systems in the [Developers section](https://raspirus.github.io/docs/developers).
