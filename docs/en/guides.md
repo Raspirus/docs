@@ -49,6 +49,10 @@ For translations of this documentation, visit [Crowdin](https://crowdin.com/proj
 
 ### Scanning Compressed Files
 
+!!! note
+
+    This option is not yet available for the Raspberry Pi. see why in the [FAQ section](https://raspirus.github.io/docs/faq)
+
 While Raspirus defaults to scanning folders, you can alter this behavior via the settings page. By toggling a switch, you can scan individual files, including compressed ones. It's important to note that only one file can be scanned at a time.
 
 ### Navigating Logs and Configurations
