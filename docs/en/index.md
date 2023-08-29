@@ -27,7 +27,7 @@ Getting started with Raspirus is a breeze. Follow these simple steps:
 
 !!! note
 
-    If you plan to use Raspirus on the Raspberry        Pi as a standalone application, we have a [dedicated guide]() for it.
+    If you plan to use Raspirus on the Raspberry Pi as a standalone application, we have a [dedicated guide](https://raspirus.github.io/docs/guides#Raspberry-Pi) for it.
 
 
 ### For Developers
