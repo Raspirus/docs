@@ -50,6 +50,8 @@
       
     
     
+      <link rel="stylesheet" href="../style.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -336,7 +338,7 @@
   
     
   
-  Guides
+  GUIDES
 
       </a>
     </li>
@@ -519,7 +521,7 @@
         
   
   <span class="md-ellipsis">
-    Guides
+    GUIDES
   </span>
   
 
@@ -598,15 +600,15 @@
 
 
 <h1 id="faq">FAQ</h1>
-<details class="question">
-<summary>App crahes when updating</summary>
+<details class="question" open="open">
+<summary>App crashes when updating</summary>
 <p>On Windows, it has been observed that the app crashes when attempting to update the database. We are aware of this issue and actively working to resolve it. The problem arises because the update function requires administrative privileges, which Windows does not automatically provide. To temporarily resolve this issue, you can execute the app with administrative privileges. Right-click on the app and select "Run as administrator" to launch it with the necessary privileges.</p>
 </details>
-<details class="question">
+<details class="question" open="open">
 <summary>Where does the Raspirus logo come from?</summary>
 <p>The logo of the Raspirus app features a red monster named Stuart, who is designed to represent a virus-eating creature. The logo was generated using <a href="https://openai.com/product/dall-e-2">DALL-E</a>, along with creative image editing and merging. Stuart is a friendly monster, except when he's hungry for viruses. You can find additional media and documents in the <a href="https://github.com/Raspirus/media">dedicated repository</a>. Feel free to use these images to create your own artwork and share them in the <a href="https://github.com/orgs/Raspirus/discussions">discussion boards</a>.</p>
 </details>
-<details class="question">
+<details class="question" open="open">
 <summary>My VScode setup is giving me issues</summary>
 <p>The Rust Analyzer plugin in Visual Studio Code searches for a <code>Cargo.toml</code> file in the current directory or its parent directory. To address this issue, you can add an option to the plugin settings and specify the location of your <code>Cargo.toml</code> file.</p>
 <p>As mentioned in <a href="https://github.com/rust-lang/rust-analyzer/issues/2649#issuecomment-691582605">this comment</a>, you can add the following lines to the end of your plugin settings JSON. Afterward, restart the Rust Analyzer for the modifications to take effect.</p>
@@ -617,11 +619,11 @@
 <span class="p">}</span>
 </code></pre></div>
 </details>
-<details class="question">
+<details class="question" open="open">
 <summary>Can't select directories/files</summary>
 <p>Unfortunately, as of <a href="https://github.com/tauri-apps/tauri/issues/5405">this issue</a> with Tauri, we currently can't allow users to select both files and folders. To switch between selecting a single file or folder, you need to change it in the Raspirus settings. There you will find a switch for it.</p>
 </details>
-<details class="question">
+<details class="question" open="open">
 <summary>What is obfuscated mode?</summary>
 <p>Raspirus was originally intended for enterprise usage and therefore needed to be privacy-friendly. To ensure that, it added the "Obfuscation Mode", which will hide everything, detect malware faster and only display: "Malware found" or "No malware found". It is on by default, so if you want to know a bit more about your scan, you should probably deactivate it. You can do so in the settings.</p>
 </details>
@@ -733,13 +735,13 @@
         
         
           
-          <a href="../guides/" class="md-footer__link md-footer__link--next" aria-label="Next: Guides" rel="next">
+          <a href="../guides/" class="md-footer__link md-footer__link--next" aria-label="Next: GUIDES" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Guides
+                GUIDES
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -50,6 +50,8 @@
       
     
     
+      <link rel="stylesheet" href="../../style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -336,7 +338,7 @@
   
     
   
-  Guides
+  GUIDES
 
       </a>
     </li>
@@ -584,7 +586,7 @@
         
   
   <span class="md-ellipsis">
-    Guides
+    GUIDES
   </span>
   
 
@@ -664,7 +666,22 @@
 
 <h1 id="developers">DEVELOPERS</h1>
 <h2 id="navigating-the-architecture">Navigating the Architecture</h2>
-<p><a class="glightbox" href="link_to_graph_image" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Raspirus Architecture Graph" src="link_to_graph_image" /></a></p>
+<pre class="mermaid"><code>graph TB
+     A[Start] --&gt; B{Scan location specified?};
+     B --&gt; |Yes| C[Start scan];
+     C --&gt; |Start Loop| D[File found];
+     D --&gt; E[Create Hash];
+     E --&gt; F[Compare Hash];
+     F --&gt; G{Hash found in DB?};
+     G --&gt; |Yes| H[Flag as Malware];
+     G --&gt; |No| I[Flag as Safe];
+     H &amp; I --&gt; J[Continue iteration];
+     J --&gt; K{Last file?};
+     K --&gt; |Yes| L[Stop scanner];
+     L --&gt; M[Display Results];
+     K --&gt; |No| N[Start again];
+     N --&gt; D;
+     B --&gt; |No| O[Stop]</code></pre>
 <p>Raspirus is structured into two integral components: frontend and backend. These components, built using distinct languages and frameworks, are interconnected via a third-party framework called <a href="https://tauri.app/">Tauri</a>. This framework not only facilitates communication between the frontend and backend but also enables us to incorporate Rust functions into the frontend. Furthermore, Tauri empowers the distribution of Raspirus across various operating systems.</p>
 <h2 id="starting-your-development-journey">Starting Your Development Journey</h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">macOS</label></div>
@@ -702,7 +719,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 29, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 31, 2023</span>
       
         <br>
         Created:
