@@ -1,40 +1,45 @@
-# Home
+# HOME
 
-## Welcome to the Raspirus Documentation
 ![Full banner logo](../img/banner_logo.png)
 
-## Table of Contents:
-- [Introduzione](#introduction)
-- [Installazione](installation.md)
-- [Guide](guides.md)
-- [FAQ](faq.md)
-- [Usage and Diagrams](usage.md)
-- [Developers Section](developers/index.md)
-    - [Frontend (Next.js)](developers/frontend.md)
-    - [Backend (Rust)](developers/backend.md)
-- [Contributing](contributing/index.md)
-    - [Coding](contributing/coding.md)
-    - [Traduzioni](contributing/translations.md)
-
 ## Introduzione
-Welcome to the Raspirus project documentation. This repository serves as a comprehensive guide to the Raspirus project. Please note that the project is currently under development, and while we strive for accuracy, some information may be subject to change.
 
-## Related Projects
-Raspirus is a simple and efficient virus scanner, specifically designed for compatibility with single-board computers like the Raspberry Pi. While there are several similar projects available, Raspirus stands out for its unique features and advantages. Here are some notable comparisons:
+Raspirus: Empowering Your Malware Protection
 
-- [Clam AV](https://www.clamav.net/): Clam AV is an open-source antivirus program that can also perform file and folder scanning similar to Raspirus. However, it is known to be resource-intensive and relatively slow. Due to its high memory requirements, it may not be suitable for deployment on low-spec systems like the Raspberry Pi. Nonetheless, Clam AV remains a powerful open-source tool.
+Welcome to the official documentation for Raspirus, your lightweight signature-based malware scanner. Originally designed to scan attached USB drives using a Raspberry Pi, Raspirus has evolved into a versatile tool capable of scanning local files and folders as well. Some of its standout features include:
 
-- [Windows Defender](https://www.microsoft.com/en-us/windows/comprehensive-security): Windows Defender is a comprehensive security program for Windows that continuously scans the entire system for threats. However, this continuous scanning process can significantly impact system performance. Additionally, Windows Defender is limited to the Windows operating system, whereas Raspirus is designed to be cross-platform, offering compatibility with various operating systems.
+- **Cost-Free Protection:** Raspirus operates solely on donations, ensuring top-notch protection without any financial burden.
+- **Tailored Signature Detection:** Our custom signature-based approach guarantees accurate identification of malware.
+- **Comprehensive File Scans:** Raspirus can efficiently scan compressed files, ensuring no threat goes undetected.
+- **Privacy Prioritized:** Offering a privacy-friendly option, Raspirus keeps your personal information secure.
+- **Cross-Platform Convenience:** Enjoy the benefits of Raspirus protection on a variety of operating systems.
+- **Swift and Dependable:** Count on Raspirus for fast and reliable malware detection.
+- **Sleek Modern Interface:** With user-friendliness at its core, Raspirus boasts a beautiful and intuitive UI.
 
-- [Bitdefender](https://www.bitdefender.com/): Bitdefender is a feature-rich commercial antivirus software solution. While it offers robust security capabilities, it comes at a cost. Raspirus, on the other hand, is committed to being a free and open-source project. We believe that security should be accessible to all users without the need for financial barriers. Furthermore, Raspirus aims to foster a collaborative community, leveraging the collective expertise of developers worldwide.
+## Getting Started
 
-While there are numerous other antivirus solutions available, it's important to note that Raspirus does not seek to outperform or compete directly with other antivirus software. Instead, its primary focus is to excel at a specific task: comparing file hashes against a list of signatures.
+### For Regular Users
 
-Key features of Raspirus include:
-- Free and open-source nature
-- Transparent codebase for community review and scrutiny
-- Emphasis on community-driven growth and development
-- Cross-platform compatibility as a standard feature
-- Lightweight and fast performance, ensuring usability even on low-spec devices
+Getting started with Raspirus is a breeze. Follow these simple steps:
 
-We invite you to explore the documentation further to gain a comprehensive understanding of the Raspirus project and its capabilities.
+1. Visit our [website](https://raspirus.deno.dev) or head to the [GitHub release page](https://github.com/Raspirus/Raspirus/releases/latest).
+2. Download the executable that matches your operating system.
+
+!!! note
+
+    If you plan to use Raspirus on the Raspberry Pi as a standalone application, we have a [dedicated guide](https://raspirus.github.io/docs/guides#Raspberry-Pi) for it.
+
+
+### For Developers
+
+Are you a developer looking to set up Raspirus? We've got you covered. Check out our comprehensive guides for various operating systems in the [Developers section](https://raspirus.github.io/docs/developers).
+
+## Questions?
+
+Got questions about Raspirus? We're here to help!
+
+- Visit our [FAQ section](https://raspirus.github.io/docs/faq) for answers to common queries.
+- Join our thriving community on the [Discord server](https://discord.gg/Vx7fW9PA8B) to engage with fellow users.
+- If you've encountered a bug, browse the GitHub issues to see if it's already reported.
+
+Thank you for choosing Raspirus for your malware protection needs. Together, we're making the digital world safer for everyone.
