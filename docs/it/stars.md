@@ -2,7 +2,7 @@
 
 ## Sponsors
 
-<span>
+<div>
   <a href="https://github.com/Benji377" target="_blank" class="contributor-card">
     <img src="https://avatars.githubusercontent.com/u/50681275?v=4" alt="Profile Image">
     <div class="contributor-info">
@@ -10,11 +10,11 @@
       <p>❤️ Maintainer</p>
     </div>
   </a>
-</span>
+</div>
 
 ## Contributors
 
-<span>
+<div>
   <a href="https://github.com/mwallnoefer" target="_blank" class="contributor-card">
     <img src="https://avatars.githubusercontent.com/u/7541399?v=4?s=100" alt="Profile Image">
     <div class="contributor-info">
@@ -22,9 +22,9 @@
       <p>🧑‍🏫 Mentoring</p>
     </div>
   </a>
-</span>
+</div>
 
-<span>
+<div>
   <a href="https://github.com/GamingGuy003" target="_blank" class="contributor-card">
     <img src="https://avatars.githubusercontent.com/u/77393763?v=4?s=100" alt="Profile Image">
     <div class="contributor-info">
@@ -32,9 +32,9 @@
       <p>💻 Backend Developer</p>
     </div>
   </a>
-</span>
+</div>
 
-<span>
+<div>
   <a href="https://github.com/zja203" target="_blank" class="contributor-card">
     <img src="https://avatars.githubusercontent.com/u/38058764?v=4?s=100" alt="Profile Image">
     <div class="contributor-info">
@@ -42,9 +42,9 @@
       <p>📦 Linux Tester</p>
     </div>
   </a>
-</span>
+</div>
 
-<span>
+<div>
   <a href="https://github.com/pguyot" target="_blank" class="contributor-card">
     <img src="https://avatars.githubusercontent.com/u/168407?v=4?s=100" alt="Profile Image">
     <div class="contributor-info">
@@ -52,11 +52,11 @@
       <p>💻 GitHub Action</p>
     </div>
   </a>
-</span>
+</div>
 
 ## Special Credits
 
-<span>
+<div>
   <a href="https://github.com/Lairex59" target="_blank" class="contributor-card">
     <img src="https://avatars.githubusercontent.com/u/74677245?v=4" alt="Profile Image">
     <div class="contributor-info">
@@ -64,10 +64,10 @@
       <p>💡 Ideas and Support</p>
     </div>
   </a>
-</span>
+</div>
 
 <!--
-<span>
+<div>
 <a href="USER_PROFILE_URL" target="_blank" class="contributor-card">
   <img src="PROFILE_IMAGE_URL" alt="Profile Image">
   <div class="contributor-info">
@@ -75,5 +75,5 @@
     <p>Short description about the contributor.</p>
   </div>
 </a>
-</span>
+</div>
 -->
