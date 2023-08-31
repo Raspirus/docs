@@ -57,24 +57,33 @@ While Raspirus defaults to scanning folders, you can alter this behavior via the
 
 ### Navigating Logs and Configurations
 
-In the event of unexpected occurrences or sudden app crashes, examining logs and configurations can provide insights. Locate these files in the following folders, based on your operating system:
-{COMING SOON}
+In the event of unexpected occurrences or sudden app crashes, examining logs and configurations can provide insights. Locate these files in the following folders, based on your operating system. The [ProjectDirs crate](https://docs.rs/directories-next/latest/directories_next/struct.ProjectDirs.html) stores them at the following location:
+
+**Config file:**
+
+|Platform | Value                                                                      | Example                                                       |
+| ------- | -------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Linux   | `$XDG_DATA_HOME`/`_project_path_` or `$HOME`/.local/share/`_project_path_` | /home/alice/.local/share/barapp                               |
+| macOS   | `$HOME`/Library/Application Support/`_project_path_`                       | /Users/Alice/Library/Application Support/com.Foo-Corp.Bar-App |
+| Windows | `{FOLDERID_RoamingAppData}`\\`_project_path_`\\data                        | C:\Users\Alice\AppData\Roaming\Foo Corp\Bar App\data          |
+
+**Log files:**
+|Platform | Value                                                                      | Example                                                       |
+| ------- | -------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Linux   | `$XDG_DATA_HOME`/`_project_path_` or `$HOME`/.local/share/`_project_path_` | /home/alice/.local/share/barapp                               |
+| macOS   | `$HOME`/Library/Application Support/`_project_path_`                       | /Users/Alice/Library/Application Support/com.Foo-Corp.Bar-App |
+| Windows | `{FOLDERID_LocalAppData}`\\`_project_path_`\\data                          | C:\Users\Alice\AppData\Local\Foo Corp\Bar App\data            |
+    
 
 Ensure to include these files when reporting bugs, as they greatly assist in troubleshooting.
 
 ## GitHub Integration
 
 ### Enriching the Signature Database
-
-Stay tuned for the upcoming release on this topic.
-
-### Compiling for Multiple Platforms
-
-Stay tuned for the upcoming release on this topic.
+COMING SOON
 
 ## Raspberry Pi Deployment
 
-Originally tailored for standalone Raspberry Pi deployment with touchscreen functionality (akin to kiosk mode), this project's primary purpose was scanning attached USB drives. While the project's scope has expanded, this feature remains intact. Follow this guide for simple step-by-step instructions:
-{COMING SOON}
+Originally tailored for standalone Raspberry Pi deployment with touchscreen functionality (akin to kiosk mode), this project's primary purpose was scanning attached USB drives. While the project's scope has expanded, this feature remains intact. Follow the [guide on Tauri](https://tauri.app/v1/guides/building/linux#manual-compilation) and if you encounter any issue with it, make sure to let us know.
 
 Thank you for choosing Raspirus as your malware protection solution. These comprehensive guides will ensure your experience is seamless and efficient.

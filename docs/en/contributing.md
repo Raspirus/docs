@@ -7,6 +7,8 @@ As a developer looking to amplify Raspirus's functionality, your contributions a
 - **Check Existing Issues:** Before diving in, peruse existing issues to avoid creating duplicates. If none exist, feel free to open a new one.
 - **Documentation is Key:** Always ensure your code is well-documented. Remember to adapt tests to maintain code integrity.
 
+- [Read the Code of Conduct](../../CODE_OF_CONDUCT.md)
+
 ## Enrich the Documentation
 
 Raspirus's documentation is crafted using Markdown and powered by [MkDocs](https://www.mkdocs.org/user-guide/installation/) and Python. To contribute to the documentation:
