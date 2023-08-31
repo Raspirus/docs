@@ -648,7 +648,7 @@
                   
 
   
-    <a href="https://github.com/Raspirus/docs/docs/en/developers.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Raspirus/docs/tree/main/docs/en/developers.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -657,7 +657,7 @@
     
       
     
-    <a href="https://github.com/Raspirus/docs/docs/en/developers.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/Raspirus/docs/tree/main/docs/en/developers.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
@@ -666,7 +666,7 @@
 
 <h1 id="developers">DEVELOPERS</h1>
 <h2 id="navigating-the-architecture">Navigating the Architecture</h2>
-<pre class="mermaid"><code>graph TB
+<pre class="mermaid"><code>graph LR
      A[Start] --&gt; B{Scan location specified?};
      B --&gt; |Yes| C[Start scan];
      C --&gt; |Start Loop| D[File found];
@@ -687,25 +687,79 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">macOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>An in-depth guide for Windows users is currently in the works.
- - Stay tuned for updates.</p>
+<ol>
+<li>Clone the repository</li>
+<li>Install <a href="https://tauri.app/v1/guides/getting-started/prerequisites#setting-up-windows">Tauri and Prerequisites</a></li>
+<li>Install <a href="https://nodejs.org/en/download">npm</a></li>
+<li>Install <a href="https://nextjs.org/docs/getting-started/installation#manual-installation">Next.js</a> with <code>npm install next@latest react@latest react-dom@latest</code></li>
+<li>Install npm dependencies with: <code>npm i</code></li>
+<li>Start development with <code>cargo tauri dev</code></li>
+<li>or build Raspirus with <code>cargo tauri build</code></li>
+</ol>
 </div>
 <div class="tabbed-block">
-<p>If you're using Linux, follow the provided Makefile for a seamless start.
- - Utilize the provided Makefile for guidance.</p>
+<ol>
+<li>Clone the Repository</li>
+<li>Execute <code>make install</code></li>
+<li>Run the application with <code>raspirus</code></li>
+</ol>
 </div>
 <div class="tabbed-block">
-<p>Detailed instructions for macOS users are coming soon.
- - Keep an eye out for upcoming information.</p>
+<ol>
+<li>Clone the repository</li>
+<li>Install <a href="https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos">Tauri and Prerequisites</a></li>
+<li>Install <a href="https://nodejs.org/en/download">npm</a></li>
+<li>Install <a href="https://nextjs.org/docs/getting-started/installation#manual-installation">Next.js</a> with <code>npm install next@latest react@latest react-dom@latest</code></li>
+<li>Install npm dependencies with: <code>npm i</code></li>
+<li>Start development with <code>cargo tauri dev</code></li>
+<li>or build Raspirus with <code>cargo tauri build</code></li>
+</ol>
 </div>
 </div>
 </div>
 <p>Should you encounter any hiccups during your initial run or build, ensure that you've followed each step diligently. Confirm the accurate creation of both logs and config files.</p>
 <h2 id="exploring-the-backend">Exploring the Backend</h2>
-<p><a class="glightbox" href="link_to_backend_graph_image" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Backend Structure Graph" src="link_to_backend_graph_image" /></a></p>
+<pre class="mermaid"><code>classDiagram
+     Main &lt;|-- DBOps
+     Main &lt;|-- Configs
+     Main &lt;|-- FileLogs
+     Main &lt;|-- Scanner
+     Main: +Config config_file
+
+     class DBOps {
+          +Connection db_conn
+          +String db_file
+          +TauriWindow t_win
+          +new()
+          +update_db()
+          +hash_exists()
+     }
+
+     class Configs {
+          +Data data
+          +new()
+          +save()
+          +load()
+     }
+
+     class FileLogs {
+          +File file
+          +log()
+          +create_file()
+     }
+
+     class Scanner {
+          +String scan_loc
+          +DbOps db_ops
+          +Vec malware_list
+          +search_files()
+          +create_hash()
+          +get_folder_size()
+     }</code></pre>
 <p>The backend, an essential cog in the Raspirus machinery, is meticulously crafted in Rust for superior performance. The primary file houses functions accessible from the frontend, which must yield JSON-compatible outcomes. For a detailed breakdown, reference the graph above outlining the backend's modular arrangement.</p>
 <h2 id="unpacking-the-frontend">Unpacking the Frontend</h2>
-<p><a class="glightbox" href="link_to_frontend_graph_image" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Frontend Structure Graph" src="link_to_frontend_graph_image" /></a></p>
+<iframe title="The original Raspirus project on Figma" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpkgpwieNbhYiOi4Gz6Uyt6%2FRaspirus%3Fnode-id%3D0%253A1%26t%3DGr4YG3Ynv24YVlz2-1" allowfullscreen></iframe>
+
 <p>Our frontend, developed with JavaScript via the Next.js framework, emphasizes user-friendliness and functionality. Comprising components and pages, it mirrors the simplicity and robustness of Next.js. Refer to the illustrated graph above for an approximate visual representation of the frontend's architecture.</p>
 <h2 id="evaluating-test-coverage">Evaluating Test Coverage</h2>
 <ul>
