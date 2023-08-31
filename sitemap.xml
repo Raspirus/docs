@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
          <loc>None.</loc>
-         <lastmod>2023-08-15</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
          <xhtml:link rel="alternate" hreflang="de" href="Nonede/"/>
@@ -10,8 +10,26 @@
          
     </url>
     <url>
+         <loc>Nonecontributing/</loc>
+         <lastmod>2023-08-31</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/contributing/"/>
+         <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/"/>
+         
+    </url>
+    <url>
+         <loc>Nonedevelopers/</loc>
+         <lastmod>2023-08-31</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/developers/"/>
+         <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="Noneit/developers/"/>
+         
+    </url>
+    <url>
          <loc>Nonefaq/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/faq/"/>
          <xhtml:link rel="alternate" hreflang="de" href="Nonede/faq/"/>
@@ -20,7 +38,7 @@
     </url>
     <url>
          <loc>Noneguides/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/"/>
          <xhtml:link rel="alternate" hreflang="de" href="Nonede/guides/"/>
@@ -28,102 +46,21 @@
          
     </url>
     <url>
-         <loc>Noneinstallation/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <loc>Nonescreenshots/</loc>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/installation/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/installation/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/installation/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/screenshots/"/>
+         <xhtml:link rel="alternate" hreflang="de" href="Nonede/screenshots/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="Noneit/screenshots/"/>
          
     </url>
     <url>
-         <loc>Noneusage/</loc>
-         <lastmod>2023-08-15</lastmod>
+         <loc>Nonestars/</loc>
+         <lastmod>2023-08-31</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/usage/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/usage/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/usage/"/>
-         
-    </url>
-    <url>
-         <loc>Nonecontributing/</loc>
-         <lastmod>2023-08-15</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/contributing/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/"/>
-         
-    </url>
-    <url>
-         <loc>Nonecontributing/CODE_OF_CONDUCT/</loc>
-         <lastmod>2023-08-15</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/contributing/CODE_OF_CONDUCT/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/CODE_OF_CONDUCT/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/CODE_OF_CONDUCT/"/>
-         
-    </url>
-    <url>
-         <loc>Nonecontributing/artwork/</loc>
-         <lastmod>2023-08-15</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/contributing/artwork/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/artwork/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/artwork/"/>
-         
-    </url>
-    <url>
-         <loc>Nonecontributing/coding/</loc>
-         <lastmod>2023-08-15</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/contributing/coding/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/coding/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/coding/"/>
-         
-    </url>
-    <url>
-         <loc>Nonecontributing/translations/</loc>
-         <lastmod>2023-08-15</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/contributing/translations/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/translations/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/translations/"/>
-         
-    </url>
-    <url>
-         <loc>Nonedevelopers/</loc>
-         <lastmod>2023-08-15</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/developers/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/developers/"/>
-         
-    </url>
-    <url>
-         <loc>Nonedevelopers/backend/</loc>
-         <lastmod>2023-08-15</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/developers/backend/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/backend/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/developers/backend/"/>
-         
-    </url>
-    <url>
-         <loc>Nonedevelopers/cross-compile/</loc>
-         <lastmod>2023-08-15</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/developers/cross-compile/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/cross-compile/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/developers/cross-compile/"/>
-         
-    </url>
-    <url>
-         <loc>Nonedevelopers/frontend/</loc>
-         <lastmod>2023-08-15</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/developers/frontend/"/>
-         <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/frontend/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/developers/frontend/"/>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/stars/"/>
+         <xhtml:link rel="alternate" hreflang="de" href="Nonede/stars/"/>
+         <xhtml:link rel="alternate" hreflang="it" href="Noneit/stars/"/>
          
     </url>
 </urlset>
