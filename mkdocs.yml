@@ -1,7 +1,7 @@
 site_name: Raspirus docs
 repo_url: https://github.com/Raspirus/Raspirus
 repo_name: Raspirus
-edit_uri: https://github.com/Raspirus/docs/docs
+edit_uri: https://github.com/Raspirus/docs/tree/main/docs
 site_description: Documentation and guides of the Raspirus project
 site_author: Benjamin Demetz
 

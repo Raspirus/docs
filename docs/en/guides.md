@@ -68,6 +68,7 @@ In the event of unexpected occurrences or sudden app crashes, examining logs and
 | Windows | `{FOLDERID_RoamingAppData}`\\`_project_path_`\\data                        | C:\Users\Alice\AppData\Roaming\Foo Corp\Bar App\data          |
 
 **Log files:**
+
 |Platform | Value                                                                      | Example                                                       |
 | ------- | -------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | Linux   | `$XDG_DATA_HOME`/`_project_path_` or `$HOME`/.local/share/`_project_path_` | /home/alice/.local/share/barapp                               |
