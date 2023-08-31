@@ -7,7 +7,7 @@ As a developer looking to amplify Raspirus's functionality, your contributions a
 - **Check Existing Issues:** Before diving in, peruse existing issues to avoid creating duplicates. If none exist, feel free to open a new one.
 - **Documentation is Key:** Always ensure your code is well-documented. Remember to adapt tests to maintain code integrity.
 
-- [Read the Code of Conduct](../../CODE_OF_CONDUCT.md)
+- [Read the Code of Conduct](https://github.com/Raspirus/docs/blob/main/CODE_OF_CONDUCT.md)
 
 ## Enrich the Documentation
 
