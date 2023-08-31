@@ -2,7 +2,25 @@
 
 ## Navigating the Architecture
 
-![Raspirus Architecture Graph](link_to_graph_image)
+``` mermaid
+graph TB
+     A[Start] --> B{Scan location specified?};
+     B --> |Yes| C[Start scan];
+     C --> |Start Loop| D[File found];
+     D --> E[Create Hash];
+     E --> F[Compare Hash];
+     F --> G{Hash found in DB?};
+     G --> |Yes| H[Flag as Malware];
+     G --> |No| I[Flag as Safe];
+     H & I --> J[Continue iteration];
+     J --> K{Last file?};
+     K --> |Yes| L[Stop scanner];
+     L --> M[Display Results];
+     K --> |No| N[Start again];
+     N --> D;
+     B --> |No| O[Stop]
+```
+
 
 Raspirus is structured into two integral components: frontend and backend. These components, built using distinct languages and frameworks, are interconnected via a third-party framework called [Tauri](https://tauri.app/). This framework not only facilitates communication between the frontend and backend but also enables us to incorporate Rust functions into the frontend. Furthermore, Tauri empowers the distribution of Raspirus across various operating systems.
 

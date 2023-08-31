@@ -1,4 +1,4 @@
-# Guides
+# GUIDES
 
 ## Setting Up Your Local Documentation
 

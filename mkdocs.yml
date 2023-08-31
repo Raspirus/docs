@@ -43,12 +43,15 @@ theme:
     - toc.integrate
 
 markdown_extensions:
-  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - i18n:
@@ -84,5 +87,8 @@ extra:
       link: https://discord.gg/Vx7fW9PA8B
     - icon: fontawesome/solid/paper-plane
       link: mailto:raspirus.dev@gmail.com
+
+extra_css:
+  - style.css
 
 copyright: Copyright &copy; 2022 - 2023 Raspirus Project
