@@ -42,6 +42,14 @@ theme:
     - search.suggest
     - toc.integrate
 
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 plugins:
   - i18n:
       default_language: en
@@ -72,8 +80,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Raspirus
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/Benben377
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/Vx7fW9PA8B
     - icon: fontawesome/solid/paper-plane
       link: mailto:raspirus.dev@gmail.com
 
