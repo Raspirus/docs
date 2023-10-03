@@ -9,7 +9,6 @@
   
   .contributor-card a {
     display: flex;
-    width: 100%;
     text-decoration: none; /* Remove underline from the link */
     color: inherit; /* Inherit text color from parent */
   }
