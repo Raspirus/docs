@@ -11,6 +11,15 @@
     </div>
   </a>
 </div>
+<div class="contributor-card">
+  <a href="https://github.com/tuchaVshortah" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/71591558?v=4" alt="Profile Image">
+    <div class="contributor-info">
+      <h3>Nurkanat Baysenkul </h3>
+      <p>💰 Sponsor</p>
+    </div>
+  </a>
+</div>
 
 ## Contributors
 
