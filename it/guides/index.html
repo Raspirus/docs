@@ -285,7 +285,7 @@
   
     
   
-  CONTRIBUTING
+  CONTRIBUTO
 
       </a>
     </li>
@@ -302,7 +302,7 @@
   
     
   
-  DEVELOPERS
+  SVILUPPI
 
       </a>
     </li>
@@ -372,7 +372,7 @@
   
     
   
-  STARS
+  STELLE
 
       </a>
     </li>
@@ -456,7 +456,7 @@
         
   
   <span class="md-ellipsis">
-    CONTRIBUTING
+    CONTRIBUTO
   </span>
   
 
@@ -476,7 +476,7 @@
         
   
   <span class="md-ellipsis">
-    DEVELOPERS
+    SVILUPPI
   </span>
   
 
@@ -558,6 +558,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#impostazione-della-documentazione-locale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impostazione Della Documentazione Locale
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#export-to-pdf" class="md-nav__link">
     <span class="md-ellipsis">
       Export to PDF
@@ -570,6 +579,72 @@
   <a href="#traduzioni" class="md-nav__link">
     <span class="md-ellipsis">
       Traduzioni
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scanner-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scanner Insights
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scanner Insights">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scansione-dei-file-compressi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scansione Dei File Compressi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigazione-di-registri-e-configurazioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigazione di registri e configurazioni
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arricchire-il-database-delle-firme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arricchire il database delle firme
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribuzione-raspberry-pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribuzione Raspberry Pi
     </span>
   </a>
   
@@ -614,7 +689,7 @@
         
   
   <span class="md-ellipsis">
-    STARS
+    STELLE
   </span>
   
 
@@ -655,20 +730,112 @@
 
 
 <h1 id="guide">Guide</h1>
-<p>Here you will find helpful guides on how to export the documentation to PDF format and how to contribute translations to this project. If you have any additional requests for guides, please leave a comment below!</p>
+<h2 id="impostazione-della-documentazione-locale">Impostazione Della Documentazione Locale</h2>
+<p>Impostare facilmente la documentazione sulla vostra macchina con questi semplici passi:</p>
+<ol>
+<li>Clone this repository by following the instructions on <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">GitHub</a>.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Raspirus/docs.git
+</code></pre></div>
+<ol>
+<li>Navigate to the cloned directory and install the required dependencies.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>You<span class="w"> </span>can<span class="w"> </span>install<span class="w"> </span>the<span class="w"> </span>dependencies<span class="w"> </span>by<span class="w"> </span>running<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>command:<span class="w"> </span><span class="sb">`</span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="sb">`</span>.
+</code></pre></div>
+<ol>
+<li>Avvia il progetto localmente:
+   Inizia il tuo progetto locale eseguendo questo comando:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>servizio<span class="w"> </span>mkdocs
+</code></pre></div>
+<p>Questo avvierà un server di sviluppo, che ti permetterà di accedere alla documentazione tramite <a href="http://localhost:8000">http://localhost:8000</a> nel tuo browser web preferito.</p>
 <h2 id="export-to-pdf">Export to PDF</h2>
 <p>If you would like to have an offline version of this documentation in PDF format, you can follow these step-by-step instructions:</p>
 <ol>
-<li>Clone this repository by following the instructions on <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">GitHub</a>.</li>
-<li>Install the necessary requirements for the PDF conversion tool. You can find the requirements specific to your operating system <a href="https://github.com/orzih/mkdocs-with-pdf#requirements">here</a>.</li>
-<li>Navigate to the cloned directory and install the required dependencies. Please note that you will need Python3 and pip for this step. You can install the dependencies by running the following command: <code>pip install -r requirements.txt</code>.</li>
-<li>Install <a href="https://www.mkdocs.org/user-guide/installation/">mkdocs</a> and execute the build command: <code>mkdocs build</code>.</li>
-<li>If everything goes smoothly, the resulting PDF file should be located in the <code>site/pdf</code> directory with the name <code>document.pdf</code>.</li>
+<li>
+<p>Segui il processo di configurazione descritto sopra.</p>
+</li>
+<li>
+<p>Install <a href="https://www.mkdocs.org/user-guide/installation/">mkdocs</a> and execute the build command: <code>mkdocs build</code>.</p>
+</li>
+<li>
+<p>If everything goes smoothly, the resulting PDF file should be located in the <code>site/pdf</code> directory with the name <code>document.pdf</code>.</p>
+</li>
 </ol>
-<p>Please be aware that the exported PDF may have some issues with images and iFrames, but the text should be readable and suitable for sharing offline.</p>
+<p>Please be aware that the exported PDF may have some issues with images and iFrames, but the text should be readable and suitable for sharing offline. Tuttavia, il testo rimane leggibile e adatto per la condivisione offline.</p>
 <h2 id="traduzioni">Traduzioni</h2>
-<p>We welcome contributions to translate this documentation into other languages. If you are interested in translating the document, you can find the necessary information and resources at the following link: <a href="https://github.com/ultrabug/mkdocs-static-i18n">Translate this document</a>.</p>
-<p>Your contributions are highly appreciated, and they will help make this documentation more accessible to a wider audience.</p>
+<p>Per le traduzioni di questa documentazione, visita <a href="https://crowdin.com/project/raspirus">Crowdin</a>, una piattaforma di collaborazione. Le traduzioni per le stringhe dell'interfaccia utente sono gestite attraverso i file JSON. Per contribuire, crea le tue traduzioni all'interno della <a href="https://github.com/Raspirus/Raspirus/tree/main/public%2Flocales">cartella locales</a>. Mantenere l'unicità delle chiavi quando si traduce dal file <code>en.json</code>.</p>
+<h2 id="scanner-insights">Scanner Insights</h2>
+<h3 id="scansione-dei-file-compressi">Scansione Dei File Compressi</h3>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+</div>
+<div class="highlight"><pre><span></span><code>Questa opzione non è ancora disponibile per il Raspberry Pi. Scopri perché nella [sezione FAQ](https://raspirus.github.io/docs/faq)
+</code></pre></div>
+<p>Mentre Raspirus predefinito per la scansione delle cartelle, è possibile modificare questo comportamento tramite la pagina delle impostazioni. Attivando un interruttore, è possibile eseguire la scansione di singoli file, inclusi quelli compressi. È importante notare che un solo file può essere scansionato alla volta.</p>
+<h3 id="navigazione-di-registri-e-configurazioni">Navigazione di registri e configurazioni</h3>
+<p>In caso di eventi inaspettati o di crash improvvisi delle app, l'esame di registri e configurazioni può fornire approfondimenti. Individuare questi file nelle seguenti cartelle, in base al sistema operativo. Il <a href="https://docs.rs/directories-next/latest/directories_next/struct.ProjectDirs.html">ProjectDirs crate</a> li memorizza nella posizione seguente:</p>
+<p><strong>File di configurazione</strong></p>
+<table>
+<thead>
+<tr>
+<th>Piattaforma</th>
+<th>Valore</th>
+<th>Esempio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linux</td>
+<td><code>$XDG_DATA_HOME</code>/<code>_project_path_</code> o <code>$HOME</code>/.local/share/<code>_project_path_</code></td>
+<td>/home/alice/.local/share/barapp</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><code>$HOME</code>/Library/Application Support/<code>_project_path_</code></td>
+<td>/Users/Alice/Library/Application Support/com.Foo-Corp.Bar-App</td>
+</tr>
+<tr>
+<td>Finestre</td>
+<td><code>{FOLDERID_RoamingAppData}</code>\<code>_project_path_</code>\data</td>
+<td>C:\Users\Alice\AppData\Roaming\Foo Corp\Bar App\data</td>
+</tr>
+</tbody>
+</table>
+<p><strong>File di registro:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Piattaforma</th>
+<th>Valore</th>
+<th>Esempio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linux</td>
+<td><code>$XDG_DATA_HOME</code>/<code>_project_path_</code> o <code>$HOME</code>/.local/share/<code>_project_path_</code></td>
+<td>/home/alice/.local/share/barapp</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><code>$HOME</code>/Library/Application Support/<code>_project_path_</code></td>
+<td>/Users/Alice/Library/Application Support/com.Foo-Corp.Bar-App</td>
+</tr>
+<tr>
+<td>Finestre</td>
+<td><code>{FOLDERID_LocalAppData}</code>\<code>_project_path_</code>\data</td>
+<td>C:\Users\Alice\AppData\Local\Foo Corp\Bar App\data</td>
+</tr>
+</tbody>
+</table>
+<p>Assicurarsi di includere questi file durante la segnalazione di bug, in quanto aiutano notevolmente nella risoluzione dei problemi.</p>
+<h2 id="github-integration">GitHub Integration</h2>
+<h3 id="arricchire-il-database-delle-firme">Arricchire il database delle firme</h3>
+<p>COMANDO SUONO</p>
+<h2 id="distribuzione-raspberry-pi">Distribuzione Raspberry Pi</h2>
+<p>Originariamente su misura per distribuzione Raspberry Pi standalone con funzionalità touchscreen (simile alla modalità chiosco), lo scopo primario di questo progetto era la scansione delle unità USB collegate. Mentre il campo di applicazione del progetto si è ampliato, questa caratteristica rimane intatta. Segui la <a href="https://tauri.app/v1/guides/building/linux#manual-compilation">guida su Tauri</a> e, se riscontri qualche problema, assicurati di farci sapere.</p>
+<p>Grazie per aver scelto Raspirus come soluzione di protezione da malware. Queste guide complete garantiranno la vostra esperienza senza soluzione di continuità ed efficiente.</p>
 
 
 
@@ -712,55 +879,6 @@
 
 
 
-
-  <h2 id="__comments">Commenti</h2>
-  <!-- Insert generated snippet here -->
-<script src="https://giscus.app/client.js"
-        data-repo="Raspirus/docs"
-        data-repo-id="R_kgDOI6768g"
-        data-category="Documentation"
-        data-category-id="DIC_kwDOI6768s4CVgUQ"
-        data-mapping="pathname"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate" ? "dark" : "light"
-      giscus.setAttribute("data-theme", theme)
-    }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 
                 
               </article>

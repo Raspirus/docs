@@ -24,7 +24,7 @@
     
     
       
-        <title>DEVELOPERS - Raspirus docs</title>
+        <title>SVILUPPI - Raspirus docs</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#developers" class="md-skip">
+        <a href="#sviluppi" class="md-skip">
           Vai al contenuto
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DEVELOPERS
+              SVILUPPI
             
           </span>
         </div>
@@ -285,7 +285,7 @@
   
     
   
-  CONTRIBUTING
+  CONTRIBUTO
 
       </a>
     </li>
@@ -304,7 +304,7 @@
   
     
   
-  DEVELOPERS
+  SVILUPPI
 
       </a>
     </li>
@@ -372,7 +372,7 @@
   
     
   
-  STARS
+  STELLE
 
       </a>
     </li>
@@ -456,7 +456,7 @@
         
   
   <span class="md-ellipsis">
-    CONTRIBUTING
+    CONTRIBUTO
   </span>
   
 
@@ -485,7 +485,7 @@
           
   
   <span class="md-ellipsis">
-    DEVELOPERS
+    SVILUPPI
   </span>
   
 
@@ -496,7 +496,7 @@
         
   
   <span class="md-ellipsis">
-    DEVELOPERS
+    SVILUPPI
   </span>
   
 
@@ -518,45 +518,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#navigating-the-architecture" class="md-nav__link">
+  <a href="#navigare-nellarchitettura" class="md-nav__link">
     <span class="md-ellipsis">
-      Navigating the Architecture
+      Navigare nell'Architettura
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#starting-your-development-journey" class="md-nav__link">
+  <a href="#iniziare-il-tuo-viaggio-di-sviluppo" class="md-nav__link">
     <span class="md-ellipsis">
-      Starting Your Development Journey
+      Iniziare Il Tuo Viaggio Di Sviluppo
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exploring-the-backend" class="md-nav__link">
+  <a href="#esplorare-il-backend" class="md-nav__link">
     <span class="md-ellipsis">
-      Exploring the Backend
+      Esplorare il Backend
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#unpacking-the-frontend" class="md-nav__link">
+  <a href="#scompattare-frontend" class="md-nav__link">
     <span class="md-ellipsis">
-      Unpacking the Frontend
+      Scompattare Frontend
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#evaluating-test-coverage" class="md-nav__link">
+  <a href="#valutazione-della-copertura-dei-test" class="md-nav__link">
     <span class="md-ellipsis">
-      Evaluating Test Coverage
+      Valutazione Della Copertura Dei Test
     </span>
   </a>
   
@@ -641,7 +641,7 @@
         
   
   <span class="md-ellipsis">
-    STARS
+    STELLE
   </span>
   
 
@@ -681,61 +681,57 @@
   
 
 
-<h1 id="developers">DEVELOPERS</h1>
-<h2 id="navigating-the-architecture">Navigating the Architecture</h2>
-<pre class="mermaid"><code>graph LR
-     A[Start] --&gt; B{Scan location specified?};
-     B --&gt; |Yes| C[Start scan];
-     C --&gt; |Start Loop| D[File found];
-     D --&gt; E[Create Hash];
-     E --&gt; F[Compare Hash];
-     F --&gt; G{Hash found in DB?};
-     G --&gt; |Yes| H[Flag as Malware];
-     G --&gt; |No| I[Flag as Safe];
+<h1 id="sviluppi">SVILUPPI</h1>
+<h2 id="navigare-nellarchitettura">Navigare nell'Architettura</h2>
+<pre class="mermaid"><code>grafico LR
+     A[Start] --&gt; B{Posizione di scansione specificata? ;
+     B --&gt; Sì&lt;unk&gt; C[Start scan];
+     C --&gt; &lt;unk&gt; Start Loop&lt;unk&gt; D[File trovato];
+     D --&gt; E[Crea Hash];
+     E --&gt; F[Confronta Hash];
+     F --&gt; G{Hash trovato in DB? ;
+     G --&gt; &lt;unk&gt; Sì&lt;unk&gt; H[Contrassegna come malware];
+     G --&gt; &lt;unk&gt; No&lt;unk&gt; I[Contrassegna come sicuro];
      H &amp; I --&gt; J[Continue iteration];
-     J --&gt; K{Last file?};
-     K --&gt; |Yes| L[Stop scanner];
+     J --&gt; K{Ultimo file? ;
+     K --&gt; &lt;unk&gt; Sì&lt;unk&gt; L[Stop scanner];
      L --&gt; M[Display Results];
-     K --&gt; |No| N[Start again];
+     K --&gt; &lt;unk&gt; No&lt;unk&gt; N[Start again];
      N --&gt; D;
-     B --&gt; |No| O[Stop]</code></pre>
-<p>Raspirus is structured into two integral components: frontend and backend. These components, built using distinct languages and frameworks, are interconnected via a third-party framework called <a href="https://tauri.app/">Tauri</a>. This framework not only facilitates communication between the frontend and backend but also enables us to incorporate Rust functions into the frontend. Furthermore, Tauri empowers the distribution of Raspirus across various operating systems.</p>
-<h2 id="starting-your-development-journey">Starting Your Development Journey</h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">macOS</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ol>
-<li>Clone the repository</li>
-<li>Install <a href="https://tauri.app/v1/guides/getting-started/prerequisites#setting-up-windows">Tauri and Prerequisites</a></li>
-<li>Install <a href="https://nodejs.org/en/download">npm</a></li>
-<li>Install <a href="https://nextjs.org/docs/getting-started/installation#manual-installation">Next.js</a> with <code>npm install next@latest react@latest react-dom@latest</code></li>
-<li>Install npm dependencies with: <code>npm i</code></li>
-<li>Start development with <code>cargo tauri dev</code></li>
-<li>or build Raspirus with <code>cargo tauri build</code></li>
-</ol>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>Clone the Repository</li>
-<li>Execute <code>make install</code></li>
-<li>Run the application with <code>raspirus</code></li>
-</ol>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>Clone the repository</li>
-<li>Install <a href="https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos">Tauri and Prerequisites</a></li>
-<li>Install <a href="https://nodejs.org/en/download">npm</a></li>
-<li>Install <a href="https://nextjs.org/docs/getting-started/installation#manual-installation">Next.js</a> with <code>npm install next@latest react@latest react-dom@latest</code></li>
-<li>Install npm dependencies with: <code>npm i</code></li>
-<li>Start development with <code>cargo tauri dev</code></li>
-<li>or build Raspirus with <code>cargo tauri build</code></li>
-</ol>
-</div>
-</div>
-</div>
-<p>Should you encounter any hiccups during your initial run or build, ensure that you've followed each step diligently. Confirm the accurate creation of both logs and config files.</p>
-<h2 id="exploring-the-backend">Exploring the Backend</h2>
+     B --&gt; &lt;unk&gt; No&lt;unk&gt; O[Stop]</code></pre>
+<p>Raspirus è strutturato in due componenti integrali: frontend e backend. Questi componenti, costruiti utilizzando linguaggi e quadri distinti, sono interconnessi tramite un framework di terze parti chiamato <a href="https://tauri.app/">Tauri</a>. Questo framework non solo facilita la comunicazione tra il frontend e il backend, ma ci permette anche di integrare le funzioni Rust nel frontend. Inoltre, Tauri consente la distribuzione di Raspirus su vari sistemi operativi.</p>
+<h2 id="iniziare-il-tuo-viaggio-di-sviluppo">Iniziare Il Tuo Viaggio Di Sviluppo</h2>
+<p>\=== "Windows" Clona il repository
+2. Installa <a href="https://tauri.app/v1/guides/getting-started/prerequisites#setting-up-windows">Tauri e Prerequisiti</a>
+3. Installa <a href="https://nodejs.org/en/download">npm</a>
+4.  1. Clone the repository
+2. Install <a href="https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos">Tauri and Prerequisites</a>
+3. Install <a href="https://nodejs.org/en/download">npm</a>
+4. Install <a href="https://nextjs.org/docs/getting-started/installation#manual-installation">Next.js</a> with <code>npm install next@latest react@latest react-dom@latest</code>
+5. Install npm dependencies with: <code>npm i</code>
+6. Start development with <code>cargo tauri dev</code>
+7. or build Raspirus with <code>cargo tauri build</code> Installa dipendenze npm con: <code>npm i</code>
+6. Inizia lo sviluppo con <code>cargo tauri dev</code>
+7. o costruisci Raspirus con <code>cargo tauri build</code></p>
+<p>\=== "Linux" Clona il Repository
+2. Esegui <code>make install</code>
+3.  1. Clone the Repository
+2. Execute <code>make install</code>
+3. Run the application with <code>raspirus</code></p>
+<p>\=== "macOS" Clona il repository
+2. Installa <a href="https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos">Tauri e Prerequisiti</a>
+3. Installa <a href="https://nodejs.org/en/download">npm</a>
+4.  1. Clone the repository
+2. Install <a href="https://tauri.app/v1/guides/getting-started/prerequisites#setting-up-windows">Tauri and Prerequisites</a>
+3. Install <a href="https://nodejs.org/en/download">npm</a>
+4. Install <a href="https://nextjs.org/docs/getting-started/installation#manual-installation">Next.js</a> with <code>npm install next@latest react@latest react-dom@latest</code>
+5. Install npm dependencies with: <code>npm i</code>
+6. Start development with <code>cargo tauri dev</code>
+7. or build Raspirus with <code>cargo tauri build</code> Installa dipendenze npm con: <code>npm i</code>
+6. Inizia lo sviluppo con <code>cargo tauri dev</code>
+7. o costruisci Raspirus con <code>cargo tauri build</code></p>
+<p>Se dovessi incontrare dei singhiozzi durante la tua esecuzione iniziale o costruire, assicurati di aver seguito diligentemente ogni passaggio. Confermare la creazione accurata di entrambi i log e file di configurazione.</p>
+<h2 id="esplorare-il-backend">Esplorare il Backend</h2>
 <pre class="mermaid"><code>classDiagram
      Main &lt;|-- DBOps
      Main &lt;|-- Configs
@@ -773,17 +769,17 @@
           +create_hash()
           +get_folder_size()
      }</code></pre>
-<p>The backend, an essential cog in the Raspirus machinery, is meticulously crafted in Rust for superior performance. The primary file houses functions accessible from the frontend, which must yield JSON-compatible outcomes. For a detailed breakdown, reference the graph above outlining the backend's modular arrangement.</p>
-<h2 id="unpacking-the-frontend">Unpacking the Frontend</h2>
+<p>Il backend, un cog essenziale nella macchina Raspirus, è meticolosamente realizzato in Rust per prestazioni superiori. Il file primario ospita funzioni accessibili dal frontend, che devono produrre risultati compatibili con JSon. Per una ripartizione dettagliata, fare riferimento al grafico sopra che delinea la disposizione modulare del backend.</p>
+<h2 id="scompattare-frontend">Scompattare Frontend</h2>
 <iframe title="The original Raspirus project on Figma" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpkgpwieNbhYiOi4Gz6Uyt6%2FRaspirus%3Fnode-id%3D0%253A1%26t%3DGr4YG3Ynv24YVlz2-1" allowfullscreen></iframe>
 
-<p>Our frontend, developed with JavaScript via the Next.js framework, emphasizes user-friendliness and functionality. Comprising components and pages, it mirrors the simplicity and robustness of Next.js. Refer to the illustrated graph above for an approximate visual representation of the frontend's architecture.</p>
-<h2 id="evaluating-test-coverage">Evaluating Test Coverage</h2>
+<p>Il nostro frontend, sviluppato con JavaScript tramite il framework Next.js, sottolinea la facilità d'uso e la funzionalità. Composto da componenti e pagine, rispecchia la semplicità e la robustezza di Next.js. Fare riferimento al grafico qui sopra illustrato per una rappresentazione visiva approssimativa dell'architettura del frontend.</p>
+<h2 id="valutazione-della-copertura-dei-test">Valutazione Della Copertura Dei Test</h2>
 <ul>
-<li>Backend tests, authored in Rust, can be executed via the <code>cargo test</code> command. Access these tests in the <a href="https://github.com/Raspirus/Raspirus/tree/main/src-tauri%2Fsrc%2Ftests">tests directory</a>. Check test coverage on <a href="https://app.codecov.io/gh/Raspirus/Raspirus">Codecov</a>.</li>
-<li>Frontend tests, created with Selenium, are currently in development.</li>
+<li>I test di backend, scritti in Rust, possono essere eseguiti tramite il comando <code>cargo test</code>. Accedi a questi test nella <a href="https://github.com/Raspirus/Raspirus/tree/main/src-tauri%2Fsrc%2Ftest">directory test</a>. Controlla la copertura del test su <a href="https://app.codecov.io/gh/Raspirus/Raspirus">Codecov</a>.</li>
+<li>I test Frontend, creati con Selenium, sono attualmente in fase di sviluppo.</li>
 </ul>
-<p>Thank you for your interest in contributing to Raspirus's development. Your expertise fuels our progress.</p>
+<p>Grazie per il vostro interesse a contribuire allo sviluppo di Raspirus. La vostra esperienza alimenta i nostri progressi.</p>
 
 
 
@@ -851,7 +847,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Piede" >
         
           
-          <a href="../contributing/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: CONTRIBUTING">
+          <a href="../contributing/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: CONTRIBUTO">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -861,7 +857,7 @@
                 Precedente
               </span>
               <div class="md-ellipsis">
-                CONTRIBUTING
+                CONTRIBUTO
               </div>
             </div>
           </a>
