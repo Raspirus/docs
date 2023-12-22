@@ -1,6 +1,6 @@
 # STARS
 
-## Sponsors
+## Sponsoren
 
 <div class="contributor-card">
   <a href="https://github.com/Benji377" target="_blank">
@@ -21,13 +21,13 @@
   </a>
 </div>
 
-## Contributors
+## Mitwirkende
 
 <div class="contributor-card">
   <a href="https://github.com/mwallnoefer" target="_blank">
     <img src="https://avatars.githubusercontent.com/u/7541399?v=4?s=100" alt="Profile Image">
     <div class="contributor-info">
-      <h3>Matthias Dieter Wallnöfer</h3>
+      <h3>Matthias Dieter Wallnöfer</h3>
       <p>🧑‍🏫 Mentoring</p>
     </div>
   </a>
@@ -38,7 +38,7 @@
     <img src="https://avatars.githubusercontent.com/u/77393763?v=4?s=100" alt="Profile Image">
     <div class="contributor-info">
       <h3>GamingGuy003</h3>
-      <p>💻 Backend Developer</p>
+      <p>:Laptop: Backend-Entwickler</p>
     </div>
   </a>
 </div>
@@ -63,14 +63,14 @@
   </a>
 </div>
 
-## Special Credits
+## Spezielle Credits
 
 <div class="contributor-card">
   <a href="https://github.com/Lairex59" target="_blank">
     <img src="https://avatars.githubusercontent.com/u/74677245?v=4" alt="Profile Image">
     <div class="contributor-info">
       <h3>Lairex59</h3>
-      <p>💡 Ideas and Support</p>
+      <p>💡 Ideen und Support</p>
     </div>
   </a>
 </div>
