@@ -1,65 +1,65 @@
-# DEVELOPERS
+# DEVELOPER
 
-## Navigating the Architecture
+## Navigation durch die Architektur
 
 ```mermaid
 graph LR
-     A[Start] --> B{Scan location specified?};
-     B --> |Yes| C[Start scan];
-     C --> |Start Loop| D[File found];
-     D --> E[Create Hash];
-     E --> F[Compare Hash];
-     F --> G{Hash found in DB?};
-     G --> |Yes| H[Flag as Malware];
-     G --> |No| I[Flag as Safe];
-     H & I --> J[Continue iteration];
-     J --> K{Last file?};
-     K --> |Yes| L[Stop scanner];
-     L --> M[Display Results];
-     K --> |No| N[Start again];
+     A[Start] --> B{Scan-Position angegeben? ;
+     B --> |Ja| C[Start scan];
+     C --> |Start Loop| D[Datei gefunden];
+     D --> E[Erstelle Hash];
+     E --> F[Vergleiche Hash];
+     F --> G{Hash in DB? ;
+     G --> |Ja| H[Flagge als Malware];
+     G --> |Nein| I[Flagge als Safe];
+     H & I --> J[Iteration fortsetzen];
+     J --> K{Letzte Datei? ;
+     K --> |Ja| L[Scanner stoppen];
+     L --> M[Ergebnisse anzeigen];
+     K --> | N[No| Erneut starten];
      N --> D;
-     B --> |No| O[Stop]
+     B --> |Nein | O[Stop]
 ```
 
-Raspirus is structured into two integral components: frontend and backend. These components, built using distinct languages and frameworks, are interconnected via a third-party framework called [Tauri](https://tauri.app/). This framework not only facilitates communication between the frontend and backend but also enables us to incorporate Rust functions into the frontend. Furthermore, Tauri empowers the distribution of Raspirus across various operating systems.
+Raspirus gliedert sich in zwei integrale Komponenten: Frontend und Backend. Diese Komponenten, die in unterschiedlichen Sprachen und Frameworks erstellt wurden, sind über ein Drittanbieter-Framework mit dem Namen [Tauri](https://tauri.app/) miteinander verbunden. Dieser Rahmen erleichtert nicht nur die Kommunikation zwischen Frontend und Backend, sondern ermöglicht auch die Integration von Rust in das Frontend. Darüber hinaus ermöglicht Tauri die Verteilung von Raspirus auf verschiedene Betriebssysteme.
 
-## Starting Your Development Journey
+## Starte deine Entwicklerreise
 
-\=== "Windows" Clone the repository
-2\. Install [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites#setting-up-windows)
-3\. Install [npm](https://nodejs.org/en/download)
+\=== "Windows" Kopiere das Repository
+2\. Installiere [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prevquisites#setting-up-windows)
+3\. Installieren Sie [npm](https://nodejs.org/en/download)
 4\.  1. Clone the repository
 2\. Install [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos)
 3\. Install [npm](https://nodejs.org/en/download)
 4\. Install [Next.js](https://nextjs.org/docs/getting-started/installation#manual-installation) with `npm install next@latest react@latest react-dom@latest`
 5\. Install npm dependencies with: `npm i`
 6\. Start development with `cargo tauri dev`
-7\. or build Raspirus with `cargo tauri build` Install npm dependencies with: `npm i`
-6\. Start development with `cargo tauri dev`
-7\. or build Raspirus with `cargo tauri build`
+7\. or build Raspirus with `cargo tauri build` Installiere npm Abhängigkeiten mit: `npm i`
+6\. Beginnen Sie die Entwicklung mit `cargo tauri dev`
+7\. oder bauen Sie Raspirus mit "cargo tauri build"
 
-\=== "Linux" Clone the Repository
-2\. Execute `make install`
-3\.  1. Clone the Repository
+\=== "Linux" Klone das Repository
+2\. Führe `make install`
+3 aus.  1. Clone the Repository
 2\. Execute `make install`
 3\. Run the application with `raspirus`
 
-\=== "macOS" Clone the repository
-2\. Install [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos)
-3\. Install [npm](https://nodejs.org/en/download)
+\=== "macOS" Kopiere das Repository
+2\. Installiere [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos)
+3\. Installieren Sie [npm](https://nodejs.org/en/download)
 4\.  1. Clone the repository
 2\. Install [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites#setting-up-windows)
 3\. Install [npm](https://nodejs.org/en/download)
 4\. Install [Next.js](https://nextjs.org/docs/getting-started/installation#manual-installation) with `npm install next@latest react@latest react-dom@latest`
 5\. Install npm dependencies with: `npm i`
 6\. Start development with `cargo tauri dev`
-7\. or build Raspirus with `cargo tauri build` Install npm dependencies with: `npm i`
-6\. Start development with `cargo tauri dev`
-7\. or build Raspirus with `cargo tauri build`
+7\. or build Raspirus with `cargo tauri build` Installiere npm Abhängigkeiten mit: `npm i`
+6\. Beginnen Sie die Entwicklung mit `cargo tauri dev`
+7\. oder bauen Sie Raspirus mit "cargo tauri build"
 
-Should you encounter any hiccups during your initial run or build, ensure that you've followed each step diligently. Confirm the accurate creation of both logs and config files.
+Sollten Sie während Ihres ersten Laufs oder Builds auf irgendwelche Fehler stoßen, stellen Sie sicher, dass Sie jeden Schritt gewissenhaft verfolgt haben. Bestätigen Sie die genaue Erstellung von Logs und Konfigurationsdateien.
 
-## Exploring the Backend
+## Erforsche das Backend
 
 ```mermaid
 classDiagram
@@ -101,17 +101,17 @@ classDiagram
      }
 ```
 
-The backend, an essential cog in the Raspirus machinery, is meticulously crafted in Rust for superior performance. The primary file houses functions accessible from the frontend, which must yield JSON-compatible outcomes. For a detailed breakdown, reference the graph above outlining the backend's modular arrangement.
+Das Backend, ein essentielles Rad in der Raspirus-Maschine, wird in Rust sorgfältig für eine herausragende Leistung hergestellt. Die primäre Datei enthält Funktionen, die über das Frontend zugänglich sind, was JSON-kompatible Ergebnisse liefern muss. Für eine detaillierte Aufschlüsselung siehe die obige Darstellung der modularen Anordnung des Backends.
 
-## Unpacking the Frontend
+## Frontend entpacken
 
 <iframe title="The original Raspirus project on Figma" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpkgpwieNbhYiOi4Gz6Uyt6%2FRaspirus%3Fnode-id%3D0%253A1%26t%3DGr4YG3Ynv24YVlz2-1" allowfullscreen></iframe> 
 
-Our frontend, developed with JavaScript via the Next.js framework, emphasizes user-friendliness and functionality. Comprising components and pages, it mirrors the simplicity and robustness of Next.js. Refer to the illustrated graph above for an approximate visual representation of the frontend's architecture.
+Unsere Frontend, die mit JavaScript über das Next.js Framework entwickelt wurde, betont Benutzerfreundlichkeit und Funktionalität. Er enthält Komponenten und Seiten und spiegelt die Einfachheit und Robustheit von Next.js wider. Eine ungefähre visuelle Darstellung der Frontend-Architektur finden Sie im obigen Bild.
 
-## Evaluating Test Coverage
+## Testabdeckung auswerten
 
-- Backend tests, authored in Rust, can be executed via the `cargo test` command. Access these tests in the [tests directory](https://github.com/Raspirus/Raspirus/tree/main/src-tauri%2Fsrc%2Ftests). Check test coverage on [Codecov](https://app.codecov.io/gh/Raspirus/Raspirus).
-- Frontend tests, created with Selenium, are currently in development.
+- Backend-Tests, die in Rust erstellt wurden, können über den Befehl "cargo test" ausgeführt werden. Greifen Sie auf diese Tests im [test-Verzeichnis](https://github.com/Raspirus/Raspirus/tree/main/src-tauri%2Fsrc%2Ftests). Prüfen Sie die Testabdeckung auf [Codecov](https://app.codecov.io/gh/Raspirus/Raspirus).
+- Die mit Selenium erstellten Frontend-Tests befinden sich derzeit in der Entwicklung.
 
-Thank you for your interest in contributing to Raspirus's development. Your expertise fuels our progress.
+Vielen Dank für Ihr Interesse, zur Entwicklung von Raspirus beizutragen. Ihre Expertise stärkt unseren Fortschritt.
