@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
          <loc>None.</loc>
-         <lastmod>2023-12-19</lastmod>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
          <xhtml:link rel="alternate" hreflang="de" href="Nonede/"/>
@@ -11,7 +11,7 @@
     </url>
     <url>
          <loc>Nonecontributing/</loc>
-         <lastmod>2023-12-19</lastmod>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/contributing/"/>
          <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/"/>
@@ -20,7 +20,7 @@
     </url>
     <url>
          <loc>Nonedevelopers/</loc>
-         <lastmod>2023-12-19</lastmod>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/developers/"/>
          <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/"/>
@@ -29,7 +29,7 @@
     </url>
     <url>
          <loc>Nonefaq/</loc>
-         <lastmod>2023-12-19</lastmod>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/faq/"/>
          <xhtml:link rel="alternate" hreflang="de" href="Nonede/faq/"/>
@@ -38,7 +38,7 @@
     </url>
     <url>
          <loc>Noneguides/</loc>
-         <lastmod>2023-12-19</lastmod>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/"/>
          <xhtml:link rel="alternate" hreflang="de" href="Nonede/guides/"/>
@@ -47,7 +47,7 @@
     </url>
     <url>
          <loc>Nonescreenshots/</loc>
-         <lastmod>2023-12-19</lastmod>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/screenshots/"/>
          <xhtml:link rel="alternate" hreflang="de" href="Nonede/screenshots/"/>
@@ -56,7 +56,7 @@
     </url>
     <url>
          <loc>Nonestars/</loc>
-         <lastmod>2023-12-19</lastmod>
+         <lastmod>2023-12-22</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/stars/"/>
          <xhtml:link rel="alternate" hreflang="de" href="Nonede/stars/"/>
