@@ -4,16 +4,16 @@
 
 ![Screenshot of Home page](../img/screenshots/home.png)
 
-## Scanning
+## Scansione
 
-![Screenshot of scanning process](../img/screenshots/scanning.png)
+![Screenshot del processo di scansione](../img/screenshots/scanning.png)
 
-## Result
+## Risultato
 
-![Screenshot of positive result](../img/screenshots/result.png)
+![Screenshot del risultato positivo](../img/screenshots/result.png)
 
-## Raspberry Pi Setup
+## Configurazione Raspberry Pi
 
-![Screenshot of Home page on Raspberry Pi](../img/screenshots/Rpihomesetup.jpg)
+![Screenshot della Home page su Raspberry Pi](../img/screenshots/Rpihomesetup.jpg)
 
 ![Screenshot of Raspberry Pi setup](../img/screenshots/Rpisetup.jpg)
