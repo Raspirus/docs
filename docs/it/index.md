@@ -4,43 +4,43 @@
 
 ## Introduzione
 
-Raspirus: Empowering Your Malware Protection
+Raspirus: Potenziare La Tua Protezione Malware
 
-Welcome to the official documentation for Raspirus, your lightweight signature-based malware scanner. Originally designed to scan attached USB drives using a Raspberry Pi, Raspirus has evolved into a versatile tool capable of scanning local files and folders as well. Some of its standout features include:
+Benvenuti nella documentazione ufficiale per Raspirus, il vostro leggero scanner di malware basato sulla firma. Originariamente progettato per eseguire la scansione di unità USB collegate utilizzando un Raspberry Pi, Raspirus si è evoluto in un versatile strumento in grado di scansionare anche file e cartelle locali. Alcune delle sue caratteristiche distintive includono:
 
-- **Cost-Free Protection:** Raspirus operates solely on donations, ensuring top-notch protection without any financial burden.
-- **Tailored Signature Detection:** Our custom signature-based approach guarantees accurate identification of malware.
-- **Comprehensive File Scans:** Raspirus can efficiently scan compressed files, ensuring no threat goes undetected.
-- **Privacy Prioritized:** Offering a privacy-friendly option, Raspirus keeps your personal information secure.
-- **Cross-Platform Convenience:** Enjoy the benefits of Raspirus protection on a variety of operating systems.
-- **Swift and Dependable:** Count on Raspirus for fast and reliable malware detection.
-- **Sleek Modern Interface:** With user-friendliness at its core, Raspirus boasts a beautiful and intuitive UI.
+- **Protezione senza costi:** Raspirus opera esclusivamente su donazioni, garantendo una protezione di prim'ordine senza alcun onere finanziario.
+- **Rilevamento firma su misura:** Il nostro approccio personalizzato basato sulla firma garantisce un'identificazione accurata del malware.
+- **Comprehensive File Scans:** Raspirus può eseguire in modo efficiente la scansione dei file compressi, garantendo che nessuna minaccia non venga rilevata.
+- **Privacy Prioritizzata:** Offrendo un'opzione per la privacy, Raspirus mantiene le tue informazioni personali al sicuro.
+- **Convenienza cross-piattaforma:** Goditi i vantaggi della protezione Raspirus su una varietà di sistemi operativi.
+- **Swift e Dependable:** Contare su Raspirus per un rilevamento rapido e affidabile di malware.
+- **Elegante interfaccia moderna:** Raspirus vanta una bellissima e intuitiva interfaccia utente: grazie alla sua semplicità di utilizzo.
 
-## Getting Started
+## Per Iniziare
 
-### For Regular Users
+### Per Utenti Regolari
 
-Getting started with Raspirus is a breeze. Follow these simple steps:
+Cominciare con Raspirus è una brezza. Seguire questi semplici passaggi:
 
-1. Visit our [website](https://raspirus.deno.dev) or head to the [GitHub release page](https://github.com/Raspirus/Raspirus/releases/latest).
-2. Download the executable that matches your operating system.
+1. Visita la nostra [website](https://raspirus.deno.dev) o vai alla [pagina di rilascio di GitHub](https://github.com/Raspirus/Raspirus/releases/latest).
+2. Scarica l'eseguibile che corrisponde al tuo sistema operativo.
 
-!!! note
+!!! nota
 
 ```
-If you plan to use Raspirus on the Raspberry Pi as a standalone application, we have a [dedicated guide](https://raspirus.github.io/docs/guides#Raspberry-Pi) for it.
+Se hai intenzione di utilizzare Raspirus sul Raspberry Pi come applicazione standalone, abbiamo una [guida dedicata](https://raspirus.github.io/docs/guides#Raspberry-Pi) per questo.
 ```
 
-### For Developers
+### Per Gli Sviluppatori
 
-Are you a developer looking to set up Raspirus? We've got you covered. Check out our comprehensive guides for various operating systems in the [Developers section](https://raspirus.github.io/docs/developers).
+Sei uno sviluppatore che cerca di impostare Raspirus? Ti abbiamo coperto. Scopri le nostre guide complete per vari sistemi operativi nella [sezione Sviluppatori](https://raspirus.github.io/docs/developers).
 
-## Questions?
+## Domande?
 
-Got questions about Raspirus? We're here to help!
+Hai domande su Raspirus? Siamo qui per aiutare!
 
-- Visit our [FAQ section](https://raspirus.github.io/docs/faq) for answers to common queries.
-- Join our thriving community on the [Discord server](https://discord.gg/Vx7fW9PA8B) to engage with fellow users.
-- If you've encountered a bug, browse the GitHub issues to see if it's already reported.
+- Visita la nostra [sezione FAQ](https://raspirus.github.io/docs/faq) per le risposte alle query comuni.
+- Unisciti alla nostra fiorente comunità sul [server Discord](https://discord.gg/Vx7fW9PA8B) per entrare in contatto con altri utenti.
+- Se hai incontrato un bug, sfogliare i problemi di GitHub per vedere se è già segnalato.
 
-Thank you for choosing Raspirus for your malware protection needs. Together, we're making the digital world safer for everyone.
+Grazie per aver scelto Raspirus per le vostre esigenze di protezione malware. Insieme, stiamo rendendo il mondo digitale più sicuro per tutti.
