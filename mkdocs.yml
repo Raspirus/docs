@@ -58,13 +58,14 @@ plugins:
       default_language: en
       docs_structure: folder
       languages:
-        en:
+        - locale: en
           name: English
           build: true
-        de:
+          default: true
+        - locale: de
           name: Deutsch
           build: true
-        it:
+        - locale: it
           name: Italiano
           build: true
   - git-revision-date-localized:
