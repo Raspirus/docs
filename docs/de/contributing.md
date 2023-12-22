@@ -1,35 +1,36 @@
-# CONTRIBUTING
+# VERTRIBUTING
 
-## Enhance the Codebase
+## Verbessere die Codebase
 
-As a developer looking to amplify Raspirus's functionality, your contributions are invaluable. Please adhere to the following guidelines:
+Als Entwickler, der Raspirus's Funktionalität verstärken möchte, sind Ihre Beiträge von unschätzbarem Wert. Bitte halten Sie sich an die folgenden Richtlinien:
 
-- **Check Existing Issues:** Before diving in, peruse existing issues to avoid creating duplicates. If none exist, feel free to open a new one.
-- **Documentation is Key:** Always ensure your code is well-documented. Remember to adapt tests to maintain code integrity.
+- **Überprüfe existierende Probleme:** Bevor du eintauchst, überprüfe existierende Probleme, um Duplikate zu vermeiden. Wenn keine existiert, zögern Sie nicht, eine neue zu öffnen.
 
-- [Read the Code of Conduct](https://github.com/Raspirus/docs/blob/main/CODE_OF_CONDUCT.md)
+- **Dokumentation ist Schlüssel:** Stellen Sie immer sicher, dass Ihr Code gut dokumentiert ist. Denken Sie daran, Tests anzupassen, um die Code-Integrität zu erhalten.
 
-## Enrich the Documentation
+- [Lies den Verhaltenskodex](https://github.com/Raspirus/docs/blob/main/CODE_OF_CONDUCT.md)
 
-Raspirus's documentation is crafted using Markdown and powered by [MkDocs](https://www.mkdocs.org/user-guide/installation/) and Python. To contribute to the documentation:
+## Die Dokumentation bereichern
 
-- **Follow the Guide:** To begin, set up the documentation on your local machine by following the [guide](https://raspirus.github.io/docs/guides).
-- **Material Theme:** Our documentation utilizes the Material Theme, which extends Markdown functionality. Discover more about it [here](https://squidfunk.github.io/mkdocs-material/reference).
+Die Dokumentation von Raspirus wird mithilfe von Markdown erstellt und von [MkDocs]betrieben (https\://www\.mkdocs.org/user-guide/installation/) und Python. Um zur Dokumentation beizutragen:
 
-## Drive Translations
+- **Folge dem Guide:** Um die Dokumentation auf deinem lokalen Rechner zu starten, folge der [guide](https://raspirus.github.io/docs/guides).
+- **Material-Theme:** Unsere Dokumentation verwendet das Material-Theme, das Markdown-Funktionalität erweitert. Entdecke mehr darüber [here](https://squidfunk.github.io/mkdocs-material/reference).
 
-Our documentation is multilingual thanks to [Crowdin](https://crowdin.com/project/raspirus), an intuitive external service. GUI translations are handled via JSON files. Refer to the [guide](https://raspirus.github.io/docs/guides) for comprehensive insights.
+## Antriebsübersetzungen
 
-## Infuse Artwork and Media
+Unsere Dokumentation ist mehrsprachig dank [Crowdin](https://crowdin.com/project/raspirus), einem intuitiven externen Dienst. GUI Übersetzungen werden über JSON-Dateien bearbeitet. Werfen Sie einen Blick auf die [guide](https://raspirus.github.io/docs/guides) für umfassende Einsichten.
 
-The repository for artwork (logos, banners, etc.) and media (powerpoints, articles, graphs, etc.) is hosted separately at [this repository](https://github.com/Raspirus/media). Feel free to contribute and bolster our visual presence. Note that the current logo and banner were AI-generated due to the lack of artistic expertise.
+## Kunstwerk und Medien infizieren
 
-## Provide Feedback
+Das Repository für Kunstwerke (Logos, Banner, etc.) und Medien (Powerpoints, Artikel, Graphen, etc.) wird separat auf [diesem Projektarchiv](https://github.com/Raspirus/media) gehostet. Fühlen Sie sich frei, unsere visuelle Präsenz zu unterstützen und zu stärken. Beachten Sie, dass das aktuelle Logo und Banner aufgrund fehlender künstlerischer Expertise von AI generiert wurden.
 
-Beyond the above contributions, there are other impactful ways to get involved:
+## Feedback geben
 
-- **Join Discord:** Engage with our community on the [Discord server](https://discord.gg/Vx7fW9PA8B) to share valuable feedback and ideas.
-- **Consider Donating:** If you find value in Raspirus, consider [donating](https://github.com/sponsors/Raspirus) to support ongoing development.
-- **Spread the Word:** A simple yet effective way to contribute is by downloading Raspirus and introducing it to friends.
+Jenseits der oben genannten Beiträge gibt es andere wirkungsvolle Möglichkeiten, sich einzubringen:
 
-Thank you for your dedication to Raspirus's growth and improvement. Your involvement is a cornerstone of our success.
+- **Trete Discord:** Komm mit unserer Community auf dem [Discord Server](https://discord.gg/Vx7fW9PA8B) um wertvolle Feedback und Ideen zu teilen.
+- **Überlege dir Spenden:** Wenn du Wert in Raspirus findest, überlege [donating](https://github.com/sponsors/Raspirus) um laufende Entwicklung zu unterstützen.
+- **Spread the Word:** Eine einfache, aber effektive Möglichkeit, dazu beizutragen, ist das Herunterladen von Raspirus und die Einführung an Freunde.
+
+Vielen Dank für Ihr Engagement für Raspirus's Wachstum und Verbesserung. Ihr Engagement ist ein Eckpfeiler unseres Erfolgs.

@@ -1,23 +1,88 @@
----
-comments: wahr
----
+# GUIDES
 
-# Anleitungen
+## Lokale Dokumentation einrichten
 
-Here you will find helpful guides on how to export the documentation to PDF format and how to contribute translations to this project. If you have any additional requests for guides, please leave a comment below!
-
-## Export to PDF
-If you would like to have an offline version of this documentation in PDF format, you can follow these step-by-step instructions:
+Richten Sie einfach die Dokumentation auf Ihrem Rechner mit diesen einfachen Schritten ein:
 
 1. Clone this repository by following the instructions on [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
-2. Install the necessary requirements for the PDF conversion tool. You can find the requirements specific to your operating system [here](https://github.com/orzih/mkdocs-with-pdf#requirements).
-3. Navigate to the cloned directory and install the required dependencies. Please note that you will need Python3 and pip for this step. You can install the dependencies by running the following command: `pip install -r requirements.txt`.
-4. Install [mkdocs](https://www.mkdocs.org/user-guide/installation/) and execute the build command: `mkdocs build`.
-5. If everything goes smoothly, the resulting PDF file should be located in the `site/pdf` directory with the name `document.pdf`.
 
-Please be aware that the exported PDF may have some issues with images and iFrames, but the text should be readable and suitable for sharing offline.
+   ```bash
+   git clone https://github.com/Raspirus/docs.git
+   ```
+
+2. Navigate to the cloned directory and install the required dependencies.
+
+   ```bash
+   You can install the dependencies by running the following command: `pip install -r requirements.txt`.
+   ```
+
+3. Starte das Projekt lokal:
+   Beginne dein lokales Projekt, indem du diesen Befehl ausführst:
+
+   ```bash
+   mkdocs dienen
+   ```
+
+   Dies wird einen Entwicklungsserver initiieren, der dir erlaubt, die Dokumentation über [http://localhost:8000](http://localhost:8000) in deinem bevorzugten Webbrowser zuzugreifen.
+
+## Export to PDF
+
+If you would like to have an offline version of this documentation in PDF format, you can follow these step-by-step instructions:
+
+1. Folgen Sie den oben beschriebenen Installationsprozess.
+
+2. Install [mkdocs](https://www.mkdocs.org/user-guide/installation/) and execute the build command: `mkdocs build`.
+
+3. If everything goes smoothly, the resulting PDF file should be located in the `site/pdf` directory with the name `document.pdf`.
+
+Please be aware that the exported PDF may have some issues with images and iFrames, but the text should be readable and suitable for sharing offline. Dennoch bleibt der Text lesbar und für die Offline-Freigabe geeignet.
 
 ## Übersetzungen
-We welcome contributions to translate this documentation into other languages. If you are interested in translating the document, you can find the necessary information and resources at the following link: [Translate this document](https://github.com/ultrabug/mkdocs-static-i18n).
 
-Your contributions are highly appreciated, and they will help make this documentation more accessible to a wider audience.
+Für Übersetzungen dieser Dokumentation besuchen Sie bitte [Crowdin](https://crowdin.com/project/raspirus), eine gemeinschaftliche Plattform. Übersetzungen für UI-Zeichenketten werden über JSON-Dateien verwaltet. Erstelle deine Übersetzungen im [locales Ordner](https://github.com/Raspirus/Raspirus/tree/main/public%2Flocales). Behalte die Einzigartigkeit der Schlüssel bei der Übersetzung aus der `en.json` Datei.
+
+## Scanner-Einblicke
+
+### Scanne komprimierte Dateien
+
+!!! notiz
+
+```
+Diese Option ist für die Raspberry Pi noch nicht verfügbar. Schau, warum in der [FAQ Sektion](https://raspirus.github.io/docs/faq)
+```
+
+Während Raspirus standardmäßig Ordner scannt, können Sie dieses Verhalten über die Einstellungsseite ändern. Durch Umschalten können Sie einzelne Dateien, einschließlich komprimierter Dateien, scannen. Es ist wichtig zu beachten, dass nur eine Datei gleichzeitig gescannt werden kann.
+
+### Protokolle und Konfigurationen navigieren
+
+Bei unerwarteten Vorfällen oder plötzlichen Abstürzen der App kann die Prüfung von Logs und Konfigurationen Einblicke bieten. Suchen Sie diese Dateien in den folgenden Ordnern, basierend auf Ihrem Betriebssystem. Das [ProjectDirs crate](https://docs.rs/directories-next/latest/directories_next/struct.ProjectDirs.html) speichert diese an der folgenden Stelle:
+
+**Konfigurationsdatei:**
+
+| Plattform | Wert                                                                         | Beispiel                                                         |
+| --------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Linux     | `$XDG_DATA_HOME`/`_project_path_` oder `$HOME`/.local/share/`_project_path_` | /home/alice/.local/share/barapp                                  |
+| macOS     | `$HOME`/Library/Application Support/`_project_path_`                         | /Benutzer/Alice/Library/Application Support/com.Foo-Corp.Bar-App |
+| Fenster   | `{FOLDERID_RoamingAppData}`\\`_project_path_`\data                           | C:\Benutzer\Alice\AppData\Roaming\Foo Corp\Bar App\data          |
+
+**Logdateien:**
+
+| Plattform | Wert                                                                         | Beispiel                                                         |
+| --------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Linux     | `$XDG_DATA_HOME`/`_project_path_` oder `$HOME`/.local/share/`_project_path_` | /home/alice/.local/share/barapp                                  |
+| macOS     | `$HOME`/Library/Application Support/`_project_path_`                         | /Benutzer/Alice/Library/Application Support/com.Foo-Corp.Bar-App |
+| Fenster   | `{FOLDERID_LocalAppData}`\\`_project_path_`\data                             | C:\Benutzer\Alice\AppData\Local\Foo Corp\Bar App\data            |
+
+Stellen Sie sicher, dass Sie diese Dateien beim Melden von Fehlern einfügen, da sie bei der Fehlerbehebung sehr hilfreich sind.
+
+## GitHub Integration
+
+### Die Anreicherung der Signaturdatenbank
+
+KOMMEN SOON
+
+## Raspberry Pi Einsatz
+
+Ursprünglich für den eigenständigen Einsatz von Raspberry Pi mit Touchscreen-Funktionalität (ähnlich dem Kiosk Modus) konzipiert, war dieses Projekt in erster Linie das Scannen angehängter USB-Laufwerke. Während der Umfang des Projekts erweitert wurde, bleibt diese Funktion intakt. Folge der [Anleitung auf Tauri](https://tauri.app/v1/guides/building/linux#manual-compilation) und wenn du Probleme damit hast, lass es uns wissen.
+
+Vielen Dank, dass Sie Raspirus als Ihre Malware-Schutzlösung gewählt haben. Diese umfassenden Führer sorgen dafür, dass Ihre Erfahrung nahtlos und effizient ist.

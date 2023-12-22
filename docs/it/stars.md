@@ -1,13 +1,13 @@
-# STARS
+# STELLE
 
-## Sponsors
+## Sponsor
 
 <div class="contributor-card">
   <a href="https://github.com/Benji377" target="_blank">
     <img src="https://avatars.githubusercontent.com/u/50681275?v=4" alt="Profile Image">
     <div class="contributor-info">
       <h3>Benjamin Demetz</h3>
-      <p>❤️ Maintainer</p>
+      <p>❤️ Manutentore</p>
     </div>
   </a>
 </div>
@@ -21,13 +21,13 @@
   </a>
 </div>
 
-## Contributors
+## Collaboratori
 
 <div class="contributor-card">
   <a href="https://github.com/mwallnoefer" target="_blank">
     <img src="https://avatars.githubusercontent.com/u/7541399?v=4?s=100" alt="Profile Image">
     <div class="contributor-info">
-      <h3>Matthias Dieter Wallnöfer</h3>
+      <h3>Matthias Dieter Wallnöfer</h3>
       <p>🧑‍🏫 Mentoring</p>
     </div>
   </a>
@@ -63,14 +63,14 @@
   </a>
 </div>
 
-## Special Credits
+## Crediti Speciali
 
 <div class="contributor-card">
   <a href="https://github.com/Lairex59" target="_blank">
     <img src="https://avatars.githubusercontent.com/u/74677245?v=4" alt="Profile Image">
     <div class="contributor-info">
       <h3>Lairex59</h3>
-      <p>💡 Ideas and Support</p>
+      <p>💡 Idee e supporto</p>
     </div>
   </a>
 </div>

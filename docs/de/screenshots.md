@@ -1,15 +1,19 @@
 # SCREENSHOTS
 
 ## Zuhause
-![Screenshot of Home page](../img/screenshots/home.png)
 
-## Scanning
-![Screenshot of scanning process](../img/screenshots/scanning.png)
+![Screenshot der Homepage](../img/screenshots/home.png)
 
-## Result
-![Screenshot of positive result](../img/screenshots/result.png)
+## Scannen
+
+![Screenshot des Scanprozess](../img/screenshots/scanning.png)
+
+## Ergebnis
+
+![Screenshot mit positivem Ergebnis](../img/screenshots/result.png)
 
 ## Raspberry Pi Setup
-![Screenshot of Home page on Raspberry Pi](../img/screenshots/Rpihomesetup.jpg)
 
-![Screenshot of Raspberry Pi setup](../img/screenshots/Rpisetup.jpg)
+![Screenshot der Startseite auf Raspberry Pi](../img/screenshots/Rpihomesetup.jpg)
+
+![Screenshot von Raspberry Pi Setup](../img/screenshots/Rpisetup.jpg)

@@ -1,29 +1,33 @@
 ---
-comments: vero
+comments: true
 ---
 
 # FAQ
 
-???+ question "App crashes when updating" On Windows, it has been observed that the app crashes when attempting to update the database. We are aware of this issue and actively working to resolve it. The problem arises because the update function requires administrative privileges, which Windows does not automatically provide. To temporarily resolve this issue, you can execute the app with administrative privileges. Right-click on the app and select "Run as administrator" to launch it with the necessary privileges.
+???+ question "App crashes when updating" On Windows, it has been observed that the app crashes when attempting to update the database. Siamo consapevoli di questo problema e ci stiamo adoperando attivamente per risolverlo. Il problema sorge perché la funzione di aggiornamento richiede privilegi amministrativi, che Windows non fornisce automaticamente. Per risolvere temporaneamente questo problema, è possibile eseguire l'applicazione con privilegi amministrativi. Fare clic con il tasto destro sull'app e selezionare "Esegui come amministratore" per avviarla con i privilegi necessari.
 
-???+ question "Where does the Raspirus logo come from?" The logo of the Raspirus app features a red monster named Stuart, who is designed to represent a virus-eating creature. The logo was generated using [DALL-E](https://openai.com/product/dall-e-2), along with creative image editing and merging. Stuart is a friendly monster, except when he's hungry for viruses. You can find additional media and documents in the [dedicated repository](https://github.com/Raspirus/media). Feel free to use these images to create your own artwork and share them in the [discussion boards](https://github.com/orgs/Raspirus/discussions).
+???+ domanda "Da dove viene il logo Raspirus?"
+Il logo dell'app Raspirus presenta un mostro rosso di nome Stuart, che è progettato per rappresentare una creatura che mangia virus. Il logo è stato generato utilizzando [DALL-E](https://openai.com/product/dall-e-2), insieme all'editing e alla fusione di immagini creative. Stuart è un mostro amichevole, tranne quando ha fame di virus. Puoi trovare ulteriori supporti e documenti nel [repository dedicato](https://github.com/Raspirus/media). Sentitevi liberi di utilizzare queste immagini per creare la vostra grafica e condividerle nelle [schede di discussione](https://github.com/orgs/Raspirus/discussioni).
 
-???+ question "My VScode setup is giving me issues"
+???+ domanda "Il mio VScode setup mi sta dando problemi"
 
-    The Rust Analyzer plugin in Visual Studio Code searches for a `Cargo.toml` file in the current directory or its parent directory. To address this issue, you can add an option to the plugin settings and specify the location of your `Cargo.toml` file.
-    
-    As mentioned in [this comment](https://github.com/rust-lang/rust-analyzer/issues/2649#issuecomment-691582605), you can add the following lines to the end of your plugin settings JSON. Afterward, restart the Rust Analyzer for the modifications to take effect.
+````
+Il plugin Rust Analyzer in Visual Studio Code cerca un file `Cargo.toml` nella directory corrente o nella directory principale. Per risolvere questo problema, puoi aggiungere un'opzione alle impostazioni del plugin e specificare la posizione del tuo `Cargo. oml` file.
 
-    ```json
-    {
-        "rust-analyzer.linkedProjects": [
-            "/home/stuart/raspirus/raspirus/Cargo.toml"
-        ]
-    }
-    ```
+Come menzionato nel [questo commento](https://github. om/rust-lang/rust-analyzer/issues/2649#issuecomment-691582605), è possibile aggiungere le seguenti righe alla fine delle impostazioni del plugin JSON. Successivamente, riavviare l'Analizzatore Rust affinché le modifiche abbiano effetto.
 
-???+ question "Can't select directories/files" Unfortunately, as of [this issue](https://github.com/tauri-apps/tauri/issues/5405) with Tauri, we currently can't allow users to select both files and folders. To switch between selecting a single file or folder, you need to change it in the Raspirus settings. There you will find a switch for it.
+```json
+{
+    "rust-analyzer. inkedProjects": [
+        "/home/stuart/raspirus/raspirus/Cargo.toml"
+    ]
+}
+```
+````
 
-???+ question "What is obfuscated mode?" Raspirus was originally intended for enterprise usage and therefore needed to be privacy-friendly. To ensure that, it added the "Obfuscation Mode", which will hide everything, detect malware faster and only display: "Malware found" or "No malware found". It is on by default, so if you want to know a bit more about your scan, you should probably deactivate it. You can do so in the settings.
+???+ question "Can't select directories/files" Unfortunately, as of [this issue](https://github.com/tauri-apps/tauri/issues/5405) with Tauri, we currently can't allow users to select both files and folders. Per passare dalla selezione di un singolo file o cartella, è necessario modificarlo nelle impostazioni di Raspirus. Qui troverete un interruttore per esso.
 
-???+ question "error: found a virtual manifest instead of a package manifest" If you get this error when performing `cargo install` or using the Makefile, please note that it's a [know issue](https://github.com/rust-lang/cargo/issues/7599). The solution is simple, as explained on the [this](https://stackoverflow.com/a/76271890) Stackoverflow answer, simply change the command to include the workspace, like this: `cargo install --path src-tauri/`
+???+ domanda "Cos'è la modalità offuscata?"
+Raspirus era originariamente destinato all'uso aziendale e quindi doveva essere rispettoso della privacy. Per garantire che, ha aggiunto la "modalità obfuscation", che nasconderà tutto, rilevare il malware più velocemente e solo visualizzare: "Malware trovato" o "Nessun malware trovato". È attivata per impostazione predefinita, quindi se vuoi saperne di più sulla tua scansione, probabilmente dovresti disattivarla. Puoi farlo nelle impostazioni.
+
+???+ question "error: found a virtual manifest instead of a package manifest" If you get this error when performing `cargo install` or using the Makefile, please note that it's a [know issue](https://github.com/rust-lang/cargo/issues/7599). La soluzione è semplice, come spiegato sulla [this](https\://stackoverflow. om/a/76271890) Risposta allo stackoverflow, basta cambiare il comando per includere lo spazio di lavoro, come questo: `cargo install --path src-tauri/`
