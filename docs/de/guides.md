@@ -1,8 +1,8 @@
 # GUIDES
 
-## Setting Up Your Local Documentation
+## Lokale Dokumentation einrichten
 
-Easily set up the documentation on your machine with these straightforward steps:
+Richten Sie einfach die Dokumentation auf Ihrem Rechner mit diesen einfachen Schritten ein:
 
 1. Clone this repository by following the instructions on [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
@@ -16,73 +16,73 @@ Easily set up the documentation on your machine with these straightforward steps
    You can install the dependencies by running the following command: `pip install -r requirements.txt`.
    ```
 
-3. Launch the Project Locally:
-   Begin your local project by executing this command:
+3. Starte das Projekt lokal:
+   Beginne dein lokales Projekt, indem du diesen Befehl ausführst:
 
    ```bash
-   mkdocs serve
+   mkdocs dienen
    ```
 
-   This will initiate a development server, allowing you to access the documentation via [http://localhost:8000](http://localhost:8000) in your preferred web browser.
+   Dies wird einen Entwicklungsserver initiieren, der dir erlaubt, die Dokumentation über [http://localhost:8000](http://localhost:8000) in deinem bevorzugten Webbrowser zuzugreifen.
 
 ## Export to PDF
 
 If you would like to have an offline version of this documentation in PDF format, you can follow these step-by-step instructions:
 
-1. Follow the setup process outlined above.
+1. Folgen Sie den oben beschriebenen Installationsprozess.
 
 2. Install [mkdocs](https://www.mkdocs.org/user-guide/installation/) and execute the build command: `mkdocs build`.
 
 3. If everything goes smoothly, the resulting PDF file should be located in the `site/pdf` directory with the name `document.pdf`.
 
-Please be aware that the exported PDF may have some issues with images and iFrames, but the text should be readable and suitable for sharing offline. Nevertheless, the text remains legible and suitable for offline sharing.
+Please be aware that the exported PDF may have some issues with images and iFrames, but the text should be readable and suitable for sharing offline. Dennoch bleibt der Text lesbar und für die Offline-Freigabe geeignet.
 
 ## Übersetzungen
 
-For translations of this documentation, visit [Crowdin](https://crowdin.com/project/raspirus), a collaborative platform. Translations for UI strings are managed through JSON files. To contribute, craft your translations within the [locales folder](https://github.com/Raspirus/Raspirus/tree/main/public%2Flocales). Retain the uniqueness of keys when translating from the `en.json` file.
+Für Übersetzungen dieser Dokumentation besuchen Sie bitte [Crowdin](https://crowdin.com/project/raspirus), eine gemeinschaftliche Plattform. Übersetzungen für UI-Zeichenketten werden über JSON-Dateien verwaltet. Erstelle deine Übersetzungen im [locales Ordner](https://github.com/Raspirus/Raspirus/tree/main/public%2Flocales). Behalte die Einzigartigkeit der Schlüssel bei der Übersetzung aus der `en.json` Datei.
 
-## Scanner Insights
+## Scanner-Einblicke
 
-### Scanning Compressed Files
+### Scanne komprimierte Dateien
 
-!!! note
+!!! notiz
 
 ```
-This option is not yet available for the Raspberry Pi. see why in the [FAQ section](https://raspirus.github.io/docs/faq)
+Diese Option ist für die Raspberry Pi noch nicht verfügbar. Schau, warum in der [FAQ Sektion](https://raspirus.github.io/docs/faq)
 ```
 
-While Raspirus defaults to scanning folders, you can alter this behavior via the settings page. By toggling a switch, you can scan individual files, including compressed ones. It's important to note that only one file can be scanned at a time.
+Während Raspirus standardmäßig Ordner scannt, können Sie dieses Verhalten über die Einstellungsseite ändern. Durch Umschalten können Sie einzelne Dateien, einschließlich komprimierter Dateien, scannen. Es ist wichtig zu beachten, dass nur eine Datei gleichzeitig gescannt werden kann.
 
-### Navigating Logs and Configurations
+### Protokolle und Konfigurationen navigieren
 
-In the event of unexpected occurrences or sudden app crashes, examining logs and configurations can provide insights. Locate these files in the following folders, based on your operating system. The [ProjectDirs crate](https://docs.rs/directories-next/latest/directories_next/struct.ProjectDirs.html) stores them at the following location:
+Bei unerwarteten Vorfällen oder plötzlichen Abstürzen der App kann die Prüfung von Logs und Konfigurationen Einblicke bieten. Suchen Sie diese Dateien in den folgenden Ordnern, basierend auf Ihrem Betriebssystem. Das [ProjectDirs crate](https://docs.rs/directories-next/latest/directories_next/struct.ProjectDirs.html) speichert diese an der folgenden Stelle:
 
-**Config file:**
+**Konfigurationsdatei:**
 
-| Platform | Value                                                                      | Example                                                       |
-| -------- | -------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| Linux    | `$XDG_DATA_HOME`/`_project_path_` or `$HOME`/.local/share/`_project_path_` | /home/alice/.local/share/barapp                               |
-| macOS    | `$HOME`/Library/Application Support/`_project_path_`                       | /Users/Alice/Library/Application Support/com.Foo-Corp.Bar-App |
-| Windows  | `{FOLDERID_RoamingAppData}`\\`_project_path_`\data                         | C:\Users\Alice\AppData\Roaming\Foo Corp\Bar App\data          |
+| Plattform | Wert                                                                         | Beispiel                                                         |
+| --------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Linux     | `$XDG_DATA_HOME`/`_project_path_` oder `$HOME`/.local/share/`_project_path_` | /home/alice/.local/share/barapp                                  |
+| macOS     | `$HOME`/Library/Application Support/`_project_path_`                         | /Benutzer/Alice/Library/Application Support/com.Foo-Corp.Bar-App |
+| Fenster   | `{FOLDERID_RoamingAppData}`\\`_project_path_`\data                           | C:\Benutzer\Alice\AppData\Roaming\Foo Corp\Bar App\data          |
 
-**Log files:**
+**Logdateien:**
 
-| Platform | Value                                                                      | Example                                                       |
-| -------- | -------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| Linux    | `$XDG_DATA_HOME`/`_project_path_` or `$HOME`/.local/share/`_project_path_` | /home/alice/.local/share/barapp                               |
-| macOS    | `$HOME`/Library/Application Support/`_project_path_`                       | /Users/Alice/Library/Application Support/com.Foo-Corp.Bar-App |
-| Windows  | `{FOLDERID_LocalAppData}`\\`_project_path_`\data                           | C:\Users\Alice\AppData\Local\Foo Corp\Bar App\data            |
+| Plattform | Wert                                                                         | Beispiel                                                         |
+| --------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Linux     | `$XDG_DATA_HOME`/`_project_path_` oder `$HOME`/.local/share/`_project_path_` | /home/alice/.local/share/barapp                                  |
+| macOS     | `$HOME`/Library/Application Support/`_project_path_`                         | /Benutzer/Alice/Library/Application Support/com.Foo-Corp.Bar-App |
+| Fenster   | `{FOLDERID_LocalAppData}`\\`_project_path_`\data                             | C:\Benutzer\Alice\AppData\Local\Foo Corp\Bar App\data            |
 
-Ensure to include these files when reporting bugs, as they greatly assist in troubleshooting.
+Stellen Sie sicher, dass Sie diese Dateien beim Melden von Fehlern einfügen, da sie bei der Fehlerbehebung sehr hilfreich sind.
 
 ## GitHub Integration
 
-### Enriching the Signature Database
+### Die Anreicherung der Signaturdatenbank
 
-COMING SOON
+KOMMEN SOON
 
-## Raspberry Pi Deployment
+## Raspberry Pi Einsatz
 
-Originally tailored for standalone Raspberry Pi deployment with touchscreen functionality (akin to kiosk mode), this project's primary purpose was scanning attached USB drives. While the project's scope has expanded, this feature remains intact. Follow the [guide on Tauri](https://tauri.app/v1/guides/building/linux#manual-compilation) and if you encounter any issue with it, make sure to let us know.
+Ursprünglich für den eigenständigen Einsatz von Raspberry Pi mit Touchscreen-Funktionalität (ähnlich dem Kiosk Modus) konzipiert, war dieses Projekt in erster Linie das Scannen angehängter USB-Laufwerke. Während der Umfang des Projekts erweitert wurde, bleibt diese Funktion intakt. Folge der [Anleitung auf Tauri](https://tauri.app/v1/guides/building/linux#manual-compilation) und wenn du Probleme damit hast, lass es uns wissen.
 
-Thank you for choosing Raspirus as your malware protection solution. These comprehensive guides will ensure your experience is seamless and efficient.
+Vielen Dank, dass Sie Raspirus als Ihre Malware-Schutzlösung gewählt haben. Diese umfassenden Führer sorgen dafür, dass Ihre Erfahrung nahtlos und effizient ist.
