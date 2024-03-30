@@ -15,6 +15,7 @@ comments: true
 
 ??? question "What are the minimum requirements for the app to work?"
     Raspirus is built to work and almost any system. It even works well on a RPi 3B+. Nonetheless, we recommend having:
+    
     - 1 GB of RAM
     - minimum of 10 GB of space (the database is sadly quite big)
     - Dual core CPU (The better, the faster Raspirus will be)
