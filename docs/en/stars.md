@@ -75,6 +75,16 @@
   </a>
 </div>
 
+<div class="contributor-card">
+  <a href="https://github.com/tauri-apps" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/54536011?s=200&v=4" alt="Profile Image">
+    <div class="contributor-info">
+      <h3>Tauri Devs</h3>
+      <p>💡 Community Support</p>
+    </div>
+  </a>
+</div>
+
 <!--
 <div class="contributor-card">
 <a href="USER_PROFILE_URL" target="_blank">
