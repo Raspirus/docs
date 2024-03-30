@@ -75,14 +75,14 @@ In caso di eventi inaspettati o di crash improvvisi delle app, l'esame di regist
 
 Assicurarsi di includere questi file durante la segnalazione di bug, in quanto aiutano notevolmente nella risoluzione dei problemi.
 
-## GitHub Integration
+## Arricchire il database delle firme
 
-### Arricchire il database delle firme
-
-COMANDO SUONO
+Raspirus has its own [signatures repository](https://github.com/Raspirus/signatures) which are collected from various sources and updated approximately once or twice every month. You can check out all the signatures there and report false positives or missing signatures directly there by opening an issue or Pull request.
+If you want to build your own signatures database, you can use the [signature-builder](https://github.com/Raspirus/signature-builder).
 
 ## Distribuzione Raspberry Pi
 
 Originariamente su misura per distribuzione Raspberry Pi standalone con funzionalità touchscreen (simile alla modalità chiosco), lo scopo primario di questo progetto era la scansione delle unità USB collegate. Mentre il campo di applicazione del progetto si è ampliato, questa caratteristica rimane intatta. Segui la [guida su Tauri](https://tauri.app/v1/guides/building/linux#manual-compilation) e, se riscontri qualche problema, assicurati di farci sapere.
+We also provide pre-built executables on [our website](https://raspirus.deno.dev/)!
 
 Grazie per aver scelto Raspirus come soluzione di protezione da malware. Queste guide complete garantiranno la vostra esperienza senza soluzione di continuità ed efficiente.
