@@ -75,14 +75,14 @@ Bei unerwarteten Vorfällen oder plötzlichen Abstürzen der App kann die Prüfu
 
 Stellen Sie sicher, dass Sie diese Dateien beim Melden von Fehlern einfügen, da sie bei der Fehlerbehebung sehr hilfreich sind.
 
-## GitHub Integration
+## Die Anreicherung der Signaturdatenbank
 
-### Die Anreicherung der Signaturdatenbank
-
-KOMMEN SOON
+Raspirus has its own [signatures repository](https://github.com/Raspirus/signatures) which are collected from various sources and updated approximately once or twice every month. You can check out all the signatures there and report false positives or missing signatures directly there by opening an issue or Pull request.
+If you want to build your own signatures database, you can use the [signature-builder](https://github.com/Raspirus/signature-builder).
 
 ## Raspberry Pi Einsatz
 
 Ursprünglich für den eigenständigen Einsatz von Raspberry Pi mit Touchscreen-Funktionalität (ähnlich dem Kiosk Modus) konzipiert, war dieses Projekt in erster Linie das Scannen angehängter USB-Laufwerke. Während der Umfang des Projekts erweitert wurde, bleibt diese Funktion intakt. Folge der [Anleitung auf Tauri](https://tauri.app/v1/guides/building/linux#manual-compilation) und wenn du Probleme damit hast, lass es uns wissen.
+We also provide pre-built executables on [our website](https://raspirus.deno.dev/)!
 
 Vielen Dank, dass Sie Raspirus als Ihre Malware-Schutzlösung gewählt haben. Diese umfassenden Führer sorgen dafür, dass Ihre Erfahrung nahtlos und effizient ist.
