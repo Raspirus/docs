@@ -1,6 +1,6 @@
 # STARS
 
-## Sponsors
+## Maintainers
 
 <div class="contributor-card">
   <a href="https://github.com/Benji377" target="_blank">
@@ -11,6 +11,19 @@
     </div>
   </a>
 </div>
+
+<div class="contributor-card">
+  <a href="https://github.com/GamingGuy003" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/77393763?v=4?s=100" alt="Profile Image">
+    <div class="contributor-info">
+      <h3>GamingGuy003</h3>
+      <p>❤️ Co-Maintainer</p>
+    </div>
+  </a>
+</div>
+
+## Sponsors
+
 <div class="contributor-card">
   <a href="https://github.com/tuchaVshortah" target="_blank">
     <img src="https://avatars.githubusercontent.com/u/71591558?v=4" alt="Profile Image">
@@ -29,16 +42,6 @@
     <div class="contributor-info">
       <h3>Matthias Dieter Wallnöfer</h3>
       <p>🧑‍🏫 Mentoring</p>
-    </div>
-  </a>
-</div>
-
-<div class="contributor-card">
-  <a href="https://github.com/GamingGuy003" target="_blank">
-    <img src="https://avatars.githubusercontent.com/u/77393763?v=4?s=100" alt="Profile Image">
-    <div class="contributor-info">
-      <h3>GamingGuy003</h3>
-      <p>💻 Backend Developer</p>
     </div>
   </a>
 </div>
