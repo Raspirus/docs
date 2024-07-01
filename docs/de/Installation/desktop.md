@@ -61,4 +61,4 @@ Currently, macOS users can download Raspirus from [our website](https://raspirus
 
 For all platforms, you can always download the executable directly from the release page on our [GitHub repository](https://github.com/Raspirus/Raspirus). This is the quickest way to get the most up-to-date release.
 
-If you prefer to build the project yourself, follow the guide in the [Developer section](../Developers/).
+If you prefer to build the project yourself, follow the guide in the [Developer section](../Developers/index.md).
