@@ -121,6 +121,22 @@
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/"/>
     </url>
     <url>
+        <loc>NoneVarious/legal/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/legal/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/legal/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/legal/"/>
+    </url>
+    <url>
+        <loc>NoneVarious/privacy/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/privacy/"/>
+    </url>
+    <url>
         <loc>NoneVarious/stars/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
@@ -284,6 +300,22 @@
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/"/>
     </url>
     <url>
+        <loc>Nonede/Various/legal/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/legal/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/legal/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/legal/"/>
+    </url>
+    <url>
+        <loc>Nonede/Various/privacy/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/privacy/"/>
+    </url>
+    <url>
         <loc>Nonede/Various/stars/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
@@ -410,6 +442,22 @@
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/"/>
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/"/>
         <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/"/>
+    </url>
+    <url>
+        <loc>Noneit/Various/legal/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/legal/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/legal/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/legal/"/>
+    </url>
+    <url>
+        <loc>Noneit/Various/privacy/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/privacy/"/>
     </url>
     <url>
         <loc>Noneit/Various/stars/</loc>
