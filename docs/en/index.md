@@ -44,7 +44,7 @@ Got questions about Raspirus? We're here to help!
 
 Thank you for choosing Raspirus for your malware protection needs. Together, we're making the digital world safer for everyone.
 
-## SCREENSHOTS
+## Screenshots
 
 ### Home
 ![Screenshot of Home page](../img/screenshots/home.png)
