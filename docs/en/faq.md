@@ -1,7 +1,3 @@
----
-comments: true
----
-
 # FAQ
 
 ??? question "App crashes when updating"
@@ -39,9 +35,6 @@ comments: true
 
 ??? question "Can't select directories/files"
     Unfortunately, as of [this issue](https://github.com/tauri-apps/tauri/issues/5405) with Tauri, we currently can't allow users to select both files and folders. To switch between selecting a single file or folder, you need to change it in the Raspirus settings. There you will find a switch for it.
-
-??? question "What is obfuscated mode?"
-    Raspirus was originally intended for enterprise usage and therefore needed to be privacy-friendly. To ensure that, it added the "Obfuscation Mode", which will hide everything, detect malware faster and only display: "Malware found" or "No malware found". It is on by default, so if you want to know a bit more about your scan, you should probably deactivate it. You can do so in the settings.
 
 ??? question "error: found a virtual manifest instead of a package manifest"
     If you get this error when performing `cargo install` or using the Makefile, please note that it's a [know issue](https://github.com/rust-lang/cargo/issues/7599). The solution is simple, as explained on [this](https://stackoverflow.com/a/76271890) Stackoverflow answer, simply change the command to include the workspace, like this: `cargo install --path src-tauri/`

@@ -2,7 +2,7 @@ site_name: Raspirus docs
 repo_url: https://github.com/Raspirus/Raspirus
 repo_name: Raspirus
 edit_uri: https://github.com/Raspirus/docs/tree/main/docs
-site_description: Documentation and guides of the Raspirus project
+site_description: Documentation of the Raspirus project
 site_author: Benjamin Demetz
 
 theme:
@@ -37,6 +37,7 @@ theme:
     - navigation.top
     - navigation.footer
     - navigation.indexes
+    - navigation.expand
     - content.action.edit
     - content.action.view
     - search.suggest
@@ -73,12 +74,6 @@ plugins:
       fallback_to_build_date: true
   - search
   - glightbox
-  - with-pdf:
-      cover_subtitle: A simple hash-based virus scanner
-      cover_logo: assets/images/logo.png
-      convert_iframe:
-        - src: https://www.figma.com/file/pkgpwieNbhYiOi4Gz6Uyt6
-          img: assets/images/Figma.png
 
 extra:
   social:
@@ -88,8 +83,11 @@ extra:
       link: https://discord.gg/Vx7fW9PA8B
     - icon: fontawesome/solid/paper-plane
       link: mailto:raspirus.dev@gmail.com
+  analytics:
+    provider: google
+    property: G-VRX9CYLPKJ
 
 extra_css:
   - style.css
 
-copyright: Copyright &copy; 2022 - 2023 Raspirus Project
+copyright: Copyright &copy; 2022 - 2024 Raspirus Project

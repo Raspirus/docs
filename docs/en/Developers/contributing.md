@@ -1,4 +1,4 @@
-# CONTRIBUTING
+# Contributing
 
 ## Enhance the Codebase
 
