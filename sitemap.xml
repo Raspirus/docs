@@ -25,22 +25,6 @@
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/faq/"/>
     </url>
     <url>
-        <loc>NoneAppendix/</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/"/>
-    </url>
-    <url>
-        <loc>NoneAppendix/stars/</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/stars/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/stars/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/stars/"/>
-    </url>
-    <url>
         <loc>NoneDevelopers/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
@@ -113,12 +97,36 @@
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/"/>
     </url>
     <url>
-        <loc>NoneUsage/guides/</loc>
+        <loc>NoneUsage/config/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/guides/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/guides/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/guides/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/config/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/config/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/config/"/>
+    </url>
+    <url>
+        <loc>NoneUsage/scanning/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/scanning/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/scanning/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/scanning/"/>
+    </url>
+    <url>
+        <loc>NoneVarious/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/"/>
+    </url>
+    <url>
+        <loc>NoneVarious/stars/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/stars/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/stars/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/stars/"/>
     </url>
     <url>
         <loc>Nonede/</loc>
@@ -178,22 +186,6 @@
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/contact/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Nonecontact/"/>
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/contact/"/>
-    </url>
-    <url>
-        <loc>Nonede/Appendix/</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/"/>
-    </url>
-    <url>
-        <loc>Nonede/Appendix/stars/</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/stars/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/stars/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/stars/"/>
     </url>
     <url>
         <loc>Nonede/Developers/</loc>
@@ -268,12 +260,36 @@
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/"/>
     </url>
     <url>
-        <loc>Nonede/Usage/guides/</loc>
+        <loc>Nonede/Usage/config/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/guides/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/guides/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/guides/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/config/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/config/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/config/"/>
+    </url>
+    <url>
+        <loc>Nonede/Usage/scanning/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/scanning/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/scanning/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/scanning/"/>
+    </url>
+    <url>
+        <loc>Nonede/Various/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/"/>
+    </url>
+    <url>
+        <loc>Nonede/Various/stars/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/stars/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/stars/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/stars/"/>
     </url>
     <url>
         <loc>Noneit/</loc>
@@ -298,22 +314,6 @@
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/faq/"/>
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/faq/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Nonefaq/"/>
-    </url>
-    <url>
-        <loc>Noneit/Appendix/</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/"/>
-    </url>
-    <url>
-        <loc>Noneit/Appendix/stars/</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/stars/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/stars/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/stars/"/>
     </url>
     <url>
         <loc>Noneit/Developers/</loc>
@@ -388,12 +388,36 @@
         <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/"/>
     </url>
     <url>
-        <loc>Noneit/Usage/guides/</loc>
+        <loc>Noneit/Usage/config/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/guides/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/guides/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/guides/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/config/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/config/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/config/"/>
+    </url>
+    <url>
+        <loc>Noneit/Usage/scanning/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/scanning/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/scanning/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/scanning/"/>
+    </url>
+    <url>
+        <loc>Noneit/Various/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/"/>
+    </url>
+    <url>
+        <loc>Noneit/Various/stars/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/stars/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/stars/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/stars/"/>
     </url>
     <url>
         <loc>Noneit/contributing/</loc>
