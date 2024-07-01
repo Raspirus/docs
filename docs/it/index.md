@@ -45,7 +45,7 @@ Hai domande su Raspirus? Siamo qui per aiutare!
 
 Grazie per aver scelto Raspirus per le vostre esigenze di protezione malware. Insieme, stiamo rendendo il mondo digitale più sicuro per tutti.
 
-## SCREENSHOTS
+## Screenshots
 
 ### Home
 
