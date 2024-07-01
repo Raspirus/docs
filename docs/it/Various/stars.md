@@ -1,4 +1,4 @@
-# STELLE
+# Special Thanks
 
 ## Maintainers
 
