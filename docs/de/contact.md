@@ -16,6 +16,6 @@ If you have bug reports, feature requests, or other code-related issues, please 
 
 ## Quick Links:
 
-- [Discord](https://discord.gg/Vx7fW9PA8B)
-- [Email](mailto:raspirus.dev@gmail.com)
-- [GitHub](https://github.com/Raspirus/Raspirus)
+- :simple-discord: [Discord](https://discord.gg/Vx7fW9PA8B)
+- :simple-gmail: [Email](mailto:raspirus.dev@gmail.com)
+- :simple-github: [GitHub](https://github.com/Raspirus/Raspirus)
