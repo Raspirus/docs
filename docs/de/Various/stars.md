@@ -1,4 +1,4 @@
-# STARS
+# Special Thanks
 
 ## Maintainers
 
