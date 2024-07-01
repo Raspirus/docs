@@ -44,3 +44,23 @@ Haben Sie Fragen zu Raspirus? Wir sind hier, um zu helfen!
 - Wenn Sie einen Fehler gefunden haben, durchsuchen Sie die GitHub Probleme, um zu sehen, ob er bereits gemeldet ist.
 
 Vielen Dank, dass Sie sich für Raspirus für Ihren Malware-Schutz entschieden haben. Gemeinsam machen wir die digitale Welt für alle sicherer.
+
+## SCREENSHOTS
+
+### Zuhause
+
+![Screenshot der Homepage](../img/screenshots/home.png)
+
+### Scannen
+
+![Screenshot des Scanprozess](../img/screenshots/scanning.png)
+
+### Ergebnis
+
+![Screenshot mit positivem Ergebnis](../img/screenshots/result.png)
+
+### Raspberry Pi Setup
+
+![Screenshot der Startseite auf Raspberry Pi](../img/screenshots/Rpihomesetup.jpg)
+
+![Screenshot von Raspberry Pi Setup](../img/screenshots/Rpisetup.jpg)
