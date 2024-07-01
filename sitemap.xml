@@ -9,20 +9,12 @@
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/"/>
     </url>
     <url>
-        <loc>Nonecontributing/</loc>
+        <loc>Nonecontact/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonecontributing/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/"/>
-    </url>
-    <url>
-        <loc>Nonedevelopers/</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/developers/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonecontact/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/contact/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/contact/"/>
     </url>
     <url>
         <loc>Nonefaq/</loc>
@@ -33,28 +25,100 @@
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/faq/"/>
     </url>
     <url>
-        <loc>Noneguides/</loc>
+        <loc>NoneAppendix/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/guides/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/guides/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/"/>
     </url>
     <url>
-        <loc>Nonescreenshots/</loc>
+        <loc>NoneAppendix/stars/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonescreenshots/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/screenshots/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/screenshots/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/stars/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/stars/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/stars/"/>
     </url>
     <url>
-        <loc>Nonestars/</loc>
+        <loc>NoneDevelopers/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonestars/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/stars/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/stars/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneDevelopers/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Developers/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Developers/"/>
+    </url>
+    <url>
+        <loc>NoneDevelopers/architecture/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneDevelopers/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Developers/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Developers/architecture/"/>
+    </url>
+    <url>
+        <loc>NoneDevelopers/contributing/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneDevelopers/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Developers/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Developers/contributing/"/>
+    </url>
+    <url>
+        <loc>NoneInstallation/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/"/>
+    </url>
+    <url>
+        <loc>NoneInstallation/desktop/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/desktop/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/desktop/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/desktop/"/>
+    </url>
+    <url>
+        <loc>NoneInstallation/mobile-devices/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/mobile-devices/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/mobile-devices/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/mobile-devices/"/>
+    </url>
+    <url>
+        <loc>NoneInstallation/raspberry-pi/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/raspberry-pi/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/raspberry-pi/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/raspberry-pi/"/>
+    </url>
+    <url>
+        <loc>NoneScanning/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneScanning/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Scanning/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Scanning/"/>
+    </url>
+    <url>
+        <loc>NoneUsage/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/"/>
+    </url>
+    <url>
+        <loc>NoneUsage/guides/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/guides/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/guides/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/guides/"/>
     </url>
     <url>
         <loc>Nonede/</loc>
@@ -69,7 +133,6 @@
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonecontributing/"/>
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/"/>
     </url>
     <url>
@@ -77,7 +140,6 @@
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/"/>
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/developers/"/>
     </url>
     <url>
@@ -93,7 +155,6 @@
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/guides/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/"/>
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/guides/"/>
     </url>
     <url>
@@ -101,7 +162,6 @@
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/screenshots/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonescreenshots/"/>
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/screenshots/"/>
     </url>
     <url>
@@ -109,8 +169,111 @@
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/stars/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonestars/"/>
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/stars/"/>
+    </url>
+    <url>
+        <loc>Nonede/contact/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/contact/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonecontact/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/contact/"/>
+    </url>
+    <url>
+        <loc>Nonede/Appendix/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/"/>
+    </url>
+    <url>
+        <loc>Nonede/Appendix/stars/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/stars/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/stars/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/stars/"/>
+    </url>
+    <url>
+        <loc>Nonede/Developers/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Developers/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneDevelopers/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Developers/"/>
+    </url>
+    <url>
+        <loc>Nonede/Developers/architecture/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Developers/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneDevelopers/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Developers/architecture/"/>
+    </url>
+    <url>
+        <loc>Nonede/Developers/contributing/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Developers/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneDevelopers/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Developers/contributing/"/>
+    </url>
+    <url>
+        <loc>Nonede/Installation/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/"/>
+    </url>
+    <url>
+        <loc>Nonede/Installation/desktop/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/desktop/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/desktop/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/desktop/"/>
+    </url>
+    <url>
+        <loc>Nonede/Installation/mobile-devices/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/mobile-devices/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/mobile-devices/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/mobile-devices/"/>
+    </url>
+    <url>
+        <loc>Nonede/Installation/raspberry-pi/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/raspberry-pi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/raspberry-pi/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/raspberry-pi/"/>
+    </url>
+    <url>
+        <loc>Nonede/Scanning/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Scanning/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneScanning/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Scanning/"/>
+    </url>
+    <url>
+        <loc>Nonede/Usage/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/"/>
+    </url>
+    <url>
+        <loc>Nonede/Usage/guides/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/guides/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/guides/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/guides/"/>
     </url>
     <url>
         <loc>Noneit/</loc>
@@ -121,20 +284,12 @@
         <xhtml:link rel="alternate" hreflang="en" href="None"/>
     </url>
     <url>
-        <loc>Noneit/contributing/</loc>
+        <loc>Noneit/contact/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonecontributing/"/>
-    </url>
-    <url>
-        <loc>Noneit/developers/</loc>
-        <lastmod>2024-07-01</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/developers/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonedevelopers/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/contact/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/contact/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonecontact/"/>
     </url>
     <url>
         <loc>Noneit/faq/</loc>
@@ -145,12 +300,121 @@
         <xhtml:link rel="alternate" hreflang="en" href="Nonefaq/"/>
     </url>
     <url>
+        <loc>Noneit/Appendix/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/"/>
+    </url>
+    <url>
+        <loc>Noneit/Appendix/stars/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Appendix/stars/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Appendix/stars/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneAppendix/stars/"/>
+    </url>
+    <url>
+        <loc>Noneit/Developers/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Developers/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Developers/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneDevelopers/"/>
+    </url>
+    <url>
+        <loc>Noneit/Developers/architecture/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Developers/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Developers/architecture/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneDevelopers/architecture/"/>
+    </url>
+    <url>
+        <loc>Noneit/Developers/contributing/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Developers/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Developers/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneDevelopers/contributing/"/>
+    </url>
+    <url>
+        <loc>Noneit/Installation/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/"/>
+    </url>
+    <url>
+        <loc>Noneit/Installation/desktop/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/desktop/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/desktop/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/desktop/"/>
+    </url>
+    <url>
+        <loc>Noneit/Installation/mobile-devices/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/mobile-devices/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/mobile-devices/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/mobile-devices/"/>
+    </url>
+    <url>
+        <loc>Noneit/Installation/raspberry-pi/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Installation/raspberry-pi/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Installation/raspberry-pi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneInstallation/raspberry-pi/"/>
+    </url>
+    <url>
+        <loc>Noneit/Scanning/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Scanning/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Scanning/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneScanning/"/>
+    </url>
+    <url>
+        <loc>Noneit/Usage/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/"/>
+    </url>
+    <url>
+        <loc>Noneit/Usage/guides/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Usage/guides/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/Usage/guides/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="NoneUsage/guides/"/>
+    </url>
+    <url>
+        <loc>Noneit/contributing/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/contributing/"/>
+    </url>
+    <url>
+        <loc>Noneit/developers/</loc>
+        <lastmod>2024-07-01</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/developers/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/developers/"/>
+    </url>
+    <url>
         <loc>Noneit/guides/</loc>
         <lastmod>2024-07-01</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/guides/"/>
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/guides/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/"/>
     </url>
     <url>
         <loc>Noneit/screenshots/</loc>
@@ -158,7 +422,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/screenshots/"/>
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/screenshots/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonescreenshots/"/>
     </url>
     <url>
         <loc>Noneit/stars/</loc>
@@ -166,6 +429,5 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/stars/"/>
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/stars/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonestars/"/>
     </url>
 </urlset>
