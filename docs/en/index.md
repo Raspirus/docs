@@ -27,18 +27,18 @@ Getting started with Raspirus is a breeze. Follow these simple steps:
 
 !!! note
 
-    If you plan to use Raspirus on the Raspberry Pi as a standalone application, we have a [dedicated guide](https://raspirus.github.io/docs/guides#Raspberry-Pi) for it.
+    If you plan to use Raspirus on the Raspberry Pi as a standalone application, we have a [dedicated guide](Installation/raspberry-pi.md) for it.
 
 
 ### For Developers
 
-Are you a developer looking to set up Raspirus? We've got you covered. Check out our comprehensive guides for various operating systems in the [Developers section](https://raspirus.github.io/docs/developers).
+Are you a developer looking to set up Raspirus? We've got you covered. Check out our comprehensive guides for various operating systems in the [Developers section](Developers/index.md).
 
 ## Questions?
 
 Got questions about Raspirus? We're here to help!
 
-- Visit our [FAQ section](https://raspirus.github.io/docs/faq) for answers to common queries.
+- Visit our [FAQ section](faq.md) for answers to common queries.
 - Join our thriving community on the [Discord server](https://discord.gg/Vx7fW9PA8B) to engage with fellow users.
 - If you've encountered a bug, browse the GitHub issues to see if it's already reported.
 
