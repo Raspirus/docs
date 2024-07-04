@@ -25,36 +25,27 @@ Raspirus gliedert sich in zwei integrale Komponenten: Frontend und Backend. Dies
 
 ## Starte deine Entwicklerreise
 
-\=== "Windows" Kopiere das Repository
-2\. Installiere [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prevquisites#setting-up-windows)
-3\. Installieren Sie [npm](https://nodejs.org/en/download)
-4\.  1. Clone the repository
-2\. Install [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos)
-3\. Install [npm](https://nodejs.org/en/download)
-4\. Install [Next.js](https://nextjs.org/docs/getting-started/installation#manual-installation) with `npm install next@latest react@latest react-dom@latest`
-5\. Install npm dependencies with: `npm i`
-6\. Start development with `cargo tauri dev`
-7\. or build Raspirus with `cargo tauri build` Installiere npm Abhängigkeiten mit: `npm i`
-6\. Beginnen Sie die Entwicklung mit `cargo tauri dev`
-7\. oder bauen Sie Raspirus mit "cargo tauri build"
-
-\=== "Linux" Klone das Repository
-2\. Führe `make install`
-3 aus.  1. Clone the Repository
-2\. Execute `make install`
-3\. Run the application with `raspirus`
-
-\=== "macOS" Kopiere das Repository
-2\. Installiere [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos)
-3\. Installieren Sie [npm](https://nodejs.org/en/download)
-4\.  1. Clone the repository
+\=== "Windows" Clone the repository
 2\. Install [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites#setting-up-windows)
 3\. Install [npm](https://nodejs.org/en/download)
 4\. Install [Next.js](https://nextjs.org/docs/getting-started/installation#manual-installation) with `npm install next@latest react@latest react-dom@latest`
 5\. Install npm dependencies with: `npm i`
 6\. Start development with `cargo tauri dev`
-7\. or build Raspirus with `cargo tauri build` Installiere npm Abhängigkeiten mit: `npm i`
-6\. Beginnen Sie die Entwicklung mit `cargo tauri dev`
+7\. oder bauen Sie Raspirus mit "cargo tauri build"
+
+\=== "Linux" Klone das Repository
+2\. Clone the Repository
+2\. Execute `make install`
+3\.  1. Clone the Repository
+2\. Execute `make install`
+3\. Run the application with `raspirus`
+
+\=== "macOS" Clone the repository
+2\. Install [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos)
+3\. Install [npm](https://nodejs.org/en/download)
+4\. Install [Next.js](https://nextjs.org/docs/getting-started/installation#manual-installation) with `npm install next@latest react@latest react-dom@latest`
+5\. Install npm dependencies with: `npm i`
+6\. Start development with `cargo tauri dev`
 7\. oder bauen Sie Raspirus mit "cargo tauri build"
 
 Sollten Sie während Ihres ersten Laufs oder Builds auf irgendwelche Fehler stoßen, stellen Sie sicher, dass Sie jeden Schritt gewissenhaft verfolgt haben. Bestätigen Sie die genaue Erstellung von Logs und Konfigurationsdateien.
