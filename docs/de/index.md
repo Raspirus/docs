@@ -6,10 +6,10 @@
 
 Raspirus: Verbessern Sie Ihren Malware-Schutz
 
-Willkommen in der offiziellen Dokumentation zu Raspirus, Ihrem leichten Signaturenscanner. Ursprünglich entwickelt, um angeschlossene USB-Laufwerke mit einem Raspberry Pi zu scannen Raspirus hat sich zu einem vielseitigen Tool entwickelt, das auch lokale Dateien und Ordner scannt. Einige der herausragenden Funktionen beinhalten:
+Welcome to the official documentation for Raspirus, your lightweight rules-based malware scanner. Ursprünglich entwickelt, um angeschlossene USB-Laufwerke mit einem Raspberry Pi zu scannen Raspirus hat sich zu einem vielseitigen Tool entwickelt, das auch lokale Dateien und Ordner scannt. Einige der herausragenden Funktionen beinhalten:
 
 - **Kostenloser Schutz:** Raspirus arbeitet ausschließlich auf Spenden und sichert so erstklassigen Schutz ohne finanzielle Belastung.
-- **Maßgeschneiderte Signaturerkennung:** Unser individueller Signatur-basierter Ansatz garantiert eine genaue Identifizierung von Malware.
+- **Tailored Yara Detection:** Our custom rules-based approach guarantees accurate identification of malware.
 - **Umfassende Datei-Scans:** Raspirus kann komprimierte Dateien effizient scannen, um sicherzustellen, dass keine Bedrohung unerkannt bleibt.
 - **Datenschutz Priorisiert:** Raspirus bietet eine datenschutzfreundliche Option, schützt Ihre persönlichen Daten.
 - **Cross-Platform Convenience:** Genießen Sie die Vorteile von Raspirus Schutz auf einer Vielzahl von Betriebssystemen.
@@ -46,6 +46,12 @@ Haben Sie Fragen zu Raspirus? Wir sind hier, um zu helfen!
 Vielen Dank, dass Sie sich für Raspirus für Ihren Malware-Schutz entschieden haben. Gemeinsam machen wir die digitale Welt für alle sicherer.
 
 ## Screenshots
+
+!!! notiz
+
+```
+The screenshots below are outdated, but the style and structure remains roughly the same
+```
 
 ### Zuhause
 
