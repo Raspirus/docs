@@ -14,7 +14,7 @@ You need permissions to access and read the files you want to scan. Raspirus can
 
 ### Scanning Procedure
 
-Scanning involves creating the MD5 signature of each file. In the case of compressed files, Raspirus extracts and scans the files within. Each signature is checked against the database, determining whether it matches known malware signatures. If a match is found, the file is flagged as malware; otherwise, it's deemed safe.
+Scanning involves inspecting the patterns of each file. In the case of compressed files, Raspirus extracts and scans the files within. Each pattern is checked against the database of rules, determining whether it matches known malware patterns. If a match is found, the file is flagged as malware; otherwise, it's deemed safe.
 
 ### After the Scan
 
