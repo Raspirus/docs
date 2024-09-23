@@ -14,17 +14,19 @@ The config file stores your settings when you close the app and includes some im
 
 ```json
 {
-  "hash_count": 0,
-  "last_db_update": "Never",
+  "config_version": "5",
+  "rules_version": "None",
+  "min_matches": 0,
+  "max_matches": 20,
+  "max_threads": 8,
   "logging_is_active": true,
-  "db_location": "",
-  "scan_dir": true,
-  "mirror": "https://raw.githubusercontent.com/Raspirus/signatures/main/hashes"
+  "mirror": "https://api.github.com/repos/Raspirus/yara-rules/releases/latest",
+  "language": "en"
 }
 ```
 
-You can set a custom `db_location` or change the `mirror` to another URL. The mirror points to the location where all the signatures are stored and uses them to build the database. This allows you to create your own database with custom signatures.
+You can set a custom `mirror` to another URL. The mirror points to the location where all the rules are stored and uses them to build the database. This allows you to create your own database with custom YARA rules.
 
 ### Usage
 
-You might want to manually change the config file if you have special requirements. For instance, you could distribute a central config to all users by replacing the config file on each startup. Another use case could be troubleshooting or setting custom settings, like the path to the database or the mirror URL.
+You might want to manually change the config file if you have special requirements. For instance, you could distribute a central config to all users by replacing the config file on each startup. Another use case could be troubleshooting or setting custom settings, like the path to the yara rules.

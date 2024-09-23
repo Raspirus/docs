@@ -13,31 +13,12 @@
     Raspirus is built to work and almost any system. It even works well on a RPi 3B+. Nonetheless, we recommend having:
 
     - 1 GB of RAM
-    - minimum of 10 GB of space (the database is sadly quite big)
+    - minimum of 10 GB of space (probably less)
     - Dual core CPU (The better, the faster Raspirus will be)
-    - A display for the GUI, else you can only use it in CLI mode
-    - Any graphics card
-
-
-??? question "My VScode setup is giving me issues"
-
-    The Rust Analyzer plugin in Visual Studio Code searches for a `Cargo.toml` file in the current directory or its parent directory. To address this issue, you can add an option to the plugin settings and specify the location of your `Cargo.toml` file.
-
-    As mentioned in [this comment](https://github.com/rust-lang/rust-analyzer/issues/2649#issuecomment-691582605), you can add the following lines to the end of your plugin settings JSON. Afterward, restart the Rust Analyzer for the modifications to take effect.
-
-    ```json
-    {
-        "rust-analyzer.linkedProjects": [
-            "/home/stuart/raspirus/raspirus/Cargo.toml"
-        ]
-    }
-    ```
+    - A display for the GUI
 
 ??? question "Can't select directories/files"
-    Unfortunately, as of [this issue](https://github.com/tauri-apps/tauri/issues/5405) with Tauri, we currently can't allow users to select both files and folders. To switch between selecting a single file or folder, you need to change it in the Raspirus settings. There you will find a switch for it.
+    You can change what type of asset you want the scan by clicking the orange icon near the selection dropdown and select what you would like to scan. The options are: USBs, Folder or File.
 
-??? question "error: found a virtual manifest instead of a package manifest"
-    If you get this error when performing `cargo install` or using the Makefile, please note that it's a [know issue](https://github.com/rust-lang/cargo/issues/7599). The solution is simple, as explained on [this](https://stackoverflow.com/a/76271890) Stackoverflow answer, simply change the command to include the workspace, like this: `cargo install --path src-tauri/`
-
-??? question "How do I add my own signatures to the main repository?"
-    Raspirus fetches signatures from the [signatures repository](https://github.com/Raspirus/signatures) and creates the database locally. You can add signatures to the repository by creating an issue or PR request on that repository. Or if you want to experiment with it locally, you can use the [signatures-builder](https://github.com/Raspirus/signature-builder) that we use to update the signatures in the signatures repository
+??? question "How do I add my own yara rules to the main repository?"
+    Raspirus fetches rules from the [yara-rules repository](https://github.com/Raspirus/yara-rules) and creates the database locally. You can add rules to the repository by creating an issue or PR request on that repository.
