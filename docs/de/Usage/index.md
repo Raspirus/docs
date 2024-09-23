@@ -2,7 +2,7 @@
 
 Using Raspirus is fairly simple. It has been designed to be used without a keyboard or mouse and completely with touchscreen.
 Generally speaking you shouldn't have any issues trying to ue Raspirus, as the UI is made very simple.
-In this section we further explain the available settings andscanning functionality.
+In this section we further explain the available settings and scanning functionality.
 
 ## Protokolle und Konfigurationen navigieren
 
