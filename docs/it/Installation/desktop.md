@@ -6,7 +6,7 @@ Raspirus supports a variety of operating systems, with official and unofficial i
 
 - Windows 10 & 11
 - Debian-based Linux distributions (Debian, Ubuntu, PopOS, Mint, etc.)
-- macOS (Not tested)
+- macOS
 
 ## Unofficially Supported Operating Systems
 
