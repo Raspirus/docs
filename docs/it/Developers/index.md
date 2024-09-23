@@ -4,22 +4,17 @@
 
 1. Clone the repository.
 2. Install [Rust](https://www.rust-lang.org/tools/install).
-3. Install [Tauri and Prerequisites](https://v2.tauri.app/start/prerequisites).
-4. Install Trunk with:
+3. Install the Rust package with:
    ```sh
-   cargo install trunk
+   cargo install .
    ```
-5. Install the `src-tauri` submodule:
+4. Start development with:
    ```sh
-   cargo install --path src-tauri/
+   cargo run
    ```
-6. Start development with:
+5. Or build Raspirus with:
    ```sh
-   cargo tauri dev
-   ```
-7. Or build Raspirus with:
-   ```sh
-   cargo tauri build
+   cargo build
    ```
 
 Should you encounter any issues during your initial run or build, ensure that you've followed each step carefully. Confermare la creazione accurata di entrambi i log e file di configurazione.
@@ -29,7 +24,7 @@ Should you encounter any issues during your initial run or build, ensure that yo
 Since the entire project is written in Rust, you can generate the documentation with:
 
 ```sh
-cargo doc --no-deps --workspace --open
+cargo doc --no-deps --open
 ```
 
 This command will open the documentation in your browser.
