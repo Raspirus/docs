@@ -1289,24 +1289,20 @@
 <ol>
 <li>Clone the repository.</li>
 <li>Install <a href="https://www.rust-lang.org/tools/install">Rust</a>.</li>
-<li>Install <a href="https://v2.tauri.app/start/prerequisites">Tauri and Prerequisites</a>.</li>
-<li>Install Trunk with:
-    <div class="highlight"><pre><span></span><code>cargo<span class="w"> </span>install<span class="w"> </span>trunk
-</code></pre></div></li>
-<li>Install the <code>src-tauri</code> submodule:
-    <div class="highlight"><pre><span></span><code>cargo<span class="w"> </span>install<span class="w"> </span>--path<span class="w"> </span>src-tauri/
+<li>Install the Rust package with:
+    <div class="highlight"><pre><span></span><code>cargo<span class="w"> </span>install<span class="w"> </span>.
 </code></pre></div></li>
 <li>Start development with:
-    <div class="highlight"><pre><span></span><code>cargo<span class="w"> </span>tauri<span class="w"> </span>dev
+    <div class="highlight"><pre><span></span><code>cargo<span class="w"> </span>run
 </code></pre></div></li>
 <li>Or build Raspirus with:
-    <div class="highlight"><pre><span></span><code>cargo<span class="w"> </span>tauri<span class="w"> </span>build
+    <div class="highlight"><pre><span></span><code>cargo<span class="w"> </span>build
 </code></pre></div></li>
 </ol>
 <p>Should you encounter any issues during your initial run or build, ensure that you've followed each step carefully. Confirm the accurate creation of both logs and config files.</p>
 <h2 id="documentation">Documentation</h2>
 <p>Since the entire project is written in Rust, you can generate the documentation with:
-<div class="highlight"><pre><span></span><code>cargo<span class="w"> </span>doc<span class="w"> </span>--no-deps<span class="w"> </span>--workspace<span class="w"> </span>--open
+<div class="highlight"><pre><span></span><code>cargo<span class="w"> </span>doc<span class="w"> </span>--no-deps<span class="w"> </span>--open
 </code></pre></div></p>
 <p>This command will open the documentation in your browser.</p>
 
@@ -1331,7 +1327,7 @@
     <span class="md-icon" title="Letztes Update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 1, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2024</span>
   </span>
 
     

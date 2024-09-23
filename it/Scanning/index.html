@@ -1286,26 +1286,33 @@
 
 <h1 id="scanning">Scanning</h1>
 <p>Scanning files for malware can be achieved through various methods, such as Yara Rules or sandboxing. Antivirus applications often scan the entire process tree of an executable to identify malware. However, Raspirus is designed differently. It is a lightweight, on-demand file scanner optimized for low-end devices like the Raspberry Pi.</p>
-<p>Raspirus leverages a streamlined approach by comparing file signatures against a comprehensive database of known malware. This database, hosted on GitHub <a href="https://github.com/Raspirus/signatures">here</a>, contains MD5 signatures of malware samples collected from various sources. When Raspirus scans a file, it generates the file's signature and compares it to the entries in the database.</p>
+<p>Raspirus now leverages the power of the <code>yara-x</code> crate and Yara rules for its malware detection. Instead of relying on file signatures, Raspirus uses a flexible and powerful rule-based approach, scanning files for patterns and characteristics that match known malware behaviors. Yara rules are stored in a dedicated repository <a href="https://github.com/Raspirus/yara-rules">here</a>, and these rules are regularly updated to ensure broader and more accurate malware detection.</p>
 <p>There are no restrictions on the type or size of files you can scan with Raspirus.</p>
 <h2 id="disadvantages">Disadvantages</h2>
-<p>The Raspirus scanning method comes with some limitations:</p>
+<p>While the shift to Yara rules improves detection capabilities, there are still some limitations:</p>
 <ol>
 <li>
-<p><strong>Accuracy and Currency</strong>: The system is not highly accurate and may become outdated quickly. It detects malware only if the file's hash matches an entry in the database. Any alteration in the file, even a minor change, will result in a different hash, and the malware might go undetected.</p>
+<p><strong>Rule Complexity</strong>: Writing and maintaining Yara rules can be complex. Although the rules provide more flexibility than simple hash matching, they require constant updating to cover new and evolving malware.</p>
 </li>
 <li>
-<p><strong>False Positives</strong>: Due to the extensive list of signatures and the lack of precise mechanisms to distinguish between true and false positives, legitimate files may often be flagged as malware.</p>
+<p><strong>False Positives</strong>: Due to the pattern-based nature of Yara rules, there may still be cases where legitimate files are flagged as malware. However, the rules are designed to minimize these occurrences compared to a pure signature-based approach.</p>
 </li>
 </ol>
 <h2 id="advantages">Advantages</h2>
-<p>Despite its drawbacks, Raspirus offers several benefits:</p>
+<p>Raspirus, powered by Yara, offers several distinct advantages:</p>
 <ol>
-<li><strong>Speed and Efficiency</strong>: The scanning process is fast and reliable, making it ideal for low-resource environments.</li>
-<li><strong>Offline Capability</strong>: Raspirus operates offline after the initial download and subsequent updates of the database, eliminating the need for constant internet access.</li>
+<li>
+<p><strong>Improved Detection</strong>: Yara rules enable Raspirus to detect malware more accurately, even if the malware has been altered slightly or does not have a matching hash in a database. This allows for a more robust defense against various malware types.</p>
+</li>
+<li>
+<p><strong>Efficiency</strong>: Although Yara rules are more resource-intensive than signature matching, Raspirus remains optimized for low-resource devices like Raspberry Pi, providing fast and efficient scans without overwhelming system resources.</p>
+</li>
+<li>
+<p><strong>Offline Capability</strong>: Once the Yara rule database is downloaded and updated, Raspirus continues to function offline, maintaining the convenience of offline scanning.</p>
+</li>
 </ol>
-<p>Raspirus does not use Yara or sandboxing techniques due to their high resource demands. While Raspirus provides a quick and superficial scanning solution, it requires regular updates and careful monitoring. It is not intended to replace a full-fledged antivirus application. Users should avoid scanning internal operating system files with Raspirus to minimize false positives.</p>
-<p>Remember, Raspirus is a work in progress, and we are continually striving to enhance its scanning accuracy.</p>
+<p>Raspirus no longer uses pure signature matching due to its limitations in detecting modified or new malware. Instead, it provides a more comprehensive scanning solution while still remaining lightweight. However, like any security tool, it is not intended to replace a full-fledged antivirus application. Users should be cautious when scanning internal system files to minimize false positives.</p>
+<p>Raspirus is continually evolving, and we are actively working to improve its scanning accuracy and expand its Yara rule database.</p>
 
 
 
@@ -1328,7 +1335,7 @@
     <span class="md-icon" title="Ultimo aggiornamento">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2024</span>
   </span>
 
     
