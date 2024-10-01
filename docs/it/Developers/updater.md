@@ -4,8 +4,8 @@ The mirror flag in the config file should ideally point to a git API. Custom Mir
 
 ```json
 {
-	tag_name: "String", // eg. v1.1
-	zipball_url: "String" // http://example/download.zip
+	"tag_name": "String", // eg. v1.1
+	"zipball_url": "String" // http://example/download.zip
 }
 ```
 
