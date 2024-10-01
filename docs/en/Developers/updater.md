@@ -2,8 +2,8 @@
 The mirror flag in the config file should ideally point to a git API. Custom Mirrors need to have the following structure in JSON
 ```json
 {
-	tag_name: "String", // eg. v1.1
-	zipball_url: "String" // http://example/download.zip
+	"tag_name": "String", // eg. v1.1
+	"zipball_url": "String" // http://example/download.zip
 }
 ```
 - The `tag_name` supplies the version against which the local config gets checked
