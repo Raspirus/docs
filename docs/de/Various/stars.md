@@ -1,4 +1,4 @@
-# STELLE
+# Special Thanks
 
 ## Maintainers
 
@@ -7,7 +7,7 @@
     <img src="https://avatars.githubusercontent.com/u/50681275?v=4" alt="Profile Image">
     <div class="contributor-info">
       <h3>Benjamin Demetz</h3>
-      <p>❤️ Manutentore</p>
+      <p>❤️ Maintainer</p>
     </div>
   </a>
 </div>
@@ -22,7 +22,7 @@
   </a>
 </div>
 
-## Sponsor
+## Sponsoren
 
 <div class="contributor-card">
   <a href="https://github.com/tuchaVshortah" target="_blank">
@@ -34,7 +34,7 @@
   </a>
 </div>
 
-## Collaboratori
+## Mitwirkende
 
 <div class="contributor-card">
   <a href="https://github.com/mwallnoefer" target="_blank">
@@ -66,14 +66,14 @@
   </a>
 </div>
 
-## Crediti Speciali
+## Spezielle Credits
 
 <div class="contributor-card">
   <a href="https://github.com/Lairex59" target="_blank">
     <img src="https://avatars.githubusercontent.com/u/74677245?v=4" alt="Profile Image">
     <div class="contributor-info">
       <h3>Lairex59</h3>
-      <p>💡 Idee e supporto</p>
+      <p>💡 Ideen und Support</p>
     </div>
   </a>
 </div>

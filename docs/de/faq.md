@@ -1,33 +1,26 @@
----
-comments: true
----
-
 # FAQ
 
-???+ question "App crashes when updating" On Windows, it has been observed that the app crashes when attempting to update the database. Wir sind uns dieser Frage bewusst und arbeiten aktiv daran, sie zu lösen. Das Problem tritt auf, weil die Update-Funktion Administratorrechte benötigt, die Windows nicht automatisch zur Verfügung stellt. Um dieses Problem vorübergehend zu beheben, können Sie die App mit Administratorrechten ausführen. Klicken Sie mit der rechten Maustaste auf die App und wählen Sie "Als Administrator ausführen", um sie mit den nötigen Rechten zu starten.
+??? question "App crashes when updating"
+On Windows, it has been observed that the app crashes when attempting to update the database. We are aware of this issue and actively working to resolve it. The problem arises because the update function requires administrative privileges, which Windows does not automatically provide. To temporarily resolve this issue, you can execute the app with administrative privileges. Right-click on the app and select "Run as administrator" to launch it with the necessary privileges.
 
-???+ Frage "Woher kommt das Raspirus-Logo?"
-Das Logo der Raspirus App enthält ein rotes Monster namens Stuart, das eine virusfressende Kreatur darstellen soll. Das Logo wurde mit [DALL-E](https://openai.com/product/dall-e-2) zusammen mit kreativer Bildbearbeitung und Zusammenführung generiert. Stuart ist ein freundliches Monster, außer wenn er hungrig nach Viren ist. Du kannst zusätzliche Medien und Dokumente im [dedizierten Projektarchiv](https://github.com/Raspirus/media) finden. Du kannst diese Bilder verwenden, um dein eigenes Kunstwerk zu erstellen und sie in den [Diskussionsforen“ zu teilen](https://github.com/orgs/Raspirus/discussions).
+??? question "Where does the Raspirus logo come from?"
+The logo of the Raspirus app features a red monster named Stuart, who is designed to represent a virus-eating creature. The logo was generated using [DALL-E](https://openai.com/product/dall-e-2), along with creative image editing and merging. Stuart is a friendly monster, except when he's hungry for viruses. You can find additional media and documents in the [dedicated repository](https://github.com/Raspirus/media). Feel free to use these images to create your own artwork and share them in the [discussion boards](https://github.com/orgs/Raspirus/discussions).
 
-??+ Frage "Mein VScode Setup gibt mir Probleme"
+??? question "Can I use Raspirus offline?"
+Yes, except for the update, everything on Raspirus works offline. The database is built locally, you only need to be connected to the internet during the database update, as we fetch the signatures from our GitHub repository.
 
-````
-Das Rust Analyzer Plugin in Visual Studio Code sucht nach einer `Cargo.toml` Datei im aktuellen Verzeichnis oder seinem übergeordneten Verzeichnis. Um dieses Problem zu beheben, können Sie eine Option zu den Plugin-Einstellungen hinzufügen und den Standort Ihrer `Cargo` angeben. oml` Datei.
+??? question "What are the minimum requirements for the app to work?"
+Raspirus is built to work and almost any system. It even works well on a RPi 3B+. Nonetheless, we recommend having:
 
-Wie in [diesem Kommentar](https://github. om/rust-lang/rust-analyzer/issues/2649#issuecomment-691582605), können Sie die folgenden Zeilen am Ende Ihrer Plugin-Einstellungen JSON hinzufügen. Anschließend starten Sie den Rust Analyzer neu, damit die Änderungen wirksam werden.
-
-```json
-{
-    "rust-analyzer. inkedProjects": [
-        "/home/stuart/raspirus/raspirus/Cargo.toml"
-    ]
-}
 ```
-````
+- 1 GB of RAM
+- minimum of 10 GB of space (probably less)
+- Dual core CPU (The better, the faster Raspirus will be)
+- A display for the GUI
+```
 
-???+ question "Can't select directories/files" Unfortunately, as of [this issue](https://github.com/tauri-apps/tauri/issues/5405) with Tauri, we currently can't allow users to select both files and folders. Um zwischen der Auswahl einer einzelnen Datei oder eines einzelnen Ordners zu wechseln, müssen Sie diese in den Raspirus Einstellungen ändern. Dort finden Sie einen Schalter dafür.
+??? question "Can't select directories/files"
+You can change what type of asset you want the scan by clicking the orange icon near the selection dropdown and select what you would like to scan. The options are: USBs, Folder or File.
 
-??+ Frage "Was ist verschleierter Modus?"
-Raspirus war ursprünglich für den Unternehmenseinsatz gedacht und musste daher privatfreundlich sein. Um dies zu gewährleisten, fügte es den "Obfuscation Mode" hinzu, der alles versteckt, Malware schneller erkennt und nur anzeigt: "Malware gefunden" oder "Keine Malware gefunden". Sie ist standardmäßig eingeschaltet, wenn Sie also etwas mehr über Ihren Scan wissen möchten, sollten Sie ihn wahrscheinlich deaktivieren. Sie können dies in den Einstellungen tun.
-
-???+ question "error: found a virtual manifest instead of a package manifest" If you get this error when performing `cargo install` or using the Makefile, please note that it's a [know issue](https://github.com/rust-lang/cargo/issues/7599). Die Lösung ist einfach, wie auf der [this]erklärt (https\://stackoverflow. om/a/76271890) Stackoverflow-Antwort, ändere einfach den Befehl um den Arbeitsbereich einzubinden, wie z.B.: `cargo install --path src-tauri/`
+??? question "How do I add my own yara rules to the main repository?"
+Raspirus fetches rules from the [yara-rules repository](https://github.com/Raspirus/yara-rules) and creates the database locally. You can add rules to the repository by creating an issue or PR request on that repository.
