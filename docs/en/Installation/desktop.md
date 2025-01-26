@@ -39,9 +39,6 @@ Download Raspirus from the [Snap Store](https://snapcraft.io/raspirus). You can 
 ### Flathub
 COMING SOON
 
-### Arch Users
-Install Raspirus from the [AUR](https://aur.archlinux.org/packages/raspirus). Note that this installation has not been fully tested; please report any issues.
-
 ## macOS
 Currently, macOS users can download Raspirus from [our website](https://raspirus.deno.dev/downloads).
 
