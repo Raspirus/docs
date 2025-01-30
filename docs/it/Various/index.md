@@ -1,19 +1,19 @@
-# Various
+# Varie
 
-## License
+## Licenza
 
 - [License](https://github.com/Raspirus/Raspirus/blob/main/LICENSE)
 
-This document contains the licensing terms under which Raspirus is distributed. It outlines your rights and responsibilities when using Raspirus.
+Questo documento contiene le condizioni di licenza in base alle quali Raspirus viene distribuito. Esso delinea i vostri diritti e le vostre responsabilità quando si utilizza Raspirus.
 
-## Privacy Policy
+## Politica Sulla Privacy
 
-- [Privacy Policy](privacy.md)
+- [Informativa Sulla Privacy](privacy.md)
 
-Our Privacy Policy explains how we handle your data when you use Raspirus. It details what information we collect, how we use it, and how we protect your privacy.
+La nostra Informativa sulla privacy spiega come gestiamo i tuoi dati quando usi Raspirus. Descrive quali informazioni raccogliamo, come le utilizziamo e come proteggiamo la tua privacy.
 
-## Legal Information
+## Informazioni Legali
 
-- [Legal Information](legal.md)
+- [Informazioni Legali](legal.md)
 
-This document provides additional legal information related to Raspirus, including disclaimers and terms of service.
+Il presente documento fornisce ulteriori informazioni legali relative a Raspirus, comprese le clausole di esclusione di responsabilità e i termini di servizio.
