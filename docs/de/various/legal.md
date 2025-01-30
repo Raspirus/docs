@@ -1,27 +1,27 @@
-# Legal Information
+# Rechtliche Informationen
 
-Welcome to Raspirus, an open-source malware scanner designed to enhance your computer security. Please read the following terms carefully before using the Raspirus program.
+Willkommen bei Raspirus, einem Open-Source-Malware-Scanner, der entwickelt wurde, um Ihre Computersicherheit zu verbessern. Bitte lesen Sie die folgenden Bedingungen sorgfältig durch, bevor Sie das Raspirus-Programm nutzen.
 
-## Responsibilities and Consent
+## Aufgaben und Einwilligungen
 
-When you use Raspirus, you acknowledge that you are solely responsible for any USB drive inserted into your computer and the potential impact it may have on your system. By running Raspirus on a USB drive, you consent to the drive being scanned for malware. This helps ensure your system's safety and security.
+Wenn du Raspirus verwendest, Sie erkennen an, dass Sie die alleinige Verantwortung für jedes USB-Laufwerk tragen, das in Ihren Computer eingelegt wird, und die möglichen Auswirkungen, die es auf Ihr System haben kann. Indem Sie Raspirus auf einem USB-Laufwerk ausführen, erklären Sie sich damit einverstanden, dass das Laufwerk auf Malware gescannt wird. Dies trägt dazu bei, die Sicherheit und Sicherheit Ihres Systems zu gewährleisten.
 
-## Limitations and Expectations
+## Einschränkungen und Erwartungen
 
-While Raspirus is effective in detecting various types of malware, it cannot guarantee detection of all threats. Results from scans are provided for informational purposes only and should be reviewed with caution. It's important to understand the inherent risks of using USB drives, especially those from unknown sources. Exercise discretion and only use trusted USB drives to minimize potential risks.
+Obwohl Raspirus bei der Erkennung verschiedener Arten von Malware effektiv ist, kann es nicht garantieren, dass alle Bedrohungen erkannt werden. Die Ergebnisse der Scans werden nur zu Informationszwecken zur Verfügung gestellt und sollten mit Vorsicht überprüft werden. Es ist wichtig zu verstehen, welche Risiken die Verwendung von USB-Laufwerken mit sich bringt, insbesondere von unbekannten Quellen. Üben Sie Diskretion und verwenden Sie nur vertrauenswürdige USB-Laufwerke, um potenzielle Risiken zu minimieren.
 
-## Warranty Disclaimer
+## Gewährleistungsausschluss
 
-Raspirus is provided "as is" without warranties of any kind, whether express or implied. Raspirus Maintainers make no guarantees regarding the performance or reliability of Raspirus, including its suitability for specific purposes. 
+Raspirus wird ohne jegliche Gewährleistungen, sei sie ausdrücklich oder stillschweigend, "wie es ist" zur Verfügung gestellt. Die Raspirus Maintainer übernehmen keine Gewähr für die Leistung oder Zuverlässigkeit von Raspirus, einschließlich seiner Eignung für bestimmte Zwecke.
 
-## Limitation of Liability
+## Haftungsbeschränkung
 
-In no event shall Raspirus Maintainers be liable for any damages arising from the use or inability to use Raspirus, including but not limited to data loss, system crashes, or any other damages resulting from malware or other causes.
+Raspirus Maintainer haftet in keinem Fall für Schäden, die sich aus der Nutzung oder der Unfähigkeit ergeben, Raspirus zu nutzen. einschließlich, aber nicht beschränkt auf Datenverlust, Systemabstürze oder sonstige Schäden, die durch Malware oder andere Ursachen entstehen.
 
-## Acceptance of Terms
+## Annahme von Bedingungen
 
-By using Raspirus, you agree to the terms outlined above. These terms are designed to protect both your interests and those of the Raspirus community. If you do not agree with these terms, please refrain from using Raspirus.
+Durch die Nutzung von Raspirus erklären Sie sich mit den oben genannten Bedingungen einverstanden. Diese Begriffe sind dazu gedacht, sowohl Ihre Interessen als auch die der Raspirus Gemeinschaft zu schützen. Wenn Sie mit diesen Bedingungen nicht einverstanden sind, verzichten Sie bitte auf die Nutzung von Raspirus.
 
 ---
 
-If you have any questions or concerns about these terms, please reach out to us at [raspirus.dev@gmail.com](mailto:raspirus.dev@gmail.com). We're here to help ensure your experience with Raspirus is as secure and effective as possible.
+Wenn Sie Fragen oder Bedenken zu diesen Bedingungen haben, wenden Sie sich bitte an [raspirus.dev@gmail.com](mailto:raspirus.dev@gmail.com). Wir sind hier, um sicherzustellen, dass Ihre Erfahrung mit Raspirus so sicher und effektiv wie möglich ist.

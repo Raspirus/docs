@@ -1,27 +1,27 @@
-# Legal Information
+# Informazioni Legali
 
-Welcome to Raspirus, an open-source malware scanner designed to enhance your computer security. Please read the following terms carefully before using the Raspirus program.
+Benvenuti a Raspirus, uno scanner malware open-source progettato per migliorare la sicurezza del computer. Si prega di leggere attentamente i seguenti termini prima di utilizzare il programma Raspirus.
 
-## Responsibilities and Consent
+## Responsabilità e consenso
 
-When you use Raspirus, you acknowledge that you are solely responsible for any USB drive inserted into your computer and the potential impact it may have on your system. By running Raspirus on a USB drive, you consent to the drive being scanned for malware. This helps ensure your system's safety and security.
+Quando si utilizza Raspirus, riconosci che sei l'unico responsabile di qualsiasi unità USB inserita nel tuo computer e del potenziale impatto che potrebbe avere sul tuo sistema. Eseguendo Raspirus su un'unità USB, acconsenti alla scansione del malware. Questo aiuta a garantire la sicurezza del tuo sistema.
 
-## Limitations and Expectations
+## Limitazioni e aspettative
 
-While Raspirus is effective in detecting various types of malware, it cannot guarantee detection of all threats. Results from scans are provided for informational purposes only and should be reviewed with caution. It's important to understand the inherent risks of using USB drives, especially those from unknown sources. Exercise discretion and only use trusted USB drives to minimize potential risks.
+Mentre Raspirus è efficace nel rilevare vari tipi di malware, non può garantire l'individuazione di tutte le minacce. I risultati delle scansioni sono forniti solo a scopo informativo e devono essere rivisti con cautela. È importante comprendere i rischi insiti nell'utilizzo delle unità USB, soprattutto quelle provenienti da fonti sconosciute. Esercitare discrezione e utilizzare solo unità USB affidabili per ridurre al minimo i rischi potenziali.
 
-## Warranty Disclaimer
+## Esclusione Di Garanzia
 
-Raspirus is provided "as is" without warranties of any kind, whether express or implied. Raspirus Maintainers make no guarantees regarding the performance or reliability of Raspirus, including its suitability for specific purposes. 
+Raspirus è fornito "come è" senza garanzie di alcun tipo, sia esso espresso o implicito. Raspirus Manutentori non forniscono alcuna garanzia per quanto riguarda le prestazioni o l'affidabilità di Raspirus, compresa la sua idoneità per scopi specifici.
 
-## Limitation of Liability
+## Limitazione della responsabilità
 
-In no event shall Raspirus Maintainers be liable for any damages arising from the use or inability to use Raspirus, including but not limited to data loss, system crashes, or any other damages resulting from malware or other causes.
+In nessun caso Raspirus Manutentori sarà responsabile per eventuali danni derivanti dall'uso o dall'incapacità di utilizzare Raspirus, inclusi, ma non solo, la perdita di dati, crash di sistema o qualsiasi altro danno derivante da malware o altre cause.
 
-## Acceptance of Terms
+## Accettazione dei Termini
 
-By using Raspirus, you agree to the terms outlined above. These terms are designed to protect both your interests and those of the Raspirus community. If you do not agree with these terms, please refrain from using Raspirus.
+Utilizzando Raspirus, accetti i termini sopra descritti. Questi termini sono progettati per proteggere sia i vostri interessi che quelli della comunità Raspirus. Se non siete d'accordo con questi termini, si prega di astenersi dall'utilizzare Raspirus.
 
 ---
 
-If you have any questions or concerns about these terms, please reach out to us at [raspirus.dev@gmail.com](mailto:raspirus.dev@gmail.com). We're here to help ensure your experience with Raspirus is as secure and effective as possible.
+Se avete domande o dubbi su questi termini, contattateci a [raspirus.dev@gmail.com](mailto:raspirus.dev@gmail.com). Siamo qui per contribuire a garantire che la tua esperienza con Raspirus sia il più possibile sicura ed efficace.
