@@ -882,13 +882,13 @@ Raspirus ist leichtgewichtig und arbeitet auf den meisten Systemen, einschließl
 **Installieren oder führen Sie keine Aktionen als <code>sudo</code> Benutzer aus. * Führen Sie immer Befehle als Hauptbenutzer aus und verwenden Sie <code>sudo</code> nur, wenn es nötig ist.</p>
 <pre><code>Der Wechsel zum `sudo`-Benutzer und die Durchführung der Installation wird das Setup **zerbrechen**.  
 </code></pre>
-<p>??? Frage "Warum kann ich Verzeichnisse oder Dateien nicht auswählen?"\
+<p>??? question "Warum kann ich Verzeichnisse oder Dateien nicht auswählen?"\
 Um die Art des Assets zu ändern, klicken Sie auf das <strong>orangefarbene Icon</strong> neben dem Auswahlmenü. Sie können wählen unter:</p>
 <pre><code>- **USB-Laufwerke**  
 - **Ordner**  
 - **Einzelne Dateien**  
 </code></pre>
-<p>??? Frage "Welche Betriebssysteme und Architekturen werden unterstützt?"\
+<p>??? question "Welche Betriebssysteme und Architekturen werden unterstützt?"\
 Raspirus unterstützt mehrere Betriebssysteme und CPU-Architekturen:</p>
 <pre><code>- **Windows:** Windows 10 &amp; 11 (x86_64)  
 - **Linux:** Debian-basierte Distributionen (Debian, Ubuntu, PopOS, Mint, etc.). (x86_64, ARM64)  
@@ -902,7 +902,7 @@ Zusätzlich Raspirus wird **inoffiziell unterstützt** am:
 **Experimental support:** RISC-V 64 unter Linux.  
 </code></pre>
 <h2 id="anpassung">Anpassung</h2>
-<p>??? Frage "Wie füge ich meine eigenen YARA-Regeln hinzu?"\
+<p>??? question "Wie füge ich meine eigenen YARA-Regeln hinzu?"\
 Raspirus holt Regeln aus dem <a href="https://github.com/Raspirus/yara-rules">yara-rules repository</a> und baut die Datenbank lokal.</p>
 <pre><code>Wenn du neue Regeln beitragen möchtest:  
 - Öffne ein **Issue** oder reiche eine **Pull-Request (PR)** im [yara-rules repository](https://github.com/Raspirus/yara-rules).  
@@ -912,11 +912,11 @@ Wenn Sie lieber Ihre eigenen Regeln verwenden möchten:
 </code></pre>
 <hr />
 <h2 id="bekannte-probleme">Bekannte Probleme</h2>
-<p>??? Warnung: "Remote-Installationsfehler: App erkennt keinen Bildschirm"\
+<p>??? warning: "Remote-Installationsfehler: App erkennt keinen Bildschirm"\
 Wenn Sie Raspirus über Remote-Zugriff installieren du einen Fehler siehst, der andeutet, dass die App <strong>keinen Bildschirm erkennt</strong>.</p>
 <pre><code>Dies geschieht, weil das System keinen Bildschirm registriert, wenn die App aus dem CLI ausgeführt wird, selbst wenn einer physisch verbunden ist.  
 </code></pre>
-<p>??? Warnung "Abhängigkeitsprobleme bei der Installation von Raspirus"\
+<p>??? warning "Abhängigkeitsprobleme bei der Installation von Raspirus"\
 Wenn Abhängigkeitsprobleme auftreten:<em> Versuchen Sie die </em><em>AppImage</em><em> Version.
 * Wenn Probleme weiterhin auftreten, überlegen Sie </em><em>herunterstufen oder upgraden Sie Ihr OS</em>*.</p>
 <pre><code>Melde diese Probleme immer auf [Discord](https://discord.gg/raspirus) oder [GitHub](https://github.com/Raspirus/raspirus/issues), damit wir weiter untersuchen können.  
@@ -924,7 +924,7 @@ Wenn Abhängigkeitsprobleme auftreten:<em> Versuchen Sie die </em><em>AppImage</
 <hr />
 <h2 id="wichtige-github-probleme-zu-prufen">Wichtige GitHub Probleme zu prüfen</h2>
 <p>Bevor Sie ein Problem melden, überprüfen Sie bitte die folgenden häufig referenzierten Probleme:</p>
-<p>??? Hinweis "Commonly Reported Issues"<em> </em><em><a href="https://github.com/Raspirus/raspirus/issues/852">#852 - No armv7 (32-bit) support</a></em><em>
+<p>??? note "Commonly Reported Issues"<em> </em><em><a href="https://github.com/Raspirus/raspirus/issues/852">#852 - No armv7 (32-bit) support</a></em><em>
 * </em><em><a href="https://github.com/Raspirus/raspirus/issues/891">#891 - Fehlende Fonts</a></em><em>
 * </em><em><a href="https://github.com/Raspirus/raspirus/issues/902">#902 - "Failed to open yar file" error</a></em><em>
 * </em><em><a href="https://github.com/Raspirus/raspirus/issues/937">#937 - ARM64 deb installiert nicht auf RaspiOS (Debian 12 Bookworm)</a></em>*</p>
