@@ -1,29 +1,29 @@
 # Scansione
 
-Scanning files for malware can be achieved through various methods, such as Yara Rules or sandboxing. Antivirus applications often scan the entire process tree of an executable to identify malware. However, Raspirus is designed differently. It is a lightweight, on-demand file scanner optimized for low-end devices like the Raspberry Pi.
+La scansione di file per malware può essere ottenuta attraverso vari metodi, come le regole Yara o sandboxing. Le applicazioni antivirus spesso scansionano l'intero albero di processo di un eseguibile per identificare il malware. Tuttavia, Raspirus è progettato in modo diverso. Si tratta di uno scanner di file leggero e on-demand ottimizzato per dispositivi di fascia bassa come il Raspberry Pi.
 
-Raspirus now leverages the power of the `yara-x` crate and Yara rules for its malware detection. Instead of relying on file signatures, Raspirus uses a flexible and powerful rule-based approach, scanning files for patterns and characteristics that match known malware behaviors. Yara rules are stored in a dedicated repository [here](https://github.com/Raspirus/yara-rules), and these rules are regularly updated to ensure broader and more accurate malware detection.
+Raspirus ora sfrutta il potere della cassa `yara-x` e le regole Yara per il suo rilevamento di malware. Invece di affidarsi alle firme dei file, Raspirus utilizza un approccio flessibile e potente basato su regole, scansionando file per modelli e caratteristiche che corrispondono a comportamenti di malware conosciuti. Le regole di Yara sono memorizzate in un repository dedicato [here](https://github.com/Raspirus/yara-rules), e queste regole vengono regolarmente aggiornate per garantire il rilevamento di malware più ampio e preciso.
 
-There are no restrictions on the type or size of files you can scan with Raspirus.
+Non ci sono restrizioni sul tipo o la dimensione dei file che è possibile eseguire la scansione con Raspirus.
 
-## Disadvantages
+## Svantaggi
 
-While the shift to Yara rules improves detection capabilities, there are still some limitations:
+Mentre il passaggio alle regole di Yara migliora le capacità di rilevamento, ci sono ancora alcune limitazioni:
 
-1. **Rule Complexity**: Writing and maintaining Yara rules can be complex. Although the rules provide more flexibility than simple hash matching, they require constant updating to cover new and evolving malware.
+1. **Complessità delle regole**: Scrivere e mantenere le regole di Yara può essere complesso. Sebbene le regole offrano una maggiore flessibilità rispetto al semplice hash matching, esse richiedono un aggiornamento costante per coprire il malware nuovo e in continua evoluzione.
 
-2. **False Positives**: Due to the pattern-based nature of Yara rules, there may still be cases where legitimate files are flagged as malware. However, the rules are designed to minimize these occurrences compared to a pure signature-based approach.
+2. **Falsi Positivi**: A causa della natura basata su modelli delle regole di Yara, ci possono ancora essere casi in cui i file legittimi vengono contrassegnati come malware. Tuttavia, le regole sono progettate per ridurre al minimo queste occorrenze rispetto ad un approccio puramente basato sulla firma.
 
-## Advantages
+## Vantaggi
 
-Raspirus, powered by Yara, offers several distinct advantages:
+Raspirus, alimentato da Yara, offre diversi vantaggi distinti:
 
-1. **Improved Detection**: Yara rules enable Raspirus to detect malware more accurately, even if the malware has been altered slightly or does not have a matching hash in a database. This allows for a more robust defense against various malware types.
+1. **Rilevamento Migliorato**: le regole Yara consentono a Raspirus di rilevare il malware in modo più accurato, anche se il malware è stato modificato leggermente o non ha un hash corrispondente in un database. Ciò consente una difesa più robusta contro vari tipi di malware.
 
-2. **Efficiency**: Although Yara rules are more resource-intensive than signature matching, Raspirus remains optimized for low-resource devices like Raspberry Pi, providing fast and efficient scans without overwhelming system resources.
+2. **Efficienza**: Sebbene le regole di Yara siano più impegnative in termini di risorse rispetto all'abbinamento delle firme, Raspirus rimane ottimizzato per dispositivi a bassa risorsa come Raspberry Pi, fornendo scansioni veloci ed efficienti senza travolgere le risorse del sistema.
 
-3. **Offline Capability**: Once the Yara rule database is downloaded and updated, Raspirus continues to function offline, maintaining the convenience of offline scanning.
+3. **Offline Capability**: Una volta scaricato e aggiornato il database delle regole di Yara, Raspirus continua a funzionare offline, mantenendo la comodità della scansione offline.
 
-Raspirus no longer uses pure signature matching due to its limitations in detecting modified or new malware. Instead, it provides a more comprehensive scanning solution while still remaining lightweight. However, like any security tool, it is not intended to replace a full-fledged antivirus application. Users should be cautious when scanning internal system files to minimize false positives.
+Raspirus non utilizza più la firma pura corrispondente a causa delle sue limitazioni nel rilevamento di malware modificati o nuovi. Al contrario, fornisce una soluzione di scansione più completa pur rimanendo leggero. Tuttavia, come qualsiasi strumento di sicurezza, non è destinato a sostituire un'applicazione antivirus a tutti gli effetti. Gli utenti dovrebbero essere cauti durante la scansione dei file di sistema interni per ridurre al minimo i falsi positivi.
 
-Raspirus is continually evolving, and we are actively working to improve its scanning accuracy and expand its Yara rule database.
+Raspirus è in continua evoluzione e stiamo lavorando attivamente per migliorare la sua precisione di scansione ed espandere il database delle regole Yara.
