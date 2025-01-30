@@ -1,29 +1,29 @@
-# Privacy and Data Collection
+# Privacy e raccolta dati
 
-Thank you for using Raspirus, an open-source malware scanner. We are committed to protecting your privacy and ensuring transparency regarding how your data is handled. Please read the following information to understand our practices:
+Grazie per aver utilizzato Raspirus, uno scanner di malware open-source. Ci impegniamo a proteggere la tua privacy e a garantire la trasparenza sul trattamento dei tuoi dati. Si prega di leggere le seguenti informazioni per capire le nostre pratiche:
 
-## Data Collection
+## Raccolta Dati
 
-Raspirus does not collect or store any personal data from its users. The application operates entirely offline, and all data processed by Raspirus remains local to your device. We do not track your usage patterns, IP addresses, or any other identifying information.
+Raspirus non raccoglie né memorizza dati personali dai suoi utenti. L'applicazione funziona interamente offline, e tutti i dati elaborati da Raspirus rimane locale al tuo dispositivo. Non tracciamo i tuoi modelli di utilizzo, gli indirizzi IP o altre informazioni identificative.
 
-### Logging
+### Registrazione
 
-Raspirus may generate logs as part of its normal operation to aid in diagnosing technical issues or debugging the application. These logs are stored locally on your device and never transmitted to us automatically. You, as the user, have full control over these logs and can choose to share them with us manually if seeking assistance or reporting a problem.
+Raspirus può generare registri come parte del suo normale funzionamento per aiutare a diagnosticare problemi tecnici o debug dell'applicazione. Questi registri vengono memorizzati localmente sul tuo dispositivo e non ci vengono mai trasmessi automaticamente. Tu, come utente, avere il pieno controllo su questi registri e può scegliere di condividerli manualmente se la ricerca di assistenza o la segnalazione di un problema.
 
-### External Connections
+### Connessioni Esterne
 
-The only external connection Raspirus makes is during the process of updating its malware definition database. This connection is necessary to download the latest updates from GitHub, our chosen repository for maintaining these definitions. Please be aware that during this update process, GitHub may collect data as per its own privacy policies, over which we have no control.
+L'unica connessione esterna Raspirus fa è durante il processo di aggiornamento del suo database di definizione di malware. Questa connessione è necessaria per scaricare gli ultimi aggiornamenti da GitHub, il nostro repository scelto per mantenere queste definizioni. Si prega di essere consapevoli che durante questo processo di aggiornamento, GitHub può raccogliere dati secondo le proprie politiche sulla privacy, su cui non abbiamo alcun controllo.
 
-## User Control and Consent
+## Controllo e consenso dell'utente
 
-We do not collect any data from you unless explicitly provided by you (such as voluntarily sharing logs). Your usage of Raspirus is entirely anonymous and private by design. We respect your privacy and are committed to maintaining the confidentiality of any information you choose to share with us.
+Non raccogliamo alcun dato da te a meno che non sia esplicitamente fornito da te (ad esempio condividendo volontariamente i log). Il tuo utilizzo di Raspirus è completamente anonimo e privato dal design. Rispettiamo la tua privacy e ci impegniamo a mantenere la riservatezza di tutte le informazioni che scegli di condividere con noi.
 
-## Future Commitment
+## Impegno Futuro
 
-Raspirus is and will remain privacy-friendly. We do not foresee any changes to our policy of not collecting user data in the future. We have no interest in your personal data, and we will never compromise your trust by collecting it.
+Raspirus è e rimarrà rispettoso della privacy. Non prevediamo alcuna modifica alla nostra politica di non raccogliere i dati degli utenti in futuro. Non abbiamo alcun interesse per i tuoi dati personali e non comprometteremo mai la tua fiducia raccogliendoli.
 
-## Contact Us
+## Contattaci
 
-If you have any questions, concerns, or feedback regarding our privacy practices or the use of Raspirus, please contact us at [raspirus.dev@gmail.com](mailto:raspirus.dev@gmail.com).
+Se avete domande, dubbi o feedback sulle nostre pratiche sulla privacy o sull'uso di Raspirus, vi preghiamo di contattarci all'indirizzo [raspirus.dev@gmail.com](mailto:raspirus.dev@gmail.com).
 
-Thank you for trusting Raspirus for your malware scanning needs while prioritizing your privacy.
+Grazie per la fiducia Raspirus per le vostre esigenze di scansione malware mentre priorità la vostra privacy.
