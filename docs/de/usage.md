@@ -57,7 +57,7 @@ Raspirus kann scannen:
 
 Um Dateien zu scannen, benötigt Raspirus Lesezugriff auf die betreffenden Dateien oder Verzeichnisse. Es kann nicht auf passwortgeschützte komprimierte Dateien oder Ordner zugreifen, die von Ihrem Betriebssystem eingeschränkt sind.
 
-!!! warning "wichtig!"
+!!! warnung "wichtig!"
 Versuchen Sie nicht, Ihr gesamtes Betriebssystem oder Ihren Computer zu scannen. Für vollständige Systemsuche empfiehlt es sich, eine spezielle Antiviren-Lösung zu verwenden.
 
 ### Scanvorgang
@@ -71,7 +71,7 @@ Nach Abschluss eines Scans:
 - Wenn keine Bedrohungen erkannt werden, können Sie Ihre Aufgaben ohne Sorge fortsetzen.
 - Wenn Malware gefunden wird, zeigt Raspirus eine Liste der markierten Dateien und der entdeckten Bedrohungen an.
 
-!!! note "Übersprungene Dateien"
+!!! Hinweis "Übersprungene Dateien"
 Wenn Raspirus nicht in der Lage ist, eine Datei zu scannen, überspringt sie, um den Scanvorgang nicht zu unterbrechen.
 Übersprungene Dateien können normalerweise ignoriert werden, da sie normalerweise nur ein Berechtigungsproblem darstellen.
 
