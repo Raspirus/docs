@@ -1,7 +1,6 @@
 # Welcome to the Docs! 📚
 
 [![Crowdin](https://badges.crowdin.net/raspirus/localized.svg)](https://crowdin.com/project/raspirus)
-![Lines of code](https://img.shields.io/tokei/lines/github/Raspirus/docs?label=Lines%20of%20docs)
 
 Thank you for contributing to the project documentation! This guide will walk you through the process of setting up the project, making changes, and contributing your translations.
 
