@@ -1,33 +1,99 @@
+# FAQ  
+
+Below are some frequently asked questions about Raspirus. Click on any question to expand the answer.  
+
+## General  
+
+??? question "Where does the Raspirus logo come from?"  
+    The Raspirus logo features a red monster named **Stuart**, designed to represent a virus-eating creature. The logo was generated using [DALL-E](https://openai.com/product/dall-e-2), with additional image editing and merging.  
+
+    Stuart is a friendly monster—except when he's hungry for viruses. You can find additional media and assets in the [dedicated repository](https://github.com/Raspirus/media). Feel free to use these images for your own artwork and share them in the [discussion boards](https://github.com/orgs/Raspirus/discussions).  
+
+??? question "Can I use Raspirus offline?"  
+    Yes! Raspirus works offline except for updates. The YARA rules database is built locally, and an internet connection is only needed when fetching the latest rules from our GitHub repository.  
+
+## Installation & Compatibility  
+
+??? question "What are the minimum system requirements?"  
+    Raspirus is lightweight and works on most systems, including low-power devices like the Raspberry Pi 3B+. However, for the best experience, we recommend:  
+
+    - **RAM:** ~1 GB  
+    - **Storage:** ~200 MB  
+    - **CPU:** Dual-core processor (higher performance results in faster scans)  
+    - **Display:** Required for the GUI (no strict minimum size, but smaller screens may impact usability)  
+
+??? question "Issue when installing Raspirus on Linux"  
+    **Do not install or perform actions as the `sudo` user.** Always run commands as your main user and use `sudo` only when necessary.  
+
+    Switching to the `sudo` user and performing the installation will **break** the setup.  
+
+??? question "Why can't I select directories or files?"  
+    To change the type of asset you want to scan, click the **orange icon** near the selection dropdown. You can choose between:  
+
+    - **USB drives**  
+    - **Folders**  
+    - **Individual files**  
+
+??? question "Which operating systems and architectures are supported?"  
+    Raspirus supports multiple operating systems and CPU architectures:  
+
+    - **Windows:** Windows 10 & 11 (x86_64)  
+    - **Linux:** Debian-based distributions (Debian, Ubuntu, PopOS, Mint, etc.) (x86_64, ARM64)  
+    - **macOS:** Intel & Apple Silicon (x86_64, aarch64)  
+
+    Additionally, Raspirus is **unofficially supported** on:  
+
+    - OpenSUSE (x86_64, ARM64)  
+    - Arch-based Linux distributions (x86_64, ARM64)  
+
+    **Experimental support:** RISC-V 64 on Linux.  
+
+## Customization  
+
+??? question "How do I add my own YARA rules?"  
+    Raspirus fetches rules from the [yara-rules repository](https://github.com/Raspirus/yara-rules) and builds the database locally.  
+
+    If you want to contribute new rules:  
+    - Open an **issue** or submit a **pull request (PR)** on the [yara-rules repository](https://github.com/Raspirus/yara-rules).  
+
+    If you prefer to use your own rules:  
+    - Modify the configuration file to fetch rules from your own repository instead.  
+
 ---
-comments: true
+
+## Known Issues  
+
+??? warning "Remote installation error: App not detecting a screen"  
+    If you install Raspirus via remote access, you may see an error indicating the app **is not detecting a screen**.  
+
+    This happens because the system doesn't register a screen when running the app from the CLI, even if one is physically connected.  
+
+??? warning "Dependency issues when installing Raspirus"  
+    If you encounter dependency issues:  
+    - Try using the **AppImage** version.  
+    - If issues persist, consider **downgrading or upgrading your OS**.  
+
+    Always report these issues on [Discord](https://discord.gg/raspirus) or [GitHub](https://github.com/Raspirus/raspirus/issues) so we can investigate further.  
+
 ---
 
-# FAQ
+## Important GitHub Issues to Check  
 
-???+ question "App crashes when updating" On Windows, it has been observed that the app crashes when attempting to update the database. Wir sind uns dieser Frage bewusst und arbeiten aktiv daran, sie zu lösen. Das Problem tritt auf, weil die Update-Funktion Administratorrechte benötigt, die Windows nicht automatisch zur Verfügung stellt. Um dieses Problem vorübergehend zu beheben, können Sie die App mit Administratorrechten ausführen. Klicken Sie mit der rechten Maustaste auf die App und wählen Sie "Als Administrator ausführen", um sie mit den nötigen Rechten zu starten.
+Before reporting a problem, please check the following commonly referenced issues:  
 
-???+ Frage "Woher kommt das Raspirus-Logo?"
-Das Logo der Raspirus App enthält ein rotes Monster namens Stuart, das eine virusfressende Kreatur darstellen soll. Das Logo wurde mit [DALL-E](https://openai.com/product/dall-e-2) zusammen mit kreativer Bildbearbeitung und Zusammenführung generiert. Stuart ist ein freundliches Monster, außer wenn er hungrig nach Viren ist. Du kannst zusätzliche Medien und Dokumente im [dedizierten Projektarchiv](https://github.com/Raspirus/media) finden. Du kannst diese Bilder verwenden, um dein eigenes Kunstwerk zu erstellen und sie in den [Diskussionsforen“ zu teilen](https://github.com/orgs/Raspirus/discussions).
+??? note "Commonly Reported Issues"  
+    - **[#852 - No armv7 (32-bit) support](https://github.com/Raspirus/raspirus/issues/852)**  
+    - **[#891 - Missing fonts](https://github.com/Raspirus/raspirus/issues/891)**  
+    - **[#902 - "Failed to open yar file" error](https://github.com/Raspirus/raspirus/issues/902)**  
+    - **[#937 - ARM64 deb does not install on RaspiOS (Debian 12 Bookworm)](https://github.com/Raspirus/raspirus/issues/937)**  
 
-??+ Frage "Mein VScode Setup gibt mir Probleme"
+This is not a complete list—just a selection of frequently reported issues. If you encounter an error, check the [GitHub issues](https://github.com/Raspirus/raspirus/issues) first to see if a solution already exists before requesting support.  
 
-````
-Das Rust Analyzer Plugin in Visual Studio Code sucht nach einer `Cargo.toml` Datei im aktuellen Verzeichnis oder seinem übergeordneten Verzeichnis. Um dieses Problem zu beheben, können Sie eine Option zu den Plugin-Einstellungen hinzufügen und den Standort Ihrer `Cargo` angeben. oml` Datei.
+## Contributing Fixes  
 
-Wie in [diesem Kommentar](https://github. om/rust-lang/rust-analyzer/issues/2649#issuecomment-691582605), können Sie die folgenden Zeilen am Ende Ihrer Plugin-Einstellungen JSON hinzufügen. Anschließend starten Sie den Rust Analyzer neu, damit die Änderungen wirksam werden.
+We are happy to assist when possible, but our time is limited. If you find a solution to a problem, consider sharing it:  
 
-```json
-{
-    "rust-analyzer. inkedProjects": [
-        "/home/stuart/raspirus/raspirus/Cargo.toml"
-    ]
-}
-```
-````
+- If an **existing issue** covers your problem, add a comment with your fix.  
+- If you discover a **new issue** and a workaround, open an issue and document the solution for others.  
 
-???+ question "Can't select directories/files" Unfortunately, as of [this issue](https://github.com/tauri-apps/tauri/issues/5405) with Tauri, we currently can't allow users to select both files and folders. Um zwischen der Auswahl einer einzelnen Datei oder eines einzelnen Ordners zu wechseln, müssen Sie diese in den Raspirus Einstellungen ändern. Dort finden Sie einen Schalter dafür.
-
-??+ Frage "Was ist verschleierter Modus?"
-Raspirus war ursprünglich für den Unternehmenseinsatz gedacht und musste daher privatfreundlich sein. Um dies zu gewährleisten, fügte es den "Obfuscation Mode" hinzu, der alles versteckt, Malware schneller erkennt und nur anzeigt: "Malware gefunden" oder "Keine Malware gefunden". Sie ist standardmäßig eingeschaltet, wenn Sie also etwas mehr über Ihren Scan wissen möchten, sollten Sie ihn wahrscheinlich deaktivieren. Sie können dies in den Einstellungen tun.
-
-???+ question "error: found a virtual manifest instead of a package manifest" If you get this error when performing `cargo install` or using the Makefile, please note that it's a [know issue](https://github.com/rust-lang/cargo/issues/7599). Die Lösung ist einfach, wie auf der [this]erklärt (https\://stackoverflow. om/a/76271890) Stackoverflow-Antwort, ändere einfach den Befehl um den Arbeitsbereich einzubinden, wie z.B.: `cargo install --path src-tauri/`
+Your contributions help improve Raspirus for everyone! 🚀  

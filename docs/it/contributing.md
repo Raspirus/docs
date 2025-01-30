@@ -1,36 +1,47 @@
-# CONTRIBUTO
+# Contributing  
 
-## Migliora il Codebase
+## Code Contributions  
 
-Come sviluppatore che cerca di amplificare la funzionalità di Raspirus, i tuoi contributi sono preziosi. Si prega di aderire alle seguenti linee guida:
+We welcome contributions! Before starting, please:  
 
-- **Controllare i problemi esistenti:** Prima di fare immersioni in tuffo, perusare i problemi esistenti per evitare di creare duplicati. Se nessuno esiste, sentitevi liberi di aprirne uno nuovo.
+- **Check existing issues** to avoid duplicates.  
+- **Follow documentation & coding standards.**  
+- **Write tests** when applicable.  
 
-- **La documentazione è la chiave:** Assicurati sempre che il tuo codice sia ben documentato. Ricordati di adattare i test per mantenere l'integrità del codice.
+🔗 **[Read the Code of Conduct](https://github.com/Raspirus/docs/blob/main/CODE_OF_CONDUCT.md)**  
 
-- [Leggi il codice di condotta](https://github.com/Raspirus/docs/blob/main/CODE_OF_CONDUCT.md)
+## Documentation Contributions  
 
-## Arricchisci la documentazione
+Our documentation is built with [MkDocs](https://www.mkdocs.org/user-guide/installation/) and enhanced with the [Material Theme](https://squidfunk.github.io/mkdocs-material/reference/).  
 
-La documentazione di Raspirus è realizzata utilizzando Markdown e powered by [MkDocs](https://www.mkdocs.org/user-guide/installation/) e Python. Contribuire alla documentazione:
+To contribute:  
 
-- **Segui la guida:** Per iniziare, imposta la documentazione sulla tua macchina locale seguendo la [guide](https://raspirus.github.io/docs/guides).
-- **Material Theme:** La nostra documentazione utilizza il Material Theme, che estende la funzionalità Markdown. Scopri di più su di esso [here](https://squidfunk.github.io/mkdocs-material/reference).
+1. Clone the [documentation repository](https://github.com/Raspirus/docs).  
+2. Set up MkDocs locally.  
+3. Submit a pull request with your improvements.  
 
-## Traduzioni Drive
+## Translation Contributions  
 
-La nostra documentazione è multilingue grazie ad [Crowdin](https://crowdin.com/project/raspirus), un servizio esterno intuitivo. Le traduzioni GUI sono gestite tramite i file JSON. Fare riferimento alla [guide](https://raspirus.github.io/docs/guides) per informazioni complete.
+Raspirus is multilingual! We use [Crowdin](https://crowdin.com/project/raspirus) for translations.  
 
-## Infondere grafica e media
+- GUI translations use JSON files.  
+- Documentation translations follow the [contribution guide](https://raspirus.github.io/docs/guides).  
 
-Il repository per le opere d'arte (loghi, banner, ecc.) e supporti (powerpoint, articoli, grafici, ecc.) è ospitato separatamente su [questo repository](https://github.com/Raspirus/media). Sentitevi liberi di contribuire e rafforzare la nostra presenza visiva. Si noti che l'attuale logo e banner sono stati generati da IA a causa della mancanza di competenze artistiche.
+## Artwork & Media  
 
-## Fornisci Feedback
+We maintain a separate [media repository](https://github.com/Raspirus/media) for:  
 
-Al di là dei suddetti contributi, esistono altri modi efficaci per coinvolgersi:
+- Logos, banners, and promotional images.  
+- PowerPoints, articles, and infographics.  
 
-- **Unisciti a Discord:** Coinvolgi la nostra comunità sul [server Discord](https://discord.gg/Vx7fW9PA8B) per condividere preziosi feedback e idee.
-- **Considera la donazione:** Se trovi valore in Raspirus, considera [donating](https://github.com/sponsors/Raspirus) per supportare lo sviluppo in corso.
-- **Diffondi la Parola:** Un modo semplice ma efficace per contribuire è scaricare Raspirus e presentarlo agli amici.
+Feel free to contribute and improve Raspirus’s visual presence!  
 
-Grazie per la vostra dedizione alla crescita e al miglioramento di Raspirus. Il vostro coinvolgimento è una pietra angolare del nostro successo.
+## Community & Feedback  
+
+Join the discussion and help shape Raspirus:  
+
+- 💬 **[Join our Discord](https://discord.gg/Vx7fW9PA8B)**  
+- 💰 **[Consider sponsoring Raspirus](https://github.com/sponsors/Raspirus)**  
+- 🌍 **Spread the word!**  
+
+Thank you for your support and contributions! 🚀  

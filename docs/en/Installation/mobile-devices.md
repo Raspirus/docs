@@ -1,2 +1,0 @@
-# Mobile Devices
-COMING SOON

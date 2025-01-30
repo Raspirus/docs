@@ -1,13 +1,13 @@
 site_name: Raspirus docs
-repo_url: https://github.com/Raspirus/Raspirus
+repo_url: https://github.com/Raspirus/raspirus
 repo_name: Raspirus
 edit_uri: https://github.com/Raspirus/docs/tree/main/docs
 site_description: Documentation of the Raspirus project
-site_author: Benjamin Demetz
+site_author: Raspirus Team
 
 theme:
   name: material
-  logo: assets/images/logo.png
+  logo: assets/images/logo.svg
   favicon: assets/images/favicon.ico
   custom_dir: overrides
   language: en
@@ -48,11 +48,6 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -60,7 +55,6 @@ markdown_extensions:
 
 plugins:
   - i18n:
-      default_language: en
       docs_structure: folder
       languages:
         - locale: en
@@ -94,4 +88,4 @@ extra:
 extra_css:
   - style.css
 
-copyright: Copyright &copy; 2022 - 2024 Raspirus Project
+copyright: Copyright &copy; 2022 - Present Raspirus Project
