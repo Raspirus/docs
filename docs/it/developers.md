@@ -1,135 +1,138 @@
-# Developers  
+# Sviluppatori
 
-Welcome to the Raspirus developer guide! This page outlines everything you need to contribute effectively, from setting up your environment to understanding the architecture and updating YARA rules.  
-
----
-
-## Setup  
-
-To begin development, follow these steps:  
-
-1. Clone the repository:  
-    ```sh
-    git clone https://github.com/Raspirus/raspirus.git
-    cd raspirus
-    ```  
-2. Install [Rust](https://www.rust-lang.org/tools/install).  
-3. Install the Raspirus package:  
-    ```sh
-    cargo install .
-    ```  
-4. Start development:  
-    ```sh
-    cargo run
-    ```  
-5. Or build Raspirus:  
-    ```sh
-    cargo build
-    ```  
-
-### Troubleshooting Setup Issues  
-If you encounter issues while building or running Raspirus:  
-
-- Ensure Rust is installed correctly.  
-- Verify that logs and config files are created properly.  
-- Check for dependency conflicts and missing packages.  
+Benvenuto nella guida dello sviluppatore Raspirus! Questa pagina delinea tutto ciò di cui hai bisogno per contribuire in modo efficace, dalla creazione del tuo ambiente alla comprensione dell'architettura e all'aggiornamento delle regole YARA.
 
 ---
 
-## Documentation  
+## Configurazione
 
-Since Raspirus is written in Rust, you can generate developer documentation with:  
+Per iniziare lo sviluppo, seguire queste fasi:
+
+1. Clona il repository:
+   ```sh
+   git clone https://github.com/Raspirus/raspirus.git
+   cd raspirus
+   ```
+2. Installa [Rust](https://www.rust-lang.org/tools/install).
+3. Installare il pacchetto Raspirus:
+   ```sh
+   cargo install .
+   ```
+4. Avvia lo sviluppo:
+   ```sh
+   corsa di carico
+   ```
+5. O costruire Raspirus:
+   ```sh
+   costruzione del carico
+   ```
+
+### Problemi Di Impostazione Risoluzione Problemi
+
+Se si incontrano problemi durante la costruzione o l'esecuzione di Raspirus:
+
+- Assicurati che Rust sia installato correttamente.
+- Verificare che i log e i file di configurazione siano creati correttamente.
+- Controlla i conflitti di dipendenza e i pacchetti mancanti.
+
+---
+
+## Documentazione
+
+Dal momento che Raspirus è scritto in Rust, è possibile generare la documentazione dello sviluppatore con:
+
 ```sh
 cargo doc --no-deps --open
-```  
-This will open the generated documentation in your browser.  
+```
+
+Questo aprirà la documentazione generata nel tuo browser.
 
 ---
 
-## Architecture  
+## Architettura
 
-Raspirus follows a **frontend-backend** architecture, with both components written in Rust.  
+Raspirus segue un'architettura **frontend-backend** con entrambi i componenti scritti a Rust.
 
-### Frontend  
+### Frontend
 
-- Uses **iced-rs** for GUI rendering.  
-- Prioritizes user experience—ideally, users should never need to open the settings page.  
-- Designed for **touch support**, minimizing keyboard input.  
-- Plug-and-play: Can be replaced with another frontend if needed.  
-- Simple structure, similar to a website with just a few pages.  
+- Usa **iced-rs** per il rendering GUI.
+- Prioritizza l'esperienza dell'utente, idealmente, gli utenti non dovrebbero mai avere bisogno di aprire la pagina delle impostazioni.
+- Progettato per **supporto touch**, minimizzando l'input della tastiera.
+- Plug-and-play: Può essere sostituito con un altro frontend se necessario.
+- Struttura semplice, simile a un sito web con poche pagine.
 
-### Backend  
+### Backend
 
-- **Multi-threaded** for efficient scanning.  
-- Handles scanning, rule processing, and settings management.  
-- Implements **YARA rules** for malware detection.  
-- Well-documented functions—if in doubt, check the code directly.  
-- Despite its complexity, it becomes easier to navigate once you start working with it.  
+- **Multi-filettato** per una scansione efficiente.
+- Gestisce la scansione, l'elaborazione delle regole e la gestione delle impostazioni.
+- Implementa **regole YARA** per il rilevamento di malware.
+- Funzioni ben documentate – in caso di dubbio controllare direttamente il codice.
+- Nonostante la sua complessità, diventa più facile navigare una volta che si inizia a lavorare con esso.
 
 ---
 
-## Configuration  
+## Configurazione
 
-The configuration file is stored in the default system configuration folder:  
+Il file di configurazione è memorizzato nella cartella di configurazione di sistema predefinita:
 
 ```json
 {
   "config_version": "6",
-  "rules_version": "v1.1.2",
+  "rules_version": "v1.1. ",
   "min_matches": 0,
   "max_matches": 20,
   "max_threads": 12,
   "logging_is_active": true,
-  "mirror": "https://api.github.com/repos/Raspirus/yara-rules/releases/latest",
+  "mirror": "https://api. ithub.com/repos/Raspirus/yara-rules/releases/latest",
   "language": "en",
   "dark_mode": true
 }
 ```
 
-### Key Fields  
+### Campi Chiave
 
-- `config_version`: Determines if an older config needs to be overwritten.  
-- `rules_version`: Tracks the last downloaded YARA rules version.  
-- `min_matches`: Minimum number of rule matches required to flag a file.  
-- `max_matches`: Maximum rule matches before stopping further checks.  
-- `max_threads`: Number of CPU threads used for scanning.  
-- `logging_is_active`: Enables/disables logging (useful when storage is limited).  
-- `mirror`: API endpoint for fetching rule updates.  
-- `language`: Current language (supports `fr`, `en`, `it`, `de`).  
-- `dark_mode`: Toggles the application’s dark mode.  
+- `config_version`: Determina se una configurazione più vecchia deve essere sovrascritta.
+- `rules_version`: Traccia l'ultima versione scaricata delle regole YARA.
+- `min_matches`: Numero minimo di regole necessarie per contrassegnare un file.
+- `max_matches`: Massima corrispondenza delle regole prima di interrompere ulteriori controlli.
+- `max_threads`: Numero di thread della CPU utilizzati per la scansione.
+- `logging_is_active`: Abilita/disabilita la registrazione (utile quando la memoria è limitata).
+- `mirror`: endpoint API per recuperare gli aggiornamenti delle regole.
+- `language`: Lingua corrente (supporta `fr`, `en`, `it`, `de`).
+- `dark_mode`: Commuta la modalità scura dell'applicazione.
 
 ---
 
-## Mirrors  
+## Specchi
 
-The `mirror` setting in the config file should point to a Git API. Custom mirrors must provide JSON with the following structure:  
+L'impostazione `mirror` nel file di configurazione dovrebbe puntare a una API Git. Gli specchi personalizzati devono fornire a JSON la seguente struttura:
 
 ```json
 {
   "tag_name": "v1.1",
   "zipball_url": "http://example.com/download.zip"
 }
-```  
+```
 
-- `tag_name`: Specifies the version for update checks.  
-- `zipball_url`: Direct link to the `.zip` archive containing YARA rules.  
+- `tag_name`: Specifica la versione per i controlli di aggiornamento.
+- `zipball_url`: Link diretto all'archivio `.zip` contenente le regole YARA.
 
 ---
 
-## Updater  
+## Aggiornatore
 
-Raspirus has a **built-from-scratch updater** that:  
+Raspirus ha un **built-from-scratch updater** che:
 
-1. Checks the latest available version using the configured mirror.  
-2. Downloads the `.zip` archive to cache.  
-3. Compiles all `.yar` files into a `.yarac` (compiled YARA rules).  
-4. Saves the compiled rules in:  
-   - **Linux/macOS**: `~/.local/share/raspirus`  
-   - **Windows**: `%appdata%\Roaming\Raspirus\Data`  
-   - **macOS (App Bundle)**: `/Applications/Raspirus/data`  
+1. Controlla l'ultima versione disponibile utilizzando lo specchio configurato.
+2. Scarica l'archivio `.zip` nella cache.
+3. Compila tutti i file `.yar` in un `.yarac` (regole YARA compilate).
+4. Salva le regole compilate in:
+   - **Linux/macOS**: `~/.local/share/raspirus`
+   - **Windows**: `%appdata%\Roaming\Raspirus\Data`
+   - **macOS (App Bundle)**: `/Applications/Raspirus/data`
 
-### Release Archive Structure  
+### Rilascia Struttura Archivio
 
-The update `.zip` should contain **uncompiled YARA `.yar` files**. The folder structure inside the archive does not matter, as files are added recursively.  
+L'aggiornamento `.zip` dovrebbe contenere **file YARA `.yar` non compilati**. La struttura delle cartelle all'interno dell'archivio non importa, poiché i file vengono aggiunti ricorsivamente.
 
-📌 **Windows Users:** If Windows Defender interferes with compiled YARA rules, an optional script can disable Defender scanning. See [this script](https://github.com/Raspirus/yara-rules/blob/main/scripts/windows.ps1).  
+📌 \*\*Utenti Windows: \*\* Se Windows Defender interferisce con le regole YARA compilate, uno script opzionale può disabilitare la scansione Defender. Vedi [questo script](https://github.com/Raspirus/yara-rules/blob/main/scripts/windows.ps1).

@@ -1,78 +1,78 @@
-# Usage Guide
+# Guida All'Uso
 
-Raspirus is designed to offer a straightforward and user-friendly experience. It eliminates the need for a keyboard or mouse by providing a fully touchscreen-based interface. The application has been developed with simplicity in mind, ensuring that navigating and using Raspirus is intuitive. In this section, we will explain the available settings and scanning functionalities in more detail.
+Raspirus è progettato per offrire un'esperienza semplice e user-friendly. Elimina la necessità di una tastiera o del mouse fornendo un'interfaccia completamente touchscreen. L'applicazione è stata sviluppata con semplicità in mente, garantendo che la navigazione e l'utilizzo di Raspirus sia intuitiva. In questa sezione, spiegheremo le impostazioni disponibili e le funzionalità di scansione in modo più dettagliato.
 
-## Navigating Logs and Configurations
+## Navigazione di registri e configurazioni
 
-In cases of unexpected errors or application crashes, reviewing logs and configuration files can provide valuable insights. These files are stored in platform-specific directories, managed by the [ProjectDirs crate](https://docs.rs/directories-next/latest/directories_next/struct.ProjectDirs.html). 
+In caso di errori inattesi o crash delle applicazioni, la revisione dei registri e dei file di configurazione può fornire preziose informazioni. Questi file sono memorizzati in directory specifiche per le piattaforme, gestite dal [ProjectDirs crate](https://docs.rs/directories-next/latest/directories_next/struct.ProjectDirs.html).
 
-### Log File Location
+### Posizione File Di Log
 
-The log files are stored in different locations depending on the operating system. Below is a table of default paths:
+I file di registro sono memorizzati in posizioni diverse a seconda del sistema operativo. Di seguito è riportata una tabella dei percorsi predefiniti:
 
-| Platform | Path                                                                 | Example                                                       |
-| -------- | -------------------------------------------------------------------- | ------------------------------------------------------------- |
-| Linux    | `$XDG_DATA_HOME`/`_project_path_` or `$HOME`/.local/share/`_project_path_` | `/home/alice/.local/share/barapp`                             |
-| macOS    | `$HOME`/Library/Application Support/`_project_path_`                 | `/Users/Alice/Library/Application Support/com.Foo-Corp.Bar-App` |
-| Windows  | `{FOLDERID_LocalAppData}`\\`_project_path_`\\data                    | `C:\Users\Alice\AppData\Local\Foo Corp\Bar App\data`          |
+| Piattaforma | Percorso                                                                                  | Esempio                                                         |
+| ----------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Linux       | `$XDG_DATA_HOME`/`_project_path_` o `$HOME`/.local/share/`_project_path_` | `/home/alice/.local/share/barapp`                               |
+| macOS       | `$HOME`/Library/Application Support/`_project_path_`                                      | `/Users/Alice/Library/Application Support/com.Foo-Corp.Bar-App` |
+| Finestre    | `{FOLDERID_LocalAppData}`\\`_project_path_`\data                                        | `C:\Users\Alice\AppData\Local\Foo Corp\Bar App\data`     |
 
-When reporting bugs or issues, make sure to include these log files, as they help significantly in troubleshooting.
+Quando si segnalano bug o problemi, assicurarsi di includere questi file di registro, in quanto aiutano in modo significativo nella risoluzione dei problemi.
 
-## Configuration File
+## File Di Configurazione
 
-The configuration file holds important settings that persist even after you close the application. It is essential not to alter these settings unless you are familiar with their function, as improper modifications could prevent the application from launching.
+Il file di configurazione contiene impostazioni importanti che persistono anche dopo la chiusura dell'applicazione. È essenziale non modificare queste impostazioni a meno che non si ha familiarità con la loro funzione, in quanto modifiche improprie potrebbero impedire l'applicazione di lanciare.
 
-### Configuration File Location
+### Posizione File Di Configurazione
 
-The config file is located in platform-specific directories, as shown below:
+Il file di configurazione si trova in directory specifiche per la piattaforma, come mostrato di seguito:
 
-| Platform | Path                                                                 | Example                                                       |
-| -------- | -------------------------------------------------------------------- | ------------------------------------------------------------- |
-| Linux    | `$XDG_DATA_HOME`/`_project_path_` or `$HOME`/.local/share/`_project_path_` | `/home/alice/.local/share/barapp`                             |
-| macOS    | `$HOME`/Library/Application Support/`_project_path_`                 | `/Users/Alice/Library/Application Support/com.Foo-Corp.Bar-App` |
-| Windows  | `{FOLDERID_RoamingAppData}`\\`_project_path_`\\data                  | `C:\Users\Alice\AppData\Roaming\Foo Corp\Bar App\data`        |
+| Piattaforma | Percorso                                                                                  | Esempio                                                         |
+| ----------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Linux       | `$XDG_DATA_HOME`/`_project_path_` o `$HOME`/.local/share/`_project_path_` | `/home/alice/.local/share/barapp`                               |
+| macOS       | `$HOME`/Library/Application Support/`_project_path_`                                      | `/Users/Alice/Library/Application Support/com.Foo-Corp.Bar-App` |
+| Finestre    | `{FOLDERID_RoamingAppData}`\\`_project_path_`\data                                      | `C:\Users\Alice\AppData\Roaming\Foo Corp\Bar App\data`   |
 
-### Configuration
+### Configurazione
 
-If you need to customize Raspirus further, you can manually edit the configuration file. For example:
+Se hai bisogno di personalizzare ulteriormente Raspirus, puoi modificare manualmente il file di configurazione. Per esempio:
 
-- **Centralized Config Distribution**: Replace the config file on each user's system upon startup to enforce a common configuration.
-- **Custom Settings**: Set specific values, such as the path to custom YARA rules or scan behavior preferences.
+- **Distribuzione di configurazione centralizzata**: Sostituire il file di configurazione sul sistema di ogni utente all'avvio per imporre una configurazione comune.
+- **Impostazioni personalizzate**: Imposta valori specifici, come il percorso delle regole YARA personalizzate o le preferenze del comportamento di scansione.
 
-For more details on how to use and modify the configuration file, refer to the [developers page](developers.md#configuration).
+Per maggiori dettagli su come utilizzare e modificare il file di configurazione, fare riferimento alla [pagina sviluppatori](developers.md#configuration).
 
-## Scanning
+## Scansione
 
-Raspirus allows you to scan specific files, folders, and external drives for potential malware threats. The scanning process checks files against a database of YARA rules designed to detect known malicious patterns.
+Raspirus consente di eseguire la scansione di file, cartelle e unità esterne specifiche per potenziali minacce di malware. Il processo di scansione controlla i file contro un database di regole YARA progettato per rilevare modelli dannosi noti.
 
-### Supported Scanning Targets
+### Bersagli Di Scansione Supportati
 
-Raspirus can scan:
+Raspirus può scansionare:
 
-- A folder and all of its subfolders.
-- A single file, including compressed files (e.g., ZIP, TAR).
-- A detachable drive (e.g., USB stick).
+- Una cartella e tutte le sue sottocartelle.
+- Un singolo file, compresi i file compressi (ad esempio, ZIP, TAR).
+- Un disco staccabile (ad es. chiavetta USB).
 
-### Permissions and Limitations
+### Permessi e limitazioni
 
-To scan files, Raspirus requires read access to the files or directories in question. It cannot access password-protected compressed files or folders that are restricted by your operating system.
+Per eseguire la scansione dei file, Raspirus richiede l'accesso in lettura ai file o alle directory in questione. Non può accedere a file o cartelle compressi protetti da password che sono limitati dal sistema operativo.
 
-!!! warning "Important!"
-    Do not attempt to scan your entire operating system or computer. For full system scans, it’s recommended to use a dedicated antivirus solution.
+!!! avvertimento "Importante!"
+Non tentare di scansionare l'intero sistema operativo o computer. Per la scansione completa del sistema, si consiglia di utilizzare una soluzione antivirus dedicata.
 
-### Scanning Process
+### Processo Di Scansione
 
-The scanning process involves analyzing files and their contents to match patterns against the YARA rule database. For compressed files, Raspirus will extract and scan the contents. If a file matches a known malware pattern, it will be flagged as potentially malicious.
+Il processo di scansione comporta l'analisi dei file e del loro contenuto per abbinare i modelli rispetto al database delle regole YARA. Per i file compressi, Raspirus estrarrà e scansionerà i contenuti. Se un file corrisponde a un modello noto di malware, verrà contrassegnato come potenzialmente dannoso.
 
-### Post-Scan Actions
+### Azioni Post-Scansione
 
-After completing a scan:
+Dopo aver completato una scansione:
 
-- If no threats are detected, you may continue your tasks without concern.
-- If malware is found, Raspirus will display a list of flagged files and the detected threats.
+- Se non vengono rilevate minacce, è possibile continuare le attività senza preoccupazione.
+- Se viene trovato un malware, Raspirus visualizzerà un elenco di file contrassegnati e le minacce rilevate.
 
-!!! note "Skipped files"
-    If Raspirus is not able to scan a file, it will skip it to avoid having to interrupt the scanning process.
-    Skipped files can normally be ignored, as its usually just a permission problem.
-  
-Raspirus does **not** offer file deletion or quarantine options because the detection database may occasionally generate false positives. We recommend reviewing flagged files carefully and making decisions based on your own judgment or submitting suspicious files to services like [VirusTotal](https://www.virustotal.com) for further analysis.
+!!! nota "File saltati"
+Se Raspirus non è in grado di scansionare un file, salterà per evitare di dover interrompere il processo di scansione.
+I file saltati possono normalmente essere ignorati, come di solito solo un problema di autorizzazione.
+
+Raspirus **non** offre opzioni di cancellazione di file o quarantena perché il database di rilevamento può occasionalmente generare falsi positivi. Raccomandiamo di rivedere attentamente i file contrassegnati e di prendere decisioni in base al tuo giudizio o di inviare file sospetti a servizi come [VirusTotal](https://www.virustotal.com) per ulteriori analisi.

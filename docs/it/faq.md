@@ -1,99 +1,113 @@
-# FAQ  
+# FAQ
 
-Below are some frequently asked questions about Raspirus. Click on any question to expand the answer.  
+Qui di seguito sono alcune domande frequenti su Raspirus. Fare clic su qualsiasi domanda per espandere la risposta.
 
-## General  
+## Generale
 
-??? question "Where does the Raspirus logo come from?"  
-    The Raspirus logo features a red monster named **Stuart**, designed to represent a virus-eating creature. The logo was generated using [DALL-E](https://openai.com/product/dall-e-2), with additional image editing and merging.  
+??? domanda "Da dove viene il logo Raspirus?"\
+Il logo Raspirus presenta un mostro rosso chiamato **Stuart**, progettato per rappresentare una creatura che mangia virus. Il logo è stato generato usando [DALL-E](https://openai.com/product/dall-e-2), con l'editing e la fusione di immagini aggiuntive.
 
-    Stuart is a friendly monster—except when he's hungry for viruses. You can find additional media and assets in the [dedicated repository](https://github.com/Raspirus/media). Feel free to use these images for your own artwork and share them in the [discussion boards](https://github.com/orgs/Raspirus/discussions).  
+```
+Stuart è un mostro amichevole, tranne quando ha fame di virus. Puoi trovare altri supporti e risorse nel [repository dedicato](https://github.com/Raspirus/media). Sentiti libero di usare queste immagini per la tua grafica e condividerle nelle [schede di discussione](https://github.com/orgs/Raspirus/discussions).  
+```
 
-??? question "Can I use Raspirus offline?"  
-    Yes! Raspirus works offline except for updates. The YARA rules database is built locally, and an internet connection is only needed when fetching the latest rules from our GitHub repository.  
+??? domanda "Posso usare Raspirus offline?"\
+Sì! Raspirus funziona offline ad eccezione degli aggiornamenti. Il database delle regole YARA è costruito localmente, e una connessione internet è necessaria solo quando si recuperano le ultime regole dal nostro repository GitHub.
 
-## Installation & Compatibility  
+## Installazione & Compatibilità
 
-??? question "What are the minimum system requirements?"  
-    Raspirus is lightweight and works on most systems, including low-power devices like the Raspberry Pi 3B+. However, for the best experience, we recommend:  
+??? domanda "Quali sono i requisiti minimi di sistema?"\
+Raspirus è leggero e funziona sulla maggior parte dei sistemi, tra cui dispositivi a bassa potenza come il Raspberry Pi 3B+. Tuttavia, per la migliore esperienza, raccomandiamo:
 
-    - **RAM:** ~1 GB  
-    - **Storage:** ~200 MB  
-    - **CPU:** Dual-core processor (higher performance results in faster scans)  
-    - **Display:** Required for the GUI (no strict minimum size, but smaller screens may impact usability)  
+```
+- **RAM:** ~1 GB  
+- **Storage:** ~200 MB  
+- **CPU:** Processore Dual-core (prestazioni superiori si traduce in scansioni più veloci)  
+- **Display:** Richiesto per la GUI (nessuna dimensione minima rigorosa, ma schermi più piccoli possono avere un impatto sull'usabilità)  
+```
 
-??? question "Issue when installing Raspirus on Linux"  
-    **Do not install or perform actions as the `sudo` user.** Always run commands as your main user and use `sudo` only when necessary.  
+??? domanda "Problema durante l'installazione di Raspirus su Linux"\
+\*\*Non installare o eseguire azioni come utente `sudo`. \* Esegui sempre i comandi come utente principale e usa `sudo` solo quando necessario.
 
-    Switching to the `sudo` user and performing the installation will **break** the setup.  
+```
+Passando all'utente `sudo` e eseguendo l'installazione si **romperà** la configurazione.  
+```
 
-??? question "Why can't I select directories or files?"  
-    To change the type of asset you want to scan, click the **orange icon** near the selection dropdown. You can choose between:  
+??? domanda "Perché non posso selezionare directory o file?"\
+Per modificare il tipo di asset che vuoi scansionare, fai clic sulla **icona arancione** vicino al menu a discesa della selezione. Puoi scegliere tra:
 
-    - **USB drives**  
-    - **Folders**  
-    - **Individual files**  
+```
+- **Unità USB**  
+- **Cartelle**  
+- **File individuali**  
+```
 
-??? question "Which operating systems and architectures are supported?"  
-    Raspirus supports multiple operating systems and CPU architectures:  
+??? domanda "Quali sistemi operativi e architetture sono supportati?"\
+Raspirus supporta più sistemi operativi e architetture della CPU:
 
-    - **Windows:** Windows 10 & 11 (x86_64)  
-    - **Linux:** Debian-based distributions (Debian, Ubuntu, PopOS, Mint, etc.) (x86_64, ARM64)  
-    - **macOS:** Intel & Apple Silicon (x86_64, aarch64)  
+```
+- **Windows:** Windows 10 & 11 (x86_64)  
+- **Linux:** Distribuzioni basate su Debian (Debian, Ubuntu, PopOS, Mint, etc. (x86_64, ARM64)  
+- **macOS:** Silicio Intel & Apple (x86_64, aarch64)  
 
-    Additionally, Raspirus is **unofficially supported** on:  
+Inoltre, Raspirus è **ufficialmente supportato** su:  
 
-    - OpenSUSE (x86_64, ARM64)  
-    - Arch-based Linux distributions (x86_64, ARM64)  
+- OpenSUSE (x86_64, ARM64)  
+- Distribuzioni Linux basate su Arch(x86_64, ARM64)  
 
-    **Experimental support:** RISC-V 64 on Linux.  
+**Supporto sperimentale:** RISC-V 64 su Linux.  
+```
 
-## Customization  
+## Personalizzazione
 
-??? question "How do I add my own YARA rules?"  
-    Raspirus fetches rules from the [yara-rules repository](https://github.com/Raspirus/yara-rules) and builds the database locally.  
+??? domanda "Come aggiungo le mie regole YARA?"\
+Raspirus recupera le regole dal [yara-rules repository](https://github.com/Raspirus/yara-rules) e costruisce il database localmente.
 
-    If you want to contribute new rules:  
-    - Open an **issue** or submit a **pull request (PR)** on the [yara-rules repository](https://github.com/Raspirus/yara-rules).  
+```
+Se vuoi contribuire con nuove regole:  
+- Apri un **problema** o invia una **pull request (PR)** sul [yara-rules repository](https://github.com/Raspirus/yara-rules).  
 
-    If you prefer to use your own rules:  
-    - Modify the configuration file to fetch rules from your own repository instead.  
-
----
-
-## Known Issues  
-
-??? warning "Remote installation error: App not detecting a screen"  
-    If you install Raspirus via remote access, you may see an error indicating the app **is not detecting a screen**.  
-
-    This happens because the system doesn't register a screen when running the app from the CLI, even if one is physically connected.  
-
-??? warning "Dependency issues when installing Raspirus"  
-    If you encounter dependency issues:  
-    - Try using the **AppImage** version.  
-    - If issues persist, consider **downgrading or upgrading your OS**.  
-
-    Always report these issues on [Discord](https://discord.gg/raspirus) or [GitHub](https://github.com/Raspirus/raspirus/issues) so we can investigate further.  
+Se preferisci usare le tue regole:  
+- Modifica il file di configurazione per recuperare le regole dal tuo repository invece.  
+```
 
 ---
 
-## Important GitHub Issues to Check  
+## Problemi Conosciuti
 
-Before reporting a problem, please check the following commonly referenced issues:  
+??? avviso "Errore di installazione remota: App non rilevamento schermo"\
+Se si installa Raspirus tramite accesso remoto, potresti vedere un errore che indica che l'app **non sta rilevando uno schermo**.
 
-??? note "Commonly Reported Issues"  
-    - **[#852 - No armv7 (32-bit) support](https://github.com/Raspirus/raspirus/issues/852)**  
-    - **[#891 - Missing fonts](https://github.com/Raspirus/raspirus/issues/891)**  
-    - **[#902 - "Failed to open yar file" error](https://github.com/Raspirus/raspirus/issues/902)**  
-    - **[#937 - ARM64 deb does not install on RaspiOS (Debian 12 Bookworm)](https://github.com/Raspirus/raspirus/issues/937)**  
+```
+Questo accade perché il sistema non registra uno schermo quando si esegue l'app dalla CLI, anche se si è fisicamente connessi.  
+```
 
-This is not a complete list—just a selection of frequently reported issues. If you encounter an error, check the [GitHub issues](https://github.com/Raspirus/raspirus/issues) first to see if a solution already exists before requesting support.  
+??? avvertimento "Problemi di dipendenza durante l'installazione di Raspirus"\
+Se riscontri problemi di dipendenza:* Prova a usare la versione **AppImage**.
+* Se i problemi persistono, considera **il downgrading o l'aggiornamento del tuo sistema operativo**.
 
-## Contributing Fixes  
+```
+Segnala sempre questi problemi su [Discord](https://discord.gg/raspirus) o [GitHub](https://github.com/Raspirus/raspirus/issues) in modo da poter indagare ulteriormente.  
+```
 
-We are happy to assist when possible, but our time is limited. If you find a solution to a problem, consider sharing it:  
+---
 
-- If an **existing issue** covers your problem, add a comment with your fix.  
-- If you discover a **new issue** and a workaround, open an issue and document the solution for others.  
+## Problemi importanti di GitHub da controllare
 
-Your contributions help improve Raspirus for everyone! 🚀  
+Prima di segnalare un problema, si prega di controllare i seguenti problemi comunemente riferiti:
+
+??? nota "Problemi segnalati comunemente"* **[#852 - Nessun supporto armv7 (32-bit)](https://github.com/Raspirus/raspirus/issues/852)**
+* **[#891 - Caratteri mancanti](https://github.com/Raspirus/raspirus/issues/891)**
+* **[#902 - Errore "Impossibile aprire il file yar"](https://github.com/Raspirus/raspirus/issues/902)**
+* **[#937 - ARM64 deb non installa su RaspiOS (Debian 12 Bookworm)](https://github.com/Raspirus/raspirus/issues/937)**
+
+Questo non è un elenco completo, ma solo una selezione di problemi segnalati di frequente. Se riscontri un errore, controlla prima di tutto [GitHub issues](https://github.com/Raspirus/raspirus/issues) per vedere se esiste già una soluzione prima di richiedere supporto.
+
+## Contribuire A Correzioni
+
+Siamo lieti di assistere, quando possibile, ma il nostro tempo è limitato. Se trovi una soluzione a un problema, considera di condividerlo:
+
+- Se un **problema esistente** copre il tuo problema, aggiungi un commento con la tua correzione.
+- Se si scopre un **nuovo problema** e un workaround, aprire un problema e documentare la soluzione per gli altri.
+
+I tuoi contributi aiutano a migliorare Raspirus per tutti! 🚀
