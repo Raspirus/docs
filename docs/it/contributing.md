@@ -1,47 +1,47 @@
-# Contributing
+# Contribuire
 
-## Code Contributions
+## Contributi Di Codice
 
-We welcome contributions! Before starting, please:
+Accogliamo con favore i contributi! Prima di iniziare, per favore:
 
-- **Check existing issues** to avoid duplicates.
-- **Follow documentation & coding standards.**
-- **Write tests** when applicable.
+- **Controlla problemi esistenti** per evitare duplicati.
+- **Segui gli standard di documentazione e codifica.**
+- **Scrivi test** se applicabile.
 
-🔗 **[Read the Code of Conduct](https://github.com/Raspirus/docs/blob/main/CODE_OF_CONDUCT.md)**
+🔗 **[Leggi il codice di condotta](https://github.com/Raspirus/docs/blob/main/CODE_OF_CONDUCT.md)**
 
-## Documentation Contributions
+## Contributi Alla Documentazione
 
-Our documentation is built with [MkDocs](https://www.mkdocs.org/user-guide/installation/) and enhanced with the [Material Theme](https://squidfunk.github.io/mkdocs-material/reference/).
+La nostra documentazione è costruita con [MkDocs](https://www.mkdocs.org/user-guide/installation/) e migliorata con il [tema materiale](https://squidfunk.github.io/mkdocs-material/reference/).
 
-To contribute:
+Per contribuire:
 
-1. Clone the [documentation repository](https://github.com/Raspirus/docs).
-2. Set up MkDocs locally.
-3. Submit a pull request with your improvements.
+1. Clona il [repository documentazione](https://github.com/Raspirus/docs).
+2. Configura MkDocs localmente.
+3. Invia una pull request con i tuoi miglioramenti.
 
-## Translation Contributions
+## Contributi Di Traduzione
 
-Raspirus is multilingual! We use [Crowdin](https://crowdin.com/project/raspirus) for translations.
+Raspirus è multilingue! Usiamo [Crowdin](https://crowdin.com/project/raspirus) per le traduzioni.
 
-- GUI translations use JSON files.
-- Documentation translations follow the [contribution guide](https://raspirus.github.io/docs/guides).
+- Le traduzioni GUI usano i file JSON.
+- Le traduzioni della documentazione seguono la [guida del contributo](https://raspirus.github.io/docs/guides).
 
-## Artwork & Media
+## Grafica E Media
 
-We maintain a separate [media repository](https://github.com/Raspirus/media) for:
+Manteniamo un [repository multimediale](https://github.com/Raspirus/media) separato per:
 
-- Logos, banners, and promotional images.
-- PowerPoints, articles, and infographics.
+- Loghi, banner e immagini promozionali.
+- PowerPoints, articoli, e infografica.
 
-Feel free to contribute and improve Raspirus’s visual presence!
+Sentitevi liberi di contribuire e migliorare la presenza visiva di Raspirus!
 
 ## Community & Feedback
 
-Join the discussion and help shape Raspirus:
+Unisciti alla discussione e aiuta a modellare Raspirus:
 
-- 💬 **[Join our Discord](https://discord.gg/Vx7fW9PA8B)**
-- 💰 **[Consider sponsoring Raspirus](https://github.com/sponsors/Raspirus)**
-- 🌍 **Spread the word!**
+- 💬 **[Unisciti alla nostra Discord](https://discord.gg/Vx7fW9PA8B)**
+- 💰 **[Considera la sponsorizzazione di Raspirus](https://github.com/sponsors/Raspirus)**
+- 🌍 **Diffondi la parola!**
 
-Thank you for your support and contributions! 🚀
+Grazie per il vostro sostegno e contributi! 🚀
