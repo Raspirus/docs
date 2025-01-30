@@ -4,19 +4,19 @@ Qui di seguito sono alcune domande frequenti su Raspirus. Fare clic su qualsiasi
 
 ## Generale
 
-??? domanda "Da dove viene il logo Raspirus?"\
+??? question "Da dove viene il logo Raspirus?"\
 Il logo Raspirus presenta un mostro rosso chiamato **Stuart**, progettato per rappresentare una creatura che mangia virus. Il logo è stato generato usando [DALL-E](https://openai.com/product/dall-e-2), con l'editing e la fusione di immagini aggiuntive.
 
 ```
 Stuart è un mostro amichevole, tranne quando ha fame di virus. Puoi trovare altri supporti e risorse nel [repository dedicato](https://github.com/Raspirus/media). Sentiti libero di usare queste immagini per la tua grafica e condividerle nelle [schede di discussione](https://github.com/orgs/Raspirus/discussions).  
 ```
 
-??? domanda "Posso usare Raspirus offline?"\
+??? question "Posso usare Raspirus offline?"\
 Sì! Raspirus funziona offline ad eccezione degli aggiornamenti. Il database delle regole YARA è costruito localmente, e una connessione internet è necessaria solo quando si recuperano le ultime regole dal nostro repository GitHub.
 
 ## Installazione & Compatibilità
 
-??? domanda "Quali sono i requisiti minimi di sistema?"\
+??? question "Quali sono i requisiti minimi di sistema?"\
 Raspirus è leggero e funziona sulla maggior parte dei sistemi, tra cui dispositivi a bassa potenza come il Raspberry Pi 3B+. Tuttavia, per la migliore esperienza, raccomandiamo:
 
 ```
@@ -26,14 +26,14 @@ Raspirus è leggero e funziona sulla maggior parte dei sistemi, tra cui disposit
 - **Display:** Richiesto per la GUI (nessuna dimensione minima rigorosa, ma schermi più piccoli possono avere un impatto sull'usabilità)  
 ```
 
-??? domanda "Problema durante l'installazione di Raspirus su Linux"\
+??? question "Problema durante l'installazione di Raspirus su Linux"\
 \*\*Non installare o eseguire azioni come utente `sudo`. \* Esegui sempre i comandi come utente principale e usa `sudo` solo quando necessario.
 
 ```
 Passando all'utente `sudo` e eseguendo l'installazione si **romperà** la configurazione.  
 ```
 
-??? domanda "Perché non posso selezionare directory o file?"\
+??? question "Perché non posso selezionare directory o file?"\
 Per modificare il tipo di asset che vuoi scansionare, fai clic sulla **icona arancione** vicino al menu a discesa della selezione. Puoi scegliere tra:
 
 ```
@@ -42,7 +42,7 @@ Per modificare il tipo di asset che vuoi scansionare, fai clic sulla **icona ara
 - **File individuali**  
 ```
 
-??? domanda "Quali sistemi operativi e architetture sono supportati?"\
+??? question "Quali sistemi operativi e architetture sono supportati?"\
 Raspirus supporta più sistemi operativi e architetture della CPU:
 
 ```
@@ -60,7 +60,7 @@ Inoltre, Raspirus è **ufficialmente supportato** su:
 
 ## Personalizzazione
 
-??? domanda "Come aggiungo le mie regole YARA?"\
+??? question "Come aggiungo le mie regole YARA?"\
 Raspirus recupera le regole dal [yara-rules repository](https://github.com/Raspirus/yara-rules) e costruisce il database localmente.
 
 ```
@@ -75,14 +75,14 @@ Se preferisci usare le tue regole:
 
 ## Problemi Conosciuti
 
-??? avviso "Errore di installazione remota: App non rilevamento schermo"\
+??? warning "Errore di installazione remota: App non rilevamento schermo"\
 Se si installa Raspirus tramite accesso remoto, potresti vedere un errore che indica che l'app **non sta rilevando uno schermo**.
 
 ```
 Questo accade perché il sistema non registra uno schermo quando si esegue l'app dalla CLI, anche se si è fisicamente connessi.  
 ```
 
-??? avvertimento "Problemi di dipendenza durante l'installazione di Raspirus"\
+??? warning "Problemi di dipendenza durante l'installazione di Raspirus"\
 Se riscontri problemi di dipendenza:* Prova a usare la versione **AppImage**.
 * Se i problemi persistono, considera **il downgrading o l'aggiornamento del tuo sistema operativo**.
 
@@ -96,7 +96,7 @@ Segnala sempre questi problemi su [Discord](https://discord.gg/raspirus) o [GitH
 
 Prima di segnalare un problema, si prega di controllare i seguenti problemi comunemente riferiti:
 
-??? nota "Problemi segnalati comunemente"* **[#852 - Nessun supporto armv7 (32-bit)](https://github.com/Raspirus/raspirus/issues/852)**
+??? note "Problemi segnalati comunemente"* **[#852 - Nessun supporto armv7 (32-bit)](https://github.com/Raspirus/raspirus/issues/852)**
 * **[#891 - Caratteri mancanti](https://github.com/Raspirus/raspirus/issues/891)**
 * **[#902 - Errore "Impossibile aprire il file yar"](https://github.com/Raspirus/raspirus/issues/902)**
 * **[#937 - ARM64 deb non installa su RaspiOS (Debian 12 Bookworm)](https://github.com/Raspirus/raspirus/issues/937)**

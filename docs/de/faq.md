@@ -33,7 +33,7 @@ Raspirus ist leichtgewichtig und arbeitet auf den meisten Systemen, einschließl
 Der Wechsel zum `sudo`-Benutzer und die Durchführung der Installation wird das Setup **zerbrechen**.  
 ```
 
-??? Frage "Warum kann ich Verzeichnisse oder Dateien nicht auswählen?"\
+??? question "Warum kann ich Verzeichnisse oder Dateien nicht auswählen?"\
 Um die Art des Assets zu ändern, klicken Sie auf das **orangefarbene Icon** neben dem Auswahlmenü. Sie können wählen unter:
 
 ```
@@ -42,7 +42,7 @@ Um die Art des Assets zu ändern, klicken Sie auf das **orangefarbene Icon** neb
 - **Einzelne Dateien**  
 ```
 
-??? Frage "Welche Betriebssysteme und Architekturen werden unterstützt?"\
+??? question "Welche Betriebssysteme und Architekturen werden unterstützt?"\
 Raspirus unterstützt mehrere Betriebssysteme und CPU-Architekturen:
 
 ```
@@ -60,7 +60,7 @@ Zusätzlich Raspirus wird **inoffiziell unterstützt** am:
 
 ## Anpassung
 
-??? Frage "Wie füge ich meine eigenen YARA-Regeln hinzu?"\
+??? question "Wie füge ich meine eigenen YARA-Regeln hinzu?"\
 Raspirus holt Regeln aus dem [yara-rules repository](https://github.com/Raspirus/yara-rules) und baut die Datenbank lokal.
 
 ```
@@ -75,14 +75,14 @@ Wenn Sie lieber Ihre eigenen Regeln verwenden möchten:
 
 ## Bekannte Probleme
 
-??? Warnung: "Remote-Installationsfehler: App erkennt keinen Bildschirm"\
+??? warning: "Remote-Installationsfehler: App erkennt keinen Bildschirm"\
 Wenn Sie Raspirus über Remote-Zugriff installieren du einen Fehler siehst, der andeutet, dass die App **keinen Bildschirm erkennt**.
 
 ```
 Dies geschieht, weil das System keinen Bildschirm registriert, wenn die App aus dem CLI ausgeführt wird, selbst wenn einer physisch verbunden ist.  
 ```
 
-??? Warnung "Abhängigkeitsprobleme bei der Installation von Raspirus"\
+??? warning "Abhängigkeitsprobleme bei der Installation von Raspirus"\
 Wenn Abhängigkeitsprobleme auftreten:* Versuchen Sie die **AppImage** Version.
 * Wenn Probleme weiterhin auftreten, überlegen Sie **herunterstufen oder upgraden Sie Ihr OS**.
 
@@ -96,7 +96,7 @@ Melde diese Probleme immer auf [Discord](https://discord.gg/raspirus) oder [GitH
 
 Bevor Sie ein Problem melden, überprüfen Sie bitte die folgenden häufig referenzierten Probleme:
 
-??? Hinweis "Commonly Reported Issues"* **[#852 - No armv7 (32-bit) support](https://github.com/Raspirus/raspirus/issues/852)**
+??? note "Commonly Reported Issues"* **[#852 - No armv7 (32-bit) support](https://github.com/Raspirus/raspirus/issues/852)**
 * **[#891 - Fehlende Fonts](https://github.com/Raspirus/raspirus/issues/891)**
 * **[#902 - "Failed to open yar file" error](https://github.com/Raspirus/raspirus/issues/902)**
 * **[#937 - ARM64 deb installiert nicht auf RaspiOS (Debian 12 Bookworm)](https://github.com/Raspirus/raspirus/issues/937)**

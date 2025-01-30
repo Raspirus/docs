@@ -57,7 +57,7 @@ Raspirus può scansionare:
 
 Per eseguire la scansione dei file, Raspirus richiede l'accesso in lettura ai file o alle directory in questione. Non può accedere a file o cartelle compressi protetti da password che sono limitati dal sistema operativo.
 
-!!! avvertimento "Importante!"
+!!! warning "Importante!"
 Non tentare di scansionare l'intero sistema operativo o computer. Per la scansione completa del sistema, si consiglia di utilizzare una soluzione antivirus dedicata.
 
 ### Processo Di Scansione
@@ -71,7 +71,7 @@ Dopo aver completato una scansione:
 - Se non vengono rilevate minacce, è possibile continuare le attività senza preoccupazione.
 - Se viene trovato un malware, Raspirus visualizzerà un elenco di file contrassegnati e le minacce rilevate.
 
-!!! nota "File saltati"
+!!! note "File saltati"
 Se Raspirus non è in grado di scansionare un file, salterà per evitare di dover interrompere il processo di scansione.
 I file saltati possono normalmente essere ignorati, come di solito solo un problema di autorizzazione.
 
