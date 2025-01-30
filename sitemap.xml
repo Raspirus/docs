@@ -121,27 +121,6 @@
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/usage/"/>
     </url>
     <url>
-        <loc>Nonede/various/</loc>
-        <lastmod>2025-01-30</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/various/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/various/"/>
-    </url>
-    <url>
-        <loc>Nonede/various/legal/</loc>
-        <lastmod>2025-01-30</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/various/legal/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/various/legal/"/>
-    </url>
-    <url>
-        <loc>Nonede/various/privacy/</loc>
-        <lastmod>2025-01-30</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="de" href="Nonede/various/privacy/"/>
-        <xhtml:link rel="alternate" hreflang="it" href="Noneit/various/privacy/"/>
-    </url>
-    <url>
         <loc>Nonede/Various/</loc>
         <lastmod>2025-01-30</lastmod>
         <changefreq>daily</changefreq>
@@ -164,6 +143,27 @@
         <xhtml:link rel="alternate" hreflang="de" href="Nonede/Various/privacy/"/>
         <xhtml:link rel="alternate" hreflang="en" href="NoneVarious/privacy/"/>
         <xhtml:link rel="alternate" hreflang="it" href="Noneit/Various/privacy/"/>
+    </url>
+    <url>
+        <loc>Nonede/various/</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/various/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/various/"/>
+    </url>
+    <url>
+        <loc>Nonede/various/legal/</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/various/legal/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/various/legal/"/>
+    </url>
+    <url>
+        <loc>Nonede/various/privacy/</loc>
+        <lastmod>2025-01-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="Nonede/various/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/various/privacy/"/>
     </url>
     <url>
         <loc>Noneit/</loc>
