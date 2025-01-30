@@ -1,108 +1,138 @@
-# DEVELOPER
+# Developers
 
-## Navigation durch die Architektur
+Welcome to the Raspirus developer guide! This page outlines everything you need to contribute effectively, from setting up your environment to understanding the architecture and updating YARA rules.
 
-```mermaid
-graph LR
-     A[Start] --> B{Scan-Position angegeben? ;
-     B --> |Ja| C[Start scan];
-     C --> |Start Loop| D[Datei gefunden];
-     D --> E[Erstelle Hash];
-     E --> F[Vergleiche Hash];
-     F --> G{Hash in DB? ;
-     G --> |Ja| H[Flagge als Malware];
-     G --> |Nein| I[Flagge als Safe];
-     H & I --> J[Iteration fortsetzen];
-     J --> K{Letzte Datei? ;
-     K --> |Ja| L[Scanner stoppen];
-     L --> M[Ergebnisse anzeigen];
-     K --> | N[No| Erneut starten];
-     N --> D;
-     B --> |Nein | O[Stop]
+---
+
+## Setup
+
+To begin development, follow these steps:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Raspirus/raspirus.git
+   cd raspirus
+   ```
+2. Install [Rust](https://www.rust-lang.org/tools/install).
+3. Install the Raspirus package:
+   ```sh
+   cargo install .
+   ```
+4. Start development:
+   ```sh
+   cargo run
+   ```
+5. Or build Raspirus:
+   ```sh
+   cargo build
+   ```
+
+### Troubleshooting Setup Issues
+
+If you encounter issues while building or running Raspirus:
+
+- Ensure Rust is installed correctly.
+- Verify that logs and config files are created properly.
+- Check for dependency conflicts and missing packages.
+
+---
+
+## Documentation
+
+Since Raspirus is written in Rust, you can generate developer documentation with:
+
+```sh
+cargo doc --no-deps --open
 ```
 
-Raspirus gliedert sich in zwei integrale Komponenten: Frontend und Backend. Diese Komponenten, die in unterschiedlichen Sprachen und Frameworks erstellt wurden, sind über ein Drittanbieter-Framework mit dem Namen [Tauri](https://tauri.app/) miteinander verbunden. Dieser Rahmen erleichtert nicht nur die Kommunikation zwischen Frontend und Backend, sondern ermöglicht auch die Integration von Rust in das Frontend. Darüber hinaus ermöglicht Tauri die Verteilung von Raspirus auf verschiedene Betriebssysteme.
+This will open the generated documentation in your browser.
 
-## Starte deine Entwicklerreise
+---
 
-\=== "Windows" Clone the repository
-2\. Install [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites#setting-up-windows)
-3\. Install [npm](https://nodejs.org/en/download)
-4\. Install [Next.js](https://nextjs.org/docs/getting-started/installation#manual-installation) with `npm install next@latest react@latest react-dom@latest`
-5\. Install npm dependencies with: `npm i`
-6\. Start development with `cargo tauri dev`
-7\. oder bauen Sie Raspirus mit "cargo tauri build"
+## Architecture
 
-\=== "Linux" Klone das Repository
-2\. Clone the Repository
-2\. Execute `make install`
-3\.  1. Clone the Repository
-2\. Execute `make install`
-3\. Run the application with `raspirus`
+Raspirus follows a **frontend-backend** architecture, with both components written in Rust.
 
-\=== "macOS" Clone the repository
-2\. Install [Tauri and Prerequisites](https://tauri.app/v1/guides/getting-started/prerequisites/#setting-up-macos)
-3\. Install [npm](https://nodejs.org/en/download)
-4\. Install [Next.js](https://nextjs.org/docs/getting-started/installation#manual-installation) with `npm install next@latest react@latest react-dom@latest`
-5\. Install npm dependencies with: `npm i`
-6\. Start development with `cargo tauri dev`
-7\. oder bauen Sie Raspirus mit "cargo tauri build"
+### Frontend
 
-Sollten Sie während Ihres ersten Laufs oder Builds auf irgendwelche Fehler stoßen, stellen Sie sicher, dass Sie jeden Schritt gewissenhaft verfolgt haben. Bestätigen Sie die genaue Erstellung von Logs und Konfigurationsdateien.
+- Uses **iced-rs** for GUI rendering.
+- Prioritizes user experience—ideally, users should never need to open the settings page.
+- Designed for **touch support**, minimizing keyboard input.
+- Plug-and-play: Can be replaced with another frontend if needed.
+- Simple structure, similar to a website with just a few pages.
 
-## Erforsche das Backend
+### Backend
 
-```mermaid
-classDiagram
-     Main <|-- DBOps
-     Main <|-- Configs
-     Main <|-- FileLogs
-     Main <|-- Scanner
-     Main: +Config config_file
+- **Multi-threaded** for efficient scanning.
+- Handles scanning, rule processing, and settings management.
+- Implements **YARA rules** for malware detection.
+- Well-documented functions—if in doubt, check the code directly.
+- Despite its complexity, it becomes easier to navigate once you start working with it.
 
-     class DBOps {
-          +Connection db_conn
-          +String db_file
-          +TauriWindow t_win
-          +new()
-          +update_db()
-          +hash_exists()
-     }
+---
 
-     class Configs {
-          +Data data
-          +new()
-          +save()
-          +load()
-     }
+## Configuration
 
-     class FileLogs {
-          +File file
-          +log()
-          +create_file()
-     }
+The configuration file is stored in the default system configuration folder:
 
-     class Scanner {
-          +String scan_loc
-          +DbOps db_ops
-          +Vec malware_list
-          +search_files()
-          +create_hash()
-          +get_folder_size()
-     }
+```json
+{
+  "config_version": "6",
+  "rules_version": "v1.1.2",
+  "min_matches": 0,
+  "max_matches": 20,
+  "max_threads": 12,
+  "logging_is_active": true,
+  "mirror": "https://api.github.com/repos/Raspirus/yara-rules/releases/latest",
+  "language": "en",
+  "dark_mode": true
+}
 ```
 
-Das Backend, ein essentielles Rad in der Raspirus-Maschine, wird in Rust sorgfältig für eine herausragende Leistung hergestellt. Die primäre Datei enthält Funktionen, die über das Frontend zugänglich sind, was JSON-kompatible Ergebnisse liefern muss. Für eine detaillierte Aufschlüsselung siehe die obige Darstellung der modularen Anordnung des Backends.
+### Key Fields
 
-## Frontend entpacken
+- `config_version`: Determines if an older config needs to be overwritten.
+- `rules_version`: Tracks the last downloaded YARA rules version.
+- `min_matches`: Minimum number of rule matches required to flag a file.
+- `max_matches`: Maximum rule matches before stopping further checks.
+- `max_threads`: Number of CPU threads used for scanning.
+- `logging_is_active`: Enables/disables logging (useful when storage is limited).
+- `mirror`: API endpoint for fetching rule updates.
+- `language`: Current language (supports `fr`, `en`, `it`, `de`).
+- `dark_mode`: Toggles the application’s dark mode.
 
-<iframe title="The original Raspirus project on Figma" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpkgpwieNbhYiOi4Gz6Uyt6%2FRaspirus%3Fnode-id%3D0%253A1%26t%3DGr4YG3Ynv24YVlz2-1" allowfullscreen></iframe> 
+---
 
-Unsere Frontend, die mit JavaScript über das Next.js Framework entwickelt wurde, betont Benutzerfreundlichkeit und Funktionalität. Er enthält Komponenten und Seiten und spiegelt die Einfachheit und Robustheit von Next.js wider. Eine ungefähre visuelle Darstellung der Frontend-Architektur finden Sie im obigen Bild.
+## Mirrors
 
-## Testabdeckung auswerten
+The `mirror` setting in the config file should point to a Git API. Custom mirrors must provide JSON with the following structure:
 
-- Backend-Tests, die in Rust erstellt wurden, können über den Befehl "cargo test" ausgeführt werden. Greifen Sie auf diese Tests im [test-Verzeichnis](https://github.com/Raspirus/Raspirus/tree/main/src-tauri%2Fsrc%2Ftests). Prüfen Sie die Testabdeckung auf [Codecov](https://app.codecov.io/gh/Raspirus/Raspirus).
-- Die mit Selenium erstellten Frontend-Tests befinden sich derzeit in der Entwicklung.
+```json
+{
+  "tag_name": "v1.1",
+  "zipball_url": "http://example.com/download.zip"
+}
+```
 
-Vielen Dank für Ihr Interesse, zur Entwicklung von Raspirus beizutragen. Ihre Expertise stärkt unseren Fortschritt.
+- `tag_name`: Specifies the version for update checks.
+- `zipball_url`: Direct link to the `.zip` archive containing YARA rules.
+
+---
+
+## Updater
+
+Raspirus has a **built-from-scratch updater** that:
+
+1. Checks the latest available version using the configured mirror.
+2. Downloads the `.zip` archive to cache.
+3. Compiles all `.yar` files into a `.yarac` (compiled YARA rules).
+4. Saves the compiled rules in:
+   - **Linux/macOS**: `~/.local/share/raspirus`
+   - **Windows**: `%appdata%\Roaming\Raspirus\Data`
+   - **macOS (App Bundle)**: `/Applications/Raspirus/data`
+
+### Release Archive Structure
+
+The update `.zip` should contain **uncompiled YARA `.yar` files**. The folder structure inside the archive does not matter, as files are added recursively.
+
+📌 **Windows Users:** If Windows Defender interferes with compiled YARA rules, an optional script can disable Defender scanning. See [this script](https://github.com/Raspirus/yara-rules/blob/main/scripts/windows.ps1).
