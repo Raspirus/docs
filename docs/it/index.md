@@ -1,20 +1,17 @@
-# HOME
+# Home
 
-![Full banner logo](../img/banner_logo.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Raspirus/media/refs/heads/main/logo/logo-final.svg" alt="Logo" style="width: 45%; max-width: 400px; vertical-align: middle; margin-right: 5%;">
+  <img src="https://raw.githubusercontent.com/Raspirus/media/refs/heads/main/logo/usb-final.svg" alt="USB" style="width: 45%; max-width: 400px; vertical-align: middle;">
+</div>
 
 ## Introduzione
 
-Raspirus: Potenziare La Tua Protezione Malware
+Raspirus is a lightweight, rules-based malware scanner designed for scanning files and directories. Originally developed to scan USB drives using a Raspberry Pi, it has since expanded to support local file and folder scanning on multiple platforms.
 
-Welcome to the official documentation for Raspirus, your lightweight rules-based malware scanner. Originariamente progettato per eseguire la scansione di unità USB collegate utilizzando un Raspberry Pi, Raspirus si è evoluto in un versatile strumento in grado di scansionare anche file e cartelle locali. Alcune delle sue caratteristiche distintive includono:
+Raspirus utilizes YARA-based detection rules to identify potential threats, offering a flexible and privacy-conscious approach to malware scanning. It supports scanning compressed files, ensuring thorough analysis. The project is community-supported and operates without cost, relying on donations.
 
-- **Protezione senza costi:** Raspirus opera esclusivamente su donazioni, garantendo una protezione di prim'ordine senza alcun onere finanziario.
-- **Tailored Yara Detection:** Our custom rules-based approach guarantees accurate identification of malware.
-- **Comprehensive File Scans:** Raspirus può eseguire in modo efficiente la scansione dei file compressi, garantendo che nessuna minaccia non venga rilevata.
-- **Privacy Prioritizzata:** Offrendo un'opzione per la privacy, Raspirus mantiene le tue informazioni personali al sicuro.
-- **Convenienza cross-piattaforma:** Goditi i vantaggi della protezione Raspirus su una varietà di sistemi operativi.
-- **Swift e Dependable:** Contare su Raspirus per un rilevamento rapido e affidabile di malware.
-- **Elegante interfaccia moderna:** Raspirus vanta una bellissima e intuitiva interfaccia utente: grazie alla sua semplicità di utilizzo.
+Designed for efficiency and ease of use, Raspirus provides a modern interface while maintaining fast and reliable scanning performance.
 
 ## Per Iniziare
 
@@ -22,18 +19,19 @@ Welcome to the official documentation for Raspirus, your lightweight rules-based
 
 Cominciare con Raspirus è una brezza. Seguire questi semplici passaggi:
 
-1. Visita la nostra [website](https://raspirus.deno.dev) o vai alla [pagina di rilascio di GitHub](https://github.com/Raspirus/Raspirus/releases/latest).
+1. Visit our [website](https://raspirus.deno.dev) or head to the [GitHub release page](https://github.com/Raspirus/raspirus/releases/latest).
 2. Scarica l'eseguibile che corrisponde al tuo sistema operativo.
 
-!!! nota
+**Alterantives:**
 
-```
-If you plan to use Raspirus on the Raspberry Pi as a standalone application, we have a [dedicated guide](Installation/raspberry-pi.md) for it.
-```
+- [Snap Store (Linux)](https://snapcraft.io/raspirus/)
+- [Flathub (Linux)](https://flathub.org/apps/details/io.github.raspirus.raspirus)
+- [SourceForge](https://sourceforge.net/projects/raspirus/files/latest/download)
+- [Chocolatey (Windows)](https://community.chocolatey.org/packages/raspirus/)
 
 ### Per Gli Sviluppatori
 
-Sei uno sviluppatore che cerca di impostare Raspirus? Ti abbiamo coperto. Check out our comprehensive guides for various operating systems in the [Developers section](Developers/index.md).
+Sei uno sviluppatore che cerca di impostare Raspirus? Ti abbiamo coperto. Check out our comprehensive guides for various operating systems in the [Developers section](developers.md).
 
 ## Domande?
 
@@ -41,32 +39,43 @@ Hai domande su Raspirus? Siamo qui per aiutare!
 
 - Visit our [FAQ section](faq.md) for answers to common queries.
 - Unisciti alla nostra fiorente comunità sul [server Discord](https://discord.gg/Vx7fW9PA8B) per entrare in contatto con altri utenti.
-- Se hai incontrato un bug, sfogliare i problemi di GitHub per vedere se è già segnalato.
+- If you've encountered a bug, browse the [GitHub issues](https://github.com/Raspirus/raspirus/issues) to see if it's already reported.
 
 Grazie per aver scelto Raspirus per le vostre esigenze di protezione malware. Insieme, stiamo rendendo il mondo digitale più sicuro per tutti.
 
 ## Screenshots
 
-!!! nota
+### Home page
 
-```
-The screenshots below are outdated, but the style and structure remains roughly the same
-```
+<div align="center">
+    <img src="https://raw.githubusercontent.com/Raspirus/media/refs/heads/main/screenshots/main_dark.png" alt="Home page dark" style="width: 45%; max-width: 400px; vertical-align: middle; margin-right: 5%;">
+    <img src="https://raw.githubusercontent.com/Raspirus/media/refs/heads/main/screenshots/main_light.png" alt="Home page light" style="width: 45%; max-width: 400px; vertical-align: middle;">
+</div>
 
-### Home
+### Settings page
 
-![Screenshot of Home page](../img/screenshots/home.png)
+<div align="center">
+    <img src="https://raw.githubusercontent.com/Raspirus/media/refs/heads/main/screenshots/settings_dark.png" alt="Settings page dark" style="width: 45%; max-width: 400px; vertical-align: middle; margin-right: 5%;">
+    <img src="https://raw.githubusercontent.com/Raspirus/media/refs/heads/main/screenshots/settings_light.png" alt="Settings page light" style="width: 45%; max-width: 400px; vertical-align: middle;">
+</div>
 
-### Scansione
+### About page
 
-![Screenshot del processo di scansione](../img/screenshots/scanning.png)
+<div align="center">
+    <img src="https://raw.githubusercontent.com/Raspirus/media/refs/heads/main/screenshots/license_dark.png" alt="About page dark" style="width: 45%; max-width: 400px; vertical-align: middle; margin-right: 5%;">
+    <img src="https://raw.githubusercontent.com/Raspirus/media/refs/heads/main/screenshots/license_light.png" alt="About page light" style="width: 45%; max-width: 400px; vertical-align: middle;">
+</div>
 
-### Risultato
+## Contact
 
-![Screenshot del risultato positivo](../img/screenshots/result.png)
+We'd love to hear from you! Depending on your needs, here are the best ways to get in touch:
 
-### Configurazione Raspberry Pi
+- Join our [Discord community](https://discord.gg/Vx7fW9PA8B) for general questions and discussions.
+- For private matters, feel free to [email us](mailto:raspirus.dev@gmail.com).
+- If you have bug reports, feature requests, or other code-related issues, please use our [GitHub Issues](https://github.com/Raspirus/raspirus) system or the dedicated channels on our Discord server.
 
-![Screenshot della Home page su Raspberry Pi](../img/screenshots/Rpihomesetup.jpg)
+### Quick Links
 
-![Screenshot of Raspberry Pi setup](../img/screenshots/Rpisetup.jpg)
+- :simple-discord: [Discord](https://discord.gg/Vx7fW9PA8B)
+- :simple-gmail: [Email](mailto:raspirus.dev@gmail.com)
+- :simple-github: [GitHub](https://github.com/Raspirus/raspirus)
