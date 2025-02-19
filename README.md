@@ -1,6 +1,12 @@
 # Welcome to the Docs! 📚
 
-[![Crowdin](https://badges.crowdin.net/raspirus/localized.svg)](https://crowdin.com/project/raspirus)
+> [!CAUTION]
+> The Raspirus documentation has been moved to the [Wiki](https://github.com/Raspirus/raspirus/wiki)!
+
+ 
+The following information is deprecated
+
+---
 
 Thank you for contributing to the project documentation! This guide will walk you through the process of setting up the project, making changes, and contributing your translations.
 
